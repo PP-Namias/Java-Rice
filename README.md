@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://pp-namias.github.io/Java-GUI/" target="blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/></a>
-<a href="https://github.com/PP-Namias/Java-GUI/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI license" /></a>
+<a href="https://github.com/PP-Namias/Java-GUI/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/LICENSE/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI license" /></a>
 <a href="https://github.com/PP-Namias/Java-GUI/fork" target="blank"><img src="https://img.shields.io/github/forks/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI forks"/></a>
 <a href="https://github.com/PP-Namias/Java-GUI/stargazers" target="blank"><img src="https://img.shields.io/github/stars/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI stars"/></a>
 <a href="https://github.com/PP-Namias/Java-GUI/issues" target="blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI issues"/></a>
@@ -80,4 +80,16 @@ Java Rice is a food ordering system designed to provide users with a fast and co
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Max-1.jpg" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Main Form [Maximize]</b>
+  <br>
+  <br>
+  <img src="./Java-Rice-GUI-Plan/Java-Receipt-Default.jpg" width="500" height="800" alt="Java GUI Banner"/>
+  <br>
+  <b>Java Rice Receipt [Default]</b>
+  <br>
+  <br>
+  <img src="./Java-Rice-GUI-Plan/Java-Receipt.jpg" width="500" height="800" alt="Java GUI Banner"/>
+  <br>
+  <b>Java Rice Receipt [Example]</b>
+  <br>
+  <br>
 </p>
