@@ -7,6 +7,8 @@
 <a href="https://github.com/PP-Namias/Java-GUI/pulls" target="blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI pull-requests"/></a>
 </p>
 
+<img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/>
+
 ## Introduction:
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
 
