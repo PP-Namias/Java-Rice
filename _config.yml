@@ -1,5 +1,4 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-show_downloads: true
+title: Java Rice
+description: Point of Sale application that runs on a graphical user interface. Made entirely on Java.
 google_analytics:
 theme: jekyll-theme-hacker
