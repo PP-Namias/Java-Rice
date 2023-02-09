@@ -6,6 +6,7 @@
 <a href="https://github.com/PP-Namias/Java-GUI/issues" target="blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI issues"/></a>
 <a href="https://github.com/PP-Namias/Java-GUI/pulls" target="blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI pull-requests"/></a>
 </p>
+<br>
 
 # Title: Java Rice - An Interactive Food Ordering System
 ## Introduction:
