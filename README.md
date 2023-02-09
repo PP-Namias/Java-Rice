@@ -60,15 +60,23 @@ Java Rice is a food ordering system designed to provide users with a fast and co
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo.png" width="300" height="400" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Logo [Transparent]</b>
+  <br>
+  <br>  
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Banner with Logo [Transparent]</b>
+  <br>
+  <br>
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-5.png" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Banner [Transparent]</b>
+  <br>
+  <br>
   <img src="./Java-Rice-GUI-Plan/Java-Rice-5.jpg" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Main Form [Regular]</b>
+  <br>
+  <br>
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Max-1.jpg" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Main Form [Maximize]</b>
