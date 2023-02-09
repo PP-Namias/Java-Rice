@@ -8,7 +8,7 @@
 </p>
 <br>
 
-# Title: __Java Rice__ - An Interactive Food Ordering System
+# __Title: Java Rice__ - An Interactive Food Ordering System
 ## __Introduction__
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
 
