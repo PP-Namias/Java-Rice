@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://pp-namias.github.io/Java-GUI/" target="blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/></a>
-<a href="https://github.com/PP-Namias/Java-GUI/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/LICENSE/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI license" /></a>
+<a href="https://github.com/PP-Namias/Java-GUI/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI license" /></a>
 <a href="https://github.com/PP-Namias/Java-GUI/fork" target="blank"><img src="https://img.shields.io/github/forks/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI forks"/></a>
 <a href="https://github.com/PP-Namias/Java-GUI/stargazers" target="blank"><img src="https://img.shields.io/github/stars/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI stars"/></a>
 <a href="https://github.com/PP-Namias/Java-GUI/issues" target="blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-GUI?style=flat-square" alt="Java-GUI issues"/></a>
