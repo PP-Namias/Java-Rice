@@ -97,7 +97,7 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 
   <br>
 
-## Database:
+## __Database__
 ```sql
 CREATE TABLE IF NOT EXISTS Products (
 	Product_ID SERIAL NOT NULL PRIMARY KEY,
@@ -147,3 +147,33 @@ CREATE TABLE IF NOT EXISTS Sales (
   <b>Java Rice Database [Relationship]</b>
   <br>
 </p>
+
+## __Forms__
+- MainForm
+- Cashier
+- Receipt
+
+## __Functions__
+- Ordering system [multiple selections]
+- Auto-generated search bar
+- Receipt 
+- Order logs
+- Items order
+- Order number
+- QR Code [generator] [reader]
+- Voucher Discounts
+
+## __Color Palette__
+- Main Background: #36414d
+- Foreground: #898b8e
+- Text (Dark): #36414d // Light Background
+- Text (Light): #bcc7c4 // Dark Background
+- Other:
+  - #333333
+  - #5182a1
+- Cart: #808080
+  - #63656a
+- Footer: #0d0d0d
+- Logo:
+  - #cc3300 // Java
+  - #cc6600 // Rice
