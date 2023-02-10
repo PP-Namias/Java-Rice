@@ -92,9 +92,58 @@ Java Rice is a food ordering system designed to provide users with a fast and co
   <b>Java Rice Receipt [Example]</b>
   <br>
   <br>
+</p>
+
+
+  <br>
+
+## Database:
+```sql
+CREATE TABLE IF NOT EXISTS Products (
+	Product_ID SERIAL NOT NULL PRIMARY KEY,
+	Name TEXT NOT NULL,
+	Category TEXT NOT NULL,
+	Store_num TEXT NOT NULL,
+	Price DOUBLE PRECISION NOT NULL,
+	Image OBJ NOT NULL,
+	Favorite BOOL NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Cart (
+	Product_ID SERIAL NOT NULL PRIMARY KEY,
+	Name TEXT NOT NULL,
+	Category TEXT NOT NULL,
+	Store_num TEXT NOT NULL,
+	Price DOUBLE PRECISION NOT NULL,
+	Image OBJ NOT NULL,
+	Quantity INT NOT NULL,
+	Voucher TEXT NOT NULL,
+	Discount DOUBLE NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Order (
+	Order_ID SERIAL NOT NULL PRIMARY KEY,
+	Product_ID SERIAL NOT NULL,
+	Name TEXT NOT NULL,
+	Category TEXT NOT NULL,
+	Store_num TEXT NOT NULL,
+	Price DOUBLE PRECISION NOT NULL,
+	Image OBJ NOT NULL,
+	Quantity INT NOT NULL,
+	Voucher TEXT NOT NULL,
+	Discount DOUBLE NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Sales (
+	Order_ID SERIAL NOT NULL PRIMARY KEY,
+	Product_ID SERIAL NOT NULL,
+	Category TEXT NOT NULL,
+	Store_num TEXT NOT NULL,
+	Quantity INT NOT NULL,
+	Date_processed DATE NOT NULL,
+	Profit DOUBLE NOT NULL
+);
+```
+<p align="center">
   <img src="./Java-Rice-GUI-Plan/Database.png" alt="Java GUI Banner"/>
   <br>
   <b>Java Rice Database [Relationship]</b>
-  <br>
   <br>
 </p>
