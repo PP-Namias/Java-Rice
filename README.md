@@ -25,10 +25,10 @@ Java Rice is a food ordering system designed to make the process of ordering foo
 *	The system will use secure payment methods to process the transactions.
 
 ## __Timeline__
-- [x] Planning and Design Phase: 2 weeks
-- [ ] Development Phase: 4 weeks
-- [ ] Testing and Debugging Phase: 2 weeks
-- [ ] Deployment Phase: 1 week
+  [x] Planning and Design Phase: 2 weeks
+  [ ] Development Phase: 4 weeks
+  [ ] Testing and Debugging Phase: 2 weeks
+  [ ] Deployment Phase: 1 week
 
 ## __Limitations__
 *	The system will only be available for use on devices with Java and Maven GUI installed.
