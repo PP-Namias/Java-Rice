@@ -92,4 +92,9 @@ Java Rice is a food ordering system designed to provide users with a fast and co
   <b>Java Rice Receipt [Example]</b>
   <br>
   <br>
+  <img src="./Java-Rice-GUI-Plan/Database.png" alt="Java GUI Banner"/>
+  <br>
+  <b>Java Rice Receipt [Example]</b>
+  <br>
+  <br>
 </p>
