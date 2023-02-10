@@ -57,14 +57,14 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 
 ## __Flowchart__
 ## __About Us__
-<table border="hidden"align="center">
+<table border="hidden" align="center">
   <tr>
     <th><img src="./Java-Rice-GUI-Plan/cano.png" width="400" height="400" alt="Java GUI Banner"/><p align="center">Kurt Daniel S. Cano</p></th>
     <th><img src="./Java-Rice-GUI-Plan/caram.png" width="400" height="400" alt="Java GUI Banner"/><p align="center">Mike Rufino J. Caram II</p></th>
     <th><img src="./Java-Rice-GUI-Plan/lonoza.png" width="400" height="400" alt="Java GUI Banner"/><p align="center">Joshua O. Lonoza</p></th>
   </tr>  
 </table>
-<table border="hidden"align="center">
+<table border="hidden" align="center">
   <tr>
     <th><img src="./Java-Rice-GUI-Plan/llanes.png" width="400" height="400" alt="Java GUI Banner"/><p align="center">Kevin A. Llanes</p></th>
     <th><img src="./Java-Rice-GUI-Plan/namias.png" width="400" height="400" alt="Java GUI Banner"/><p align="center">Jhon Keneth Ryan B. Namias</p></th>
