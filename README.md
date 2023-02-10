@@ -59,15 +59,15 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 ## __About Us__
 <table border="hidden" align="center">
   <tr>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/cano.png" width="300" height="300" alt="Cano Rizz Pic"/><p align="center">Kurt Daniel S. Cano</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/caram.png" width="300" height="300" alt="Caram Rizz Pic"/><p align="center">Mike Rufino J. Caram II</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/lonoza.png" width="300" height="300" alt="Lonoza Rizz Pic"/><p align="center">Joshua O. Lonoza</p></th>
+    <th><p align="center"><img src="./Java-Rice-GUI-Plan/cano.png"   width="300" height="300" alt="Cano Rizz Pic"/><br>Kurt Daniel S. Cano</p></th>
+    <th><p align="center"><img src="./Java-Rice-GUI-Plan/caram.png"  width="300" height="300" alt="Caram Rizz Pic"/><br>Mike Rufino J. Caram II</p></th>
+    <th><p align="center"><img src="./Java-Rice-GUI-Plan/lonoza.png" width="300" height="300" alt="Lonoza Rizz Pic"/><br>Joshua O. Lonoza</p></th>
   </tr>  
 </table>
 <table border="hidden" align="center">
   <tr>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/llanes.png" width="300" height="300" alt="Llanes Rizz Pic"/><p align="center">Kevin A. Llanes</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/namias.png" width="300" height="300" alt="Namias Rizz Pic"/><p align="center">Jhon Keneth Ryan B. Namias</p></th>
+    <th><p align="center"><img src="./Java-Rice-GUI-Plan/llanes.png" width="300" height="300" alt="Llanes Rizz Pic"/><br>Kevin A. Llanes</p></th>
+    <th><p align="center"><img src="./Java-Rice-GUI-Plan/namias.png" width="300" height="300" alt="Namias Rizz Pic"/><br>Jhon Keneth Ryan B. Namias</p></th>
   </tr>
 </table>
 
