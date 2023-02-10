@@ -53,8 +53,18 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 *	Detailed project plan
 *	Technical specifications
 *	UI Design
+*	Database
 
-## __UI Design__
+## __Flowchart__
+## __Changelog__
+This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
+
+## Alpha Build: February 3, 2023 - February 10, 2023
+__Planning and Designing Phase__, this week's development progress will be focused on finding references, brainstorming, and planning for program design, as well as making the most of available time to ensure efficient and progressive coding in subsequent weeks.
+
+The Plan is to make a structure of what program will be created, it includes the design of possible future User Interface of the program that will be used for referencing and on top of that is to brainstorm a plan as well as Logo Designing. Created four initial databases named as: Products, Carts, Order, Sales.
+
+## __UI and Logo Design__
 <br>
 <p align="center">
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo.png" width="300" height="400" alt="Java GUI Banner"/>
