@@ -25,7 +25,7 @@ Java Rice is a food ordering system designed to make the process of ordering foo
 *	The system will use secure payment methods to process the transactions.
 
 ## __Timeline__
-- [x] Planning and Design Phase: 2 weeks
+- [x] __Planning and Design Phase: 2 weeks__
 - [ ] Development Phase: 4 weeks
 - [ ] Testing and Debugging Phase: 2 weeks
 - [ ] Deployment Phase: 1 week
@@ -59,18 +59,17 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 ## __About Us__
 <table border="hidden" align="center">
   <tr>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/cano.png" width="400" height="400" alt="Cano Rizz Pic"/><p align="center">Kurt Daniel S. Cano</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/caram.png" width="400" height="400" alt="Caram Rizz Pic"/><p align="center">Mike Rufino J. Caram II</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/lonoza.png" width="400" height="400" alt="Lonoza Rizz Pic"/><p align="center">Joshua O. Lonoza</p></th>
+    <th><img align="center" src="./Java-Rice-GUI-Plan/cano.png" width="250" height="250" alt="Cano Rizz Pic"/><p align="center">Kurt Daniel S. Cano</p></th>
+    <th><img align="center" src="./Java-Rice-GUI-Plan/caram.png" width="250" height="250" alt="Caram Rizz Pic"/><p align="center">Mike Rufino J. Caram II</p></th>
+    <th><img align="center" src="./Java-Rice-GUI-Plan/lonoza.png" width="250" height="250" alt="Lonoza Rizz Pic"/><p align="center">Joshua O. Lonoza</p></th>
   </tr>  
 </table>
 <table border="hidden" align="center">
   <tr>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/llanes.png" width="400" height="400" alt="Llanes Rizz Pic"/><p align="center">Kevin A. Llanes</p></th>
-    <th><img align="center" src="./Java-Rice-GUI-Plan/namias.png" width="400" height="400" alt="Namias Rizz Pic"/><p align="center">Jhon Keneth Ryan B. Namias</p></th>
+    <th><img align="center" src="./Java-Rice-GUI-Plan/llanes.png" width="250" height="250" alt="Llanes Rizz Pic"/><p align="center">Kevin A. Llanes</p></th>
+    <th><img align="center" src="./Java-Rice-GUI-Plan/namias.png" width="250" height="250" alt="Namias Rizz Pic"/><p align="center">Jhon Keneth Ryan B. Namias</p></th>
   </tr>
 </table>
-
 
 ## __Changelog__
 This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
@@ -172,17 +171,18 @@ CREATE TABLE IF NOT EXISTS Sales (
 
 ## __Forms__
 - MainForm
+- DeveloperForm
 - Cashier
 - Receipt
 
 ## __Functions__
-- Ordering system [multiple selections]
+- Ordering system [Multiple Selections]
 - Auto-generated search bar
-- Receipt 
+- Receipt
 - Order logs
 - Items order
 - Order number
-- QR Code [generator] [reader]
+- QR Code [Generator] [Reader]
 - Voucher Discounts
 
 ## __Color Palette__
