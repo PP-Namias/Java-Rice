@@ -8,7 +8,7 @@
 </p>
 <br>
 
-# __Title: Java Rice__ - An Interactive Food Ordering System
+# __Title: Java Rice__ - _An Interactive Food Ordering System_
 ## __Introduction__
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
 
@@ -56,6 +56,22 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 *	Database
 
 ## __Flowchart__
+## __About Us__
+<table border="none" align="center">
+  <tr>
+    <th><img src="./Java-Rice-GUI-Plan/cano.png" width="400" height="400" alt="Java GUI Banner"/>Kurt Daniel S. Cano</th>
+    <th><img src="./Java-Rice-GUI-Plan/caram.png" width="400" height="400" alt="Java GUI Banner"/>Mike Rufino J. Caram II</th>
+    <th><img src="./Java-Rice-GUI-Plan/lonoza.png" width="400" height="400" alt="Java GUI Banner"/>Joshua O. Lonoza </th>
+  </tr>  
+</table>
+<table border="none">
+  <tr>
+    <th><img src="./Java-Rice-GUI-Plan/llanes.png" width="400" height="400" alt="Java GUI Banner"/>Kevin A. Llanes</th>
+    <th><img src="./Java-Rice-GUI-Plan/namias.png" width="400" height="400" alt="Java GUI Banner"/>Jhon Keneth Ryan B. Namias </th>
+  </tr>
+</table>
+
+
 ## __Changelog__
 This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
 
