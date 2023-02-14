@@ -1,21 +1,4 @@
-# Security Policy
+# Java Rive Security Policy
+If you discover any security related issue in this repository or in this project, please contact me with this email jkrbn99@gmail.com or submit a vulnerability report via huntr.dev.
 
-## Supported Versions
-
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
-
-## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Thanks for helping me making my open-source projects safe for everyone, I really appreciate it.
