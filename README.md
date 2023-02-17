@@ -9,6 +9,27 @@
 <br>
 
 # __Title: Java Rice__ - _An Interactive Food Ordering System_
+
+## __Table of Contents__
+- [__Introduction__](#__Introduction__)
+- [__Objectives__](#__Objectives__)
+- [__Methodology__](#__Methodology__)
+- [__Timeline__](#__Timeline__)
+- [__Limitations__](#__Limitations__)
+- [__Criteria__](#__Criteria__)
+- [__Conclusion__](#__Conclusion__)
+- [__References__](#__References__)
+- [__Appendix__](#__Appendix__)
+- [__Flowchart__](#__Flowchart__)
+- [__About Us__](#__About Us__)
+- [__Changelog__](#__Changelog__)
+- [__Alpha Build:__ _February 3, 2023 - February 10, 2023_](#__Alpha Build:__ _February 3, 2023 - February 10, 2023_)
+- [__UI and Logo Design__](#__UI and Logo Design__)
+- [__Database__](#__Database__)
+- [__Forms__](#__Forms__)
+- [__Functions__](#__Functions__)
+- [__Color Palette__](#__Color Palette__)
+
 ## __Introduction__
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
 
@@ -56,6 +77,7 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 *	Database
 
 ## __Flowchart__
+
 ## __About Us__
 <table border="hidden" align="center">
   <tr>
