@@ -8,76 +8,76 @@
 </p>
 <br>
 
-# Title: Java Rice - _An Interactive Food Ordering System_
+# __Title: Java Rice__ - _An Interactive Food Ordering System_
 
-## Table of Contents
-- [Introduction](#Introduction)
-- [Objectives](#Objectives)
-- [Methodology](#Methodology)
-- [Timeline](#Timeline)
-- [Limitations](#Limitations)
-- [Criteria](#Criteria)
-- [Conclusion](#Conclusion)
-- [References](#References)
-- [Appendix](#Appendix)
-- [Flowchart](#Flowchart)
-- [About Us](#About_Us)
-- [Changelog](#Changelog)
-- [Alpha Build](#Alpha Build: _February 3, 2023 - February 10, 2023_)
-- [UI and Logo Design](#UI and Logo Design)
-- [Database](#Database)
-- [Forms](#Forms)
-- [Functions](#Functions)
-- [Color Palette](#Color_Palette)
+## __Table of Contents__
+- [__Introduction__](#Introduction)
+- [__Objectives__](#Objectives)
+- [__Methodology__](#__Methodology__)
+- [__Timeline__](#__Timeline__)
+- [__Limitations__](#__Limitations__)
+- [__Criteria__](#__Criteria__)
+- [__Conclusion__](#__Conclusion__)
+- [__References__](#__References__)
+- [__Appendix__](#__Appendix__)
+- [__Flowchart__](#__Flowchart__)
+- [__About Us__](#__About Us__)
+- [__Changelog__](#__Changelog__)
+- [__Alpha Build:__ _February 3, 2023 - February 10, 2023_](#__Alpha Build:__ _February 3, 2023 - February 10, 2023_)
+- [__UI and Logo Design__](#__UI and Logo Design__)
+- [__Database__](#__Database__)
+- [__Forms__](#__Forms__)
+- [__Functions__](#__Functions__)
+- [__Color Palette__](#__Color Palette__)
 
-## Introduction
+## __Introduction__
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
 
-## Objectives
+## __Objectives__
   * To provide a platform where users can order food with just a few clicks.
   *	To make the process of food ordering fast and efficient.
   *	To provide users with an interactive and user-friendly experience.
   *	To provide a secure and reliable platform for food ordering.
 
-## Methodology
+## __Methodology__
 *	The system will be built using Java programming language and Maven GUI for the front-end interface.
 *	A database will be used to store all the information about the food items and orders.
 *	The system will provide a user-friendly interface for users to place their orders.
 *	The system will use secure payment methods to process the transactions.
 
-## Timeline
-- [x] ___Planning and Design Phase: 2 weeks___
+## __Timeline__
+- [x] __Planning and Design Phase: 2 weeks__
 - [ ] Development Phase: 4 weeks
 - [ ] Testing and Debugging Phase: 2 weeks
 - [ ] Deployment Phase: 1 week
 
-## Limitations
+## __Limitations__
 *	The system will only be available for use on devices with Java and Maven GUI installed.
 *	The system will only support online payment methods.
 *	The system will not provide delivery services.
 
-## Criteria
+## __Criteria__
 *	Usability
 *	Availability
 *	Reliability
 *	Maintainability
 *	Security
 
-## Conclusion
+## __Conclusion__
 Java Rice is a food ordering system designed to provide users with a fast and convenient way to order food. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The system will provide a secure platform for food ordering and will be accessible on devices with Java and Maven GUI installed. The estimated timeline is 9 weeks.
 
-## References
+## __References__
 *	Java Programming Language Reference: Oracle Corporation
 *	Maven GUI Reference: Apache Software Foundation
 
-## Appendix
+## __Appendix__
 *	Detailed project plan
 *	Technical specifications
 *	UI Design
 *	Database
 
-## Flowchart
-## About Us
+## __Flowchart__
+## __About Us__
 <table border="hidden" align="center">
   <tr>
     <th><p align="center"><img src="./Java-Rice-GUI-Plan/cano.png"   width="300" height="300" alt="Cano Rizz Pic"/><br>Kurt Daniel S. Cano</p></th>
@@ -92,15 +92,15 @@ Java Rice is a food ordering system designed to provide users with a fast and co
   </tr>
 </table>
 
-## Changelog
+## __Changelog__
 This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
 
-## Alpha Build: _February 3, 2023 - February 10, 2023_
-Planning and Designing Phase, this week's development progress will be focused on finding references, brainstorming, and planning for program design, as well as making the most of available time to ensure efficient and progressive coding in subsequent weeks.
+## __Alpha Build:__ _February 3, 2023 - February 10, 2023_
+__Planning and Designing Phase__, this week's development progress will be focused on finding references, brainstorming, and planning for program design, as well as making the most of available time to ensure efficient and progressive coding in subsequent weeks.
 
 The Plan is to make a structure of what program will be created, it includes the design of possible future User Interface of the program that will be used for referencing and on top of that is to brainstorm a plan as well as Logo Designing. Created four initial databases named as: Products, Carts, Order, Sales.
 
-## UI and Logo Design
+## __UI and Logo Design__
 <br>
 <p align="center">
   <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo.png" width="300" height="400" alt="Java GUI Banner"/>
@@ -139,7 +139,7 @@ The Plan is to make a structure of what program will be created, it includes the
   <br>
 </p>
 
-## Database
+## __Database__
 ```sql
 CREATE TABLE IF NOT EXISTS Products (
 	Product_ID SERIAL NOT NULL PRIMARY KEY,
@@ -190,13 +190,13 @@ CREATE TABLE IF NOT EXISTS Sales (
   <br>
 </p>
 
-## Forms
+## __Forms__
 - MainForm
 - DeveloperForm
 - Cashier
 - Receipt
 
-## Functions
+## __Functions__
 - Ordering system [Multiple Selections]
 - Auto-generated search bar
 - Receipt
@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS Sales (
 - QR Code [Generator] [Reader]
 - Voucher Discounts
 
-## Color Palette
+## __Color Palette__
 - Main Background: #36414d
 - Foreground: #898b8e
 - Text (Dark): #36414d // Light Background
