@@ -33,7 +33,7 @@
 - [__Alpha Build 2:__ _February 12, 2023 - February ##, 2023_](#alpha-build-2-february-12-2023---february--2023)
   - [__Measurement__](#i-measurement)
   - [__Font__](#ii-font)
-  - [__Database__](#iii-database-excel)
+  - [__Database (Excel)__](#iii-database-excel)
 - [__Beta Build 1:__](#beta-build-1)
 - [__Release Build:__](#release-build)
 
@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS Sales (
 
 ## __Alpha Build 2:__ _February 12, 2023 - February ##, 2023_
 __Development Phase__
-## __I__. Measurement:
+## __Measurement__
   - Footer: 1280 x 41
   - Main Product Window: 971 x 416
   - Category Background: 971 x 130
@@ -241,17 +241,17 @@ __Development Phase__
     - Cart Button: 190 x 45
   - Search Bar: 707 x 286
   - Logo: 250 x 58
-## __II__. Font:
+## __Font__
   - Archivo
   - Arista
   - Bahnschrift
   - Myriad Pro
-## __III__. Database (Excel)
+## __Database (Excel)__
   - _Database - JavaRice.xlsx_
   - _https://1drv.ms/x/s!Am1JvRELYZ5OkV9SVXW56iUcIV7i?e=5Fuzis_ 
 
-## Beta Build 1: 
+## __Beta Build 1__
 __Testing, and Trial Run / Debugging Phase__
 
-## Release Build: 
+## __Release Build__
 __Deployment Phase, final__
