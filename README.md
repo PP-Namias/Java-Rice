@@ -96,7 +96,7 @@ Java Rice is a food ordering system designed to provide users with a fast and co
 ## __Changelog__
 This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
 
-## __Alpha Build:__ _February 3, 2023 - February 10, 2023_
+## __Alpha Build 1:__ _February 3, 2023 - February 11, 2023_
 __Planning and Designing Phase__, this week's development progress will be focused on finding references, brainstorming, and planning for program design, as well as making the most of available time to ensure efficient and progressive coding in subsequent weeks.
 
 The Plan is to make a structure of what program will be created, it includes the design of possible future User Interface of the program that will be used for referencing and on top of that is to brainstorm a plan as well as Logo Designing. Created four initial databases named as: Products, Carts, Order, Sales.
@@ -221,3 +221,32 @@ CREATE TABLE IF NOT EXISTS Sales (
 - Logo:
   - #cc3300 // Java
   - #cc6600 // Rice
+
+## __Alpha Build 2:__ _February 12, 2023 - February ##, 2023_
+__Development Phase__
+- __I__. Measurement:
+  - Footer: 1280 x 41
+  - Main Product Window: 971 x 416
+  - Category Background: 971 x 130
+    - Category Rectangle: 243 x 48
+    - Category Quad Box: 52 x 47
+  - Cart Side Bar Background: 245 x 560
+    - Cart Item: 205 x 110
+    - Cart Button: 190 x 45
+  - Search Bar: 707 x 286
+  - Logo: 250 x 58
+- __II__. Font:
+  - Archivo
+  - Arista
+  - Bahnschrift
+  - Myriad Pro
+
+- __III__. Database (Excel)
+  - _Database - JavaRice.xlsx_
+  - _https://1drv.ms/x/s!Am1JvRELYZ5OkV9SVXW56iUcIV7i?e=5Fuzis_ 
+
+## Beta Build 1: 
+__Testing, and Trial Run / Debugging Phase__
+
+## Release Build: 
+__Deployment Phase, final__
