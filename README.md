@@ -30,10 +30,12 @@
   - [__Forms__](#forms)
   - [__Functions__](#functions)
   - [__Color Palette__](#color-palette)
-- [__Alpha Build 2:__ _February 12, 2023 - February ##, 2023_](#alpha-build-1-february-3-2023---february-11-2023)
-  - [__Measurement__](#Measurement)
-  - [__Font__](#Font)
-  - [__Database__](#Database)
+- [__Alpha Build 2:__ _February 12, 2023 - February ##, 2023_](#alpha-build-2-february-12-2023---february--2023)
+  - [__Measurement__](#i-measurement)
+  - [__Font__](#ii-font)
+  - [__Database__](#iii-database-excel)
+- [__Beta Build 1:__](#beta-build-1)
+- [__Release Build:__](#release-build)
 
 ## __Introduction__
 Java Rice is a food ordering system designed to make the process of ordering food easier for users. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The purpose of this system is to allow users to order their favorite meals with ease and convenience.
