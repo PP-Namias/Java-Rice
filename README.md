@@ -228,6 +228,113 @@ CREATE TABLE IF NOT EXISTS Sales (
   - #cc3300 // Java
   - #cc6600 // Rice
 
+## References for Databases:
+__Store: [Name]#___
+1. Maestro Food Hub {Meal}
+2. Garvs' PaKanton {Noodles}
+3. Bam-bam's {Meal}
+4. Snap n' Bite {Snacks, [Fries, Burger, Hotdogs, Donuts]}
+5. RMBSJ: Tapsilogan ATB. {Set Meal}
+6. Kuya Lery: Pares ng Bayan {Noodles, Pares, Mami}
+7. Shake It Off {Snacks, Milk Tea, Shakes}
+8. Kitchen Nanay {Snacks, Meal}
+9. SnowJoe {Ice Cream, Cold Drinks}
+10. Happy Tummy {Set Meal, Noodles}
+
+Food Price: ####.##
+
+Products: [ProductName]
+
+__Food Category:__
+  - __Beverages__ {Cola, Softdrinks, Tea, Coffee, Milk, Energy Drink, Hot Chocolate, Milk Tea (sub categ.?), Water, Juice}
+  - __Combo Meal__ {Rice + 2 dish, e.g.: Rice + Vegetable + Meat, or any combo}
+  - __Vegetables__ { Adobong Kang-kong, Pinakbet, Ginataang Kalabasa, Lumpiang Togue, Ginisang Togue, …}
+  - __Meat__ {Curry, Adobo, Bicol Express, Fried Chicken, …}
+  - __Fish__ {Paksiw, Fried Fish, Lumpiang Shanghai, …}
+  - __Snacks__ {Bananacue, Ginataang Bilo-bilo, Turon, …}
+  - __Noodles__ {Palabok, Pancit Bihon, Spaghetti, Pares, Mami, Lomi, Fried Noodles, Pancit Canton, Cup Noodles}
+  - __Milk Tea__ { }
+
+### Maestro Foodhub (meal)
+  - meat vegetable combo
+  - siomai rice
+  - sizzling sisig
+  - sizzling burger steak
+
+### Garvs kantuhan (Noodles)
+  - Fried Noodles Hongkong Style Plain (Special 35php)
+  - Fried Noodles with egg (45php)
+  - Fried Noodles with pork siomai (45php)
+  - Fried Noodles with sharkfin (45php)
+  - Fried Noodles with beef (50php)
+  - Pork Ramen (70php)
+### Bam-bam's (meal)
+  - sizzling hotdog
+  - sizzling sisig
+  - sizzling burger steak
+  - spaghetti
+
+### Snap n' Bite (meal & snacks)
+  - sharksfin - 29
+  - pork siomai - 29
+  - gyoza - 29
+  - lumpiang shanghai - 29
+  - java rice meal - 39
+  - java rice meal + 12 oz drink - 49
+  - 12oz drink - 15
+  - 16oz drink - 19
+  - corndog bits
+  - corndog
+
+### RMBSJ (Set meal)
+  - Hotsilog - 45
+  - Skinsilog - 45
+  - Hamsilog -45
+  - siomaisilog - 45
+  - embosilog - 45
+  - cornsilog - 50
+  - tapsiloc - 55
+  - chorizosilog - 45
+
+### Kuya Lery (Noodles)
+  - Pares - 35
+  - Pares with rice - 45 
+  - Mami - 30
+  - Mami with rice - 40
+
+### Shake it off (Snacks, Milk Tea, Shakes)
+  - Snacks
+  - hamburger
+  - hamburger w/egg
+  - real cheese sticks
+  - fries & hotdog w/ juice
+  - fries w/juice
+  - fries
+  - footlong w/ cheese
+  - half-long w/ cheese
+  - Shakes
+  - mango
+  - cookies and cream
+
+### Kitchen Nanay (Snacks, Meals)
+
+### Snowjoe (Ice cream, cold drinks)
+  - milk melon popsicle stick (Specialty 12Php)
+  - Watermelon popsicle stick (12Php)
+  - Chocolate mochi ice cream (13Php)
+  - Cola 237mL(11Php)
+  - Soda 237mL(11Php)
+  - Lemon juice (15Php)
+  - Orange juice (15Php)
+
+### Happy Tummy (set meal, noodles)
+  - Milk tea
+  - Fruit tea
+  - pork sisig
+  - fried noodles
+  - fried noodles w/egg
+  - fried noodles w/ siomai
+
 ## __Alpha Build 2:__ _February 12, 2023 - February ##, 2023_
 __Development Phase__
 ## __Measurement__
@@ -255,3 +362,18 @@ __Testing, and Trial Run / Debugging Phase__
 
 ## __Release Build__
 __Deployment Phase, final__
+
+CPU register test,
+ROM checksum test,
+System timer and beeper port test,
+Checking the DMA controller,
+Reviewing the lower region of RAM for projecting resident programs in the BIOS,
+Launch of local programs,
+Checking the standard graphics adapter (VGA),
+Testing RAM,
+Checking the main input devices,
+CMOS check,
+Checking the main LPT / COM ports,
+Checking hard disk drives (HDD), and SSDs,
+Self-testing of BIOS functional subsystems,
+Transferring control to the bootloader.
