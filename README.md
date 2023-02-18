@@ -354,8 +354,7 @@ __Development Phase__
   - Bahnschrift
   - Myriad Pro
 ## __Database (Excel)__
-  - _Database - JavaRice.xlsx_
-  - _https://1drv.ms/x/s!Am1JvRELYZ5OkV9SVXW56iUcIV7i?e=5Fuzis_ 
+  - [_Database - JavaRice.xlsx_](https://1drv.ms/x/s!Am1JvRELYZ5OkV9SVXW56iUcIV7i?e=5Fuzis)
 
 ## __Beta Build 1__
 __Testing, and Trial Run / Debugging Phase__
@@ -377,3 +376,16 @@ Checking the main LPT / COM ports,
 Checking hard disk drives (HDD), and SSDs,
 Self-testing of BIOS functional subsystems,
 Transferring control to the bootloader.
+
+
+Restart
+Unplug any drives or USB devices.
+Disconnect external devices.
+Reconnect the power supply cables.
+Identify the beep code using the component or device manual.
+Check the fans turned off or on.
+Disconnect all expansion cards.
+Power off and on the computer.
+Check if the BIOS chip is loose.
+Update BIOS.
+Change motherboard, GPU, RAM, PSU, storage disks as a proxy to see whether the POST continues to proceed further.
