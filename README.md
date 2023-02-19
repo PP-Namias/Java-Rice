@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS Sales (
   - #cc3300 // Java
   - #cc6600 // Rice
 
-## References for Databases
+## __References for Databases__
 __Store: [Name]#___
 1. Maestro Food Hub {Meal}
 2. Garvs' PaKanton {Noodles}
@@ -256,26 +256,26 @@ __Food Category:__
   - __Noodles__ {Palabok, Pancit Bihon, Spaghetti, Pares, Mami, Lomi, Fried Noodles, Pancit Canton, Cup Noodles}
   - __Milk Tea__ { }
 
-### Maestro Foodhub (meal)
+### __Maestro Foodhub (meal)__
   - meat vegetable combo
   - siomai rice
   - sizzling sisig
   - sizzling burger steak
 
-### Garvs kantuhan (Noodles)
+### __Garvs kantuhan (Noodles)__
   - Fried Noodles Hongkong Style Plain (Special 35php)
   - Fried Noodles with egg (45php)
   - Fried Noodles with pork siomai (45php)
   - Fried Noodles with sharkfin (45php)
   - Fried Noodles with beef (50php)
   - Pork Ramen (70php)
-### Bam-bam's (meal)
+### __Bam-bam's (meal)__
   - sizzling hotdog
   - sizzling sisig
   - sizzling burger steak
   - spaghetti
 
-### Snap n' Bite (meal & snacks)
+### __Snap n' Bite (meal & snacks)__
   - sharksfin - 29
   - pork siomai - 29
   - gyoza - 29
@@ -287,7 +287,7 @@ __Food Category:__
   - corndog bits
   - corndog
 
-### RMBSJ (Set meal)
+### __RMBSJ (Set meal)__
   - Hotsilog - 45
   - Skinsilog - 45
   - Hamsilog -45
@@ -297,13 +297,13 @@ __Food Category:__
   - tapsiloc - 55
   - chorizosilog - 45
 
-### Kuya Lery (Noodles)
+### __Kuya Lery (Noodles)__
   - Pares - 35
   - Pares with rice - 45 
   - Mami - 30
   - Mami with rice - 40
 
-### Shake it off (Snacks, Milk Tea, Shakes)
+### __Shake it off (Snacks, Milk Tea, Shakes)__
   - Snacks
   - hamburger
   - hamburger w/egg
@@ -317,9 +317,9 @@ __Food Category:__
   - mango
   - cookies and cream
 
-### Kitchen Nanay (Snacks, Meals)
+### __Kitchen Nanay (Snacks, Meals)__
 
-### Snowjoe (Ice cream, cold drinks)
+### __Snowjoe (Ice cream, cold drinks)__
   - milk melon popsicle stick (Specialty 12Php)
   - Watermelon popsicle stick (12Php)
   - Chocolate mochi ice cream (13Php)
@@ -328,7 +328,7 @@ __Food Category:__
   - Lemon juice (15Php)
   - Orange juice (15Php)
 
-### Happy Tummy (set meal, noodles)
+### __Happy Tummy (set meal, noodles)__
   - Milk tea
   - Fruit tea
   - pork sisig
@@ -349,11 +349,13 @@ __Development Phase__
     - Cart Button: 190 x 45
   - Search Bar: 707 x 286
   - Logo: 250 x 58
+
 ## __Font__
   - Archivo
   - Arista
   - Bahnschrift
   - Myriad Pro
+  
 ## __Database (Excel)__
   - [_Database - JavaRice.xlsx_](https://1drv.ms/x/s!Am1JvRELYZ5OkV9SVXW56iUcIV7i?e=5Fuzis)
 
