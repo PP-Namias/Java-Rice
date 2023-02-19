@@ -30,6 +30,7 @@
     - [__Forms__](#forms)
     - [__Functions__](#functions)
     - [__Color Palette__](#color-palette)
+    - [__References for Databases__](#references-for-databases)
   - [__Alpha Build 2:__ _February 12, 2023 - February ##, 2023_](#alpha-build-2-february-12-2023---february--2023)
     - [__Measurement__](#measurement)
     - [__Font__](#font)
@@ -228,7 +229,7 @@ CREATE TABLE IF NOT EXISTS Sales (
   - #cc3300 // Java
   - #cc6600 // Rice
 
-## References for Databases:
+## References for Databases
 __Store: [Name]#___
 1. Maestro Food Hub {Meal}
 2. Garvs' PaKanton {Noodles}
@@ -361,31 +362,3 @@ __Testing, and Trial Run / Debugging Phase__
 
 ## __Release Build__
 __Deployment Phase, final__
-
-CPU register test,
-ROM checksum test,
-System timer and beeper port test,
-Checking the DMA controller,
-Reviewing the lower region of RAM for projecting resident programs in the BIOS,
-Launch of local programs,
-Checking the standard graphics adapter (VGA),
-Testing RAM,
-Checking the main input devices,
-CMOS check,
-Checking the main LPT / COM ports,
-Checking hard disk drives (HDD), and SSDs,
-Self-testing of BIOS functional subsystems,
-Transferring control to the bootloader.
-
-
-Restart
-Unplug any drives or USB devices.
-Disconnect external devices.
-Reconnect the power supply cables.
-Identify the beep code using the component or device manual.
-Check the fans turned off or on.
-Disconnect all expansion cards.
-Power off and on the computer.
-Check if the BIOS chip is loose.
-Update BIOS.
-Change motherboard, GPU, RAM, PSU, storage disks as a proxy to see whether the POST continues to proceed further.
