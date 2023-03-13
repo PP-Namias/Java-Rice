@@ -54,7 +54,6 @@ Java Rice is a food ordering system designed to make the process of ordering foo
 - [x] __Payment__: The user can pay for their orders using a payment gateway.
 - [x] __Admin Panel__: The admin panel allows the restaurant owner to add, remove, or edit menu items. They can also manage orders, view sales reports, order logs, popular orders ,and track customer activity.
 - [x] __Promotions and Discounts__: The system can offer promotional discounts, such as a percentage off or a free item with a purchase, to encourage customers to order.
-- [x] __Feedback and Ratings__: The system can allow customers to provide feedback and ratings on their orders and overall experience.
 - [x] __QR Code Ordering__: Customers can scan QR codes located at tables in the restaurant to access the menu and place orders without having to wait for a server.
 - [x] __QR Code Discounts__: The system can use QR codes to offer promotional discounts or special offers to customers who scan them.
 
