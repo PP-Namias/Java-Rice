@@ -96,6 +96,10 @@ Overall, Java Rice is a practical solution for restaurants looking for an easy-t
 *	Database
 
 ## __Flowchart__
+<p align="center">
+  <img src="./Java-Rice-GUI-Plan/Java Rice [ Flowchart ].png" alt="Java Rice [ Flowchart ]"/>
+</p>
+
 ## __About Us__
 <table border="hidden" align="center">
   <tr>
