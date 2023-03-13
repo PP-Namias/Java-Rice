@@ -14,8 +14,8 @@
 ## __Table of Contents__
 - [__Introduction__](#introduction)
 - [__Objectives__](#objectives)
-- [__Objectives__](#objectives)
 - [__Features__](#features)
+- [__Methodology__](#methodology)
 - [__Timeline__](#timeline)
 - [__Limitations__](#limitations)
 - [__Criteria__](#criteria)
