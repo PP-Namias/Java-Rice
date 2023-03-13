@@ -47,6 +47,18 @@ Java Rice is a food ordering system designed to make the process of ordering foo
   *	To provide users with an interactive and user-friendly experience.
   *	To provide a secure and reliable platform for food ordering.
 
+## __Features__
+- [x] __User Registration__: The user can register for an account to access the system. The registration process requires a name, email, and password.
+- [x] __Menu Display__: The application displays a menu of food items available for ordering.
+- [x] __Ordering__: The user can select and add food items to their cart. They can also view their order history and make changes to their orders.
+- [x] __Payment__: The user can pay for their orders using a payment gateway.
+- [x] __Admin Panel__: The admin panel allows the restaurant owner to add, remove, or edit menu items. They can also manage orders, view sales reports, order logs, popular orders ,and track customer activity.
+- [x] __Promotions and Discounts__: The system can offer promotional discounts, such as a percentage off or a free item with a purchase, to encourage customers to order.
+- [x] __Feedback and Ratings__: The system can allow customers to provide feedback and ratings on their orders and overall experience.
+- [x] __QR Code Ordering__: Customers can scan QR codes located at tables in the restaurant to access the menu and place orders without having to wait for a server.
+- [x] __QR Code Payment__: Customers can use their mobile devices to scan QR codes on their bills to pay for their orders.
+- [x] __QR Code Discounts__: The system can use QR codes to offer promotional discounts or special offers to customers who scan them.
+
 ## __Methodology__
 *	The system will be built using Java programming language and Maven GUI for the front-end interface.
 *	A database will be used to store all the information about the food items and orders.
@@ -63,6 +75,7 @@ Java Rice is a food ordering system designed to make the process of ordering foo
 *	The system will only be available for use on devices with Java and Maven GUI installed.
 *	The system will only support online payment methods.
 *	The system will not provide delivery services.
+* The system may require regular updates to keep up with the latest security and payment standards.
 
 ## __Criteria__
 *	Usability
@@ -72,7 +85,7 @@ Java Rice is a food ordering system designed to make the process of ordering foo
 *	Security
 
 ## __Conclusion__
-Java Rice is a food ordering system designed to provide users with a fast and convenient way to order food. The system is built using Java and Maven GUI, which provides an interactive and user-friendly experience. The system will provide a secure platform for food ordering and will be accessible on devices with Java and Maven GUI installed. The estimated timeline is 9 weeks.
+Overall, Java Rice is a practical solution for restaurants looking for an easy-to-use food ordering system that integrates with payment gateways. With its intuitive interface and customizable options, Java Rice provides an ideal solution for restaurants looking to streamline their ordering process and enhance customer experience.
 
 ## __References__
 *	Java Programming Language Reference: Oracle Corporation
