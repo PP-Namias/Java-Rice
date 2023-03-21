@@ -9,7 +9,6 @@
   <a href="#" target="blank"><img src="https://visitor-badge.glitch.me/badge?page_id=PP-Namias.Java-Rice" alt="Java Rice Visitors"/></a>
   <a href="https://github.com/PP-Namias/Java-Rice/releases" target="blank"><img src="https://img.shields.io/github/downloads/PP-Namias/Java-Rice/total.svg?style=flat-square" alt="Java Rice downloads"/></a>
 </p>
-<br>
 
 # __Title: Java Rice__ - _An Interactive Food Ordering System_
 
