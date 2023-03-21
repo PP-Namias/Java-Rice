@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://pp-namias.github.io/Java-Rice/" target="blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/></a>
+  <a href="https://pp-namias.github.io/Java-Rice/" target="blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java Rice Banner"/></a>
   <a href="https://github.com/PP-Namias/Java-Program/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="Java-Program All Contributors" /></a>
   <a href="https://github.com/PP-Namias/Java-Rice/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice license" /></a>
   <a href="https://github.com/PP-Namias/Java-Rice/fork" target="blank"><img src="https://img.shields.io/github/forks/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice forks"/></a>
@@ -128,37 +128,37 @@ The Plan is to make a structure of what program will be created, it includes the
 ## __UI and Logo Design__
 <br>
 <p align="center">
-  <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo.png" width="300" height="400" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo.png" width="300" height="400" alt="Java Rice Logo"/>
   <br>
   <b>Java Rice Logo [Transparent]</b>
   <br>
   <br>  
-  <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java Rice Banner with Logo"/>
   <br>
   <b>Java Rice Banner with Logo [Transparent]</b>
   <br>
   <br>
-  <img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-5.png" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java Rice Menu Screen.png" alt="Java Rice Menu Screen"/>
   <br>
-  <b>Java Rice Banner [Transparent]</b>
-  <br>
-  <br>
-  <img src="./Java-Rice-GUI-Plan/Java-Rice-5.jpg" alt="Java GUI Banner"/>
-  <br>
-  <b>Java Rice Main Form [Regular]</b>
+  <b>Java Rice Menu Screen</b>
   <br>
   <br>
-  <img src="./Java-Rice-GUI-Plan/Java-Rice-Max-1.jpg" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java Rice Cart [none].png" alt="Java Rice Cart [none]"/>
   <br>
-  <b>Java Rice Main Form [Maximize]</b>
+  <b>Java Rice Cart [Default]</b>
   <br>
   <br>
-  <img src="./Java-Rice-GUI-Plan/Java-Receipt-Default.jpg" width="500" height="800" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java Rice Cart [sample].png" alt="Java Rice Cart [sample]"/>
+  <br>
+  <b>Java Rice Cart [Example]</b>
+  <br>
+  <br>
+  <img src="./Java-Rice-GUI-Plan/Java-Receipt-Default.jpg" width="500" height="800" alt="Java Rice Receipt [Default]"/>
   <br>
   <b>Java Rice Receipt [Default]</b>
   <br>
   <br>
-  <img src="./Java-Rice-GUI-Plan/Java-Receipt.jpg" width="500" height="800" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Java-Receipt.jpg" width="500" height="800" alt="Java Rice Receipt [Example]"/>
   <br>
   <b>Java Rice Receipt [Example]</b>
   <br>
@@ -209,7 +209,7 @@ CREATE TABLE IF NOT EXISTS Sales (
 );
 ```
 <p align="center">
-  <img src="./Java-Rice-GUI-Plan/Database.png" alt="Java GUI Banner"/>
+  <img src="./Java-Rice-GUI-Plan/Database.png" alt="Java Rice Banner"/>
   <br>
   <b>Java Rice Database [Relationship]</b>
   <br>
