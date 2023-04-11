@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://pp-namias.github.io/Java-Rice/" target="blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java Rice Banner"/></a>
-  <a href="https://github.com/PP-Namias/Java-Program/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="Java-Program All Contributors" /></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice license" /></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/fork" target="blank"><img src="https://img.shields.io/github/forks/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice forks"/></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/stargazers" target="blank"><img src="https://img.shields.io/github/stars/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice stars"/></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/issues" target="blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice issues"/></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/pulls" target="blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice pull-requests"/></a>
-  <a href="#" target="blank"><img src="https://visitor-badge.glitch.me/badge?page_id=PP-Namias.Java-Rice" alt="Java Rice Visitors"/></a>
-  <a href="https://github.com/PP-Namias/Java-Rice/releases" target="blank"><img src="https://img.shields.io/github/downloads/PP-Namias/Java-Rice/total.svg?style=flat-square" alt="Java Rice downloads"/></a>
+  <a href="https://pp-namias.github.io/Java-Rice/" target="_blank"><img src="./Java-Rice-GUI-Plan/Java-Rice-Logo-3.png" alt="Java Rice Banner"/></a>
+  <a href="https://github.com/PP-Namias/Java-Program/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="Java-Program All Contributors" /></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice license" /></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/fork" target="_blank"><img src="https://img.shields.io/github/forks/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice forks"/></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice stars"/></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/issues" target="_blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice issues"/></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice pull-requests"/></a>
+  <a href="#" target="_blank"><img src="https://visitor-badge.glitch.me/badge?page_id=PP-Namias.Java-Rice" alt="Java Rice Visitors"/></a>
+  <a href="https://github.com/PP-Namias/Java-Rice/releases" target="_blank"><img src="https://img.shields.io/github/downloads/PP-Namias/Java-Rice/total.svg?style=flat-square" alt="Java Rice downloads"/></a>
 </p>
 
 # __Title: Java Rice__ - _An Interactive Food Ordering System_
