@@ -44,7 +44,9 @@
             <children>
               <component id="9aead" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="668" height="34"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <font size="25" style="1"/>
@@ -53,7 +55,9 @@
               </component>
               <vspacer id="2af58">
                 <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="668" height="14"/>
+                  </grid>
                 </constraints>
               </vspacer>
             </children>
