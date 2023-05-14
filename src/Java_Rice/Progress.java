@@ -46,19 +46,20 @@ public class Progress extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jPanel1.setPreferredSize(new java.awt.Dimension(400, 400));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         system_load.setBackground(new java.awt.Color(255, 255, 255));
-        system_load.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        system_load.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         system_load.setForeground(new java.awt.Color(255, 255, 255));
         system_load.setText("Loading. . . . . . . .");
-        jPanel1.add(system_load, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 160, -1));
+        jPanel1.add(system_load, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 210, -1));
 
         percent.setBackground(new java.awt.Color(255, 255, 255));
-        percent.setFont(new java.awt.Font("Segoe UI Emoji", 0, 10)); // NOI18N
+        percent.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         percent.setForeground(new java.awt.Color(255, 255, 255));
         percent.setText("0%");
-        jPanel1.add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, -1, 20));
+        jPanel1.add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 70, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(70, 66));
@@ -68,19 +69,25 @@ public class Progress extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Java_Rice/loading.gif"))); // NOI18N
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 180, 160);
+        jLabel1.setBounds(0, 0, 400, 290);
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 190, 160));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 300));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
