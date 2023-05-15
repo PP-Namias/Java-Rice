@@ -680,16 +680,19 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel99 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
+        setResizable(false);
+        setSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         panel_choose.setBackground(new java.awt.Color(54, 65, 77));
 
-        panel_pos.setBackground(new java.awt.Color(255, 255, 255));
+        panel_pos.setBackground(new java.awt.Color(84, 86, 91));
         panel_pos.setForeground(new java.awt.Color(255, 255, 255));
 
-        chooose_POS.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        chooose_POS.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         chooose_POS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         chooose_POS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_sale_price_tag_30px.png"))); // NOI18N
         chooose_POS.setText("Point of Sale");
@@ -716,9 +719,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(chooose_POS, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
-        panel_cos.setBackground(new java.awt.Color(255, 255, 255));
+        panel_cos.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_COSTUMER.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_COSTUMER.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_COSTUMER.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_COSTUMER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_parenting_30px_1.png"))); // NOI18N
         choose_COSTUMER.setText("Costumer");
@@ -745,9 +748,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_COSTUMER, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
-        panel_prod.setBackground(new java.awt.Color(255, 255, 255));
+        panel_prod.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_PRODUCT.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_PRODUCT.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_PRODUCT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_PRODUCT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_product_30px_1.png"))); // NOI18N
         choose_PRODUCT.setText("Products");
@@ -774,9 +777,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_PRODUCT, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
-        panel_income.setBackground(new java.awt.Color(255, 255, 255));
+        panel_income.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_INCOME.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_INCOME.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_INCOME.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INCOME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_cost_30px_1.png"))); // NOI18N
         choose_INCOME.setText("Income");
@@ -803,9 +806,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_INCOME, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
-        panel_invoice.setBackground(new java.awt.Color(255, 255, 255));
+        panel_invoice.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_INVOICE.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_INVOICE.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_INVOICE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INVOICE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_invoice_25px.png"))); // NOI18N
         choose_INVOICE.setText("Invoice");
@@ -832,7 +835,7 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_INVOICE, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
         );
 
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel16.setBackground(new java.awt.Color(84, 86, 91));
         jPanel16.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(153, 153, 153)));
 
         jLabel74.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
@@ -850,9 +853,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Panelhome.setBackground(new java.awt.Color(255, 255, 255));
+        Panelhome.setBackground(new java.awt.Color(84, 86, 91));
 
-        jLabel94.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        jLabel94.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel94.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_home_25px.png"))); // NOI18N
         jLabel94.setText("Home");
@@ -879,9 +882,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
         );
 
-        panel_invoice1.setBackground(new java.awt.Color(255, 255, 255));
+        panel_invoice1.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_SETTINGS.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_SETTINGS.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_SETTINGS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_SETTINGS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_settings_20px_1.png"))); // NOI18N
         choose_SETTINGS.setText("Settings");
@@ -908,9 +911,9 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_SETTINGS, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
         );
 
-        panel_invoice2.setBackground(new java.awt.Color(255, 255, 255));
+        panel_invoice2.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_SETTINGS1.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
+        choose_SETTINGS1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         choose_SETTINGS1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_SETTINGS1.setText("About Us");
         choose_SETTINGS1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1706,7 +1709,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         Costumer.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 20));
 
-        jPanel62.setBackground(new java.awt.Color(0, 204, 51));
+        jPanel62.setBackground(new java.awt.Color(54, 65, 77));
         jPanel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
@@ -4486,7 +4489,7 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1120, 621));
+        setSize(new java.awt.Dimension(1136, 629));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -6684,6 +6687,38 @@ public class Main_menu extends javax.swing.JFrame {
         OOP.choose_color2(choose_SETTINGS);
     }//GEN-LAST:event_choose_SETTINGSMouseExited
 
+    private void product_STOCKSMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_STOCKSMouseEntered
+        // TODO add your handling code here:
+        OOP.product_color1(product_STOCKS);
+    }//GEN-LAST:event_product_STOCKSMouseEntered
+
+    private void product_STOCKSMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_STOCKSMouseExited
+        // TODO add your handling code here:
+        OOP.product_color2(product_STOCKS);
+    }//GEN-LAST:event_product_STOCKSMouseExited
+
+    private void product_REMOVEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_REMOVEMouseEntered
+        // TODO add your handling code here:
+        OOP.product_color1(product_REMOVE);
+    }//GEN-LAST:event_product_REMOVEMouseEntered
+
+    private void product_REMOVEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_REMOVEMouseExited
+        // TODO add your handling code here:
+        OOP.product_color2(product_REMOVE);
+    }//GEN-LAST:event_product_REMOVEMouseExited
+
+    private void choose_SETTINGS1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_choose_SETTINGS1MouseClicked
+
+    private void choose_SETTINGS1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_choose_SETTINGS1MouseEntered
+
+    private void choose_SETTINGS1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_choose_SETTINGS1MouseExited
+
     private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
         // TODO add your handling code here:
         Login Log = new Login();
@@ -6695,212 +6730,15 @@ public class Main_menu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel56MouseClicked
 
-    private void jLabel102MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseClicked
+    private void jLabel115MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseExited
         // TODO add your handling code here:
-        OOP.glenn(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
-        jComboBox2.setSelectedItem("Regular Costumer");
-        jComboBox1.setSelectedItem("Select product");
-    }//GEN-LAST:event_jLabel102MouseClicked
+        OOP.home_panel2(home_invoice);
+    }//GEN-LAST:event_jLabel115MouseExited
 
-    private void jLabel102MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseEntered
+    private void jLabel115MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseEntered
         // TODO add your handling code here:
-        OOP.home_panel1(home_pos);
-    }//GEN-LAST:event_jLabel102MouseEntered
-
-    private void jLabel102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_pos);
-    }//GEN-LAST:event_jLabel102MouseExited
-
-    private void jLabel109MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
-    }//GEN-LAST:event_jLabel109MouseClicked
-
-    private void jLabel109MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_costumer);
-    }//GEN-LAST:event_jLabel109MouseEntered
-
-    private void jLabel109MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_costumer);
-    }//GEN-LAST:event_jLabel109MouseExited
-
-    private void jLabel110MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
-        data();
-    }//GEN-LAST:event_jLabel110MouseClicked
-
-    private void jLabel110MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_product);
-    }//GEN-LAST:event_jLabel110MouseEntered
-
-    private void jLabel110MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_product);
-    }//GEN-LAST:event_jLabel110MouseExited
-
-    private void jLabel111MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
-        sdata();
-        try {
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
-
-            while (rs.next()) {
-                tot_quantity.setText(rs.getString("sum(`quantity`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-
-        }
-    }//GEN-LAST:event_jLabel111MouseClicked
-
-    private void jLabel111MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_most);
-    }//GEN-LAST:event_jLabel111MouseEntered
-
-    private void jLabel111MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_most);
-    }//GEN-LAST:event_jLabel111MouseExited
-
-    private void jLabel112MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
-        jComboBox5.setSelectedItem("Product");
-        stockdata();
-    }//GEN-LAST:event_jLabel112MouseClicked
-
-    private void jLabel112MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_stock);
-    }//GEN-LAST:event_jLabel112MouseEntered
-
-    private void jLabel112MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_stock);
-    }//GEN-LAST:event_jLabel112MouseExited
-
-    private void jLabel113MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
-        try {
-            DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
-            table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("select * from tblremove");
-
-            while (rs.next()) {
-
-                Object o[] = {rs.getString("remove_id"), rs.getString("remove_by"), rs.getString("product_id"), rs.getString("product_name"), rs.getString("quantity"), rs.getString("unit_price"), rs.getString("date"), rs.getString("time")};
-                table.addRow(o);
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-        try {
-
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("select count(*) from tblremove");
-
-            while (rs.next()) {
-
-                jLabel103.setText(rs.getString("count(*)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        try {
-
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
-
-            while (rs.next()) {
-                profit1.setText(rs.getString("sum(`quantity`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }//GEN-LAST:event_jLabel113MouseClicked
-
-    private void jLabel113MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_remove);
-    }//GEN-LAST:event_jLabel113MouseEntered
-
-    private void jLabel113MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_remove);
-    }//GEN-LAST:event_jLabel113MouseExited
-
-    private void jLabel114MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseClicked
-        // TODO add your handling code here:
-        OOP.glenn(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
-
-        try {
-            DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
-            table1.setRowCount(0);
-
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` ");
-
-            while (rs.next()) {
-                Vector r = new Vector();
-
-                r.add(rs.getString(1));
-                r.add(rs.getString(2));
-                r.add(rs.getString(3));
-                r.add(rs.getString(4));
-                r.add(rs.getString(5));
-                r.add(rs.getString(6));
-                r.add(rs.getString(7));
-                table1.addRow(r);
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-        try {
-
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
-
-            while (rs.next()) {
-                profit.setText(rs.getString("sum(`profit`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        try {
-
-            Statement state = Home_source.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
-
-            while (rs.next()) {
-                Total_Income.setText(rs.getString("sum(`total_price`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }//GEN-LAST:event_jLabel114MouseClicked
-
-    private void jLabel114MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_income);
-    }//GEN-LAST:event_jLabel114MouseEntered
-
-    private void jLabel114MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_income);
-    }//GEN-LAST:event_jLabel114MouseExited
+        OOP.home_panel1(home_invoice);
+    }//GEN-LAST:event_jLabel115MouseEntered
 
     private void jLabel115MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseClicked
         // TODO add your handling code here:
@@ -6996,50 +6834,214 @@ public class Main_menu extends javax.swing.JFrame {
 
         paRTIAL.setText("0.0");
         unPAID.setText("0.0");
-
     }//GEN-LAST:event_jLabel115MouseClicked
 
-    private void jLabel115MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseEntered
+    private void jLabel114MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseExited
         // TODO add your handling code here:
-        OOP.home_panel1(home_invoice);
-    }//GEN-LAST:event_jLabel115MouseEntered
+        OOP.home_panel2(home_income);
+    }//GEN-LAST:event_jLabel114MouseExited
 
-    private void jLabel115MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseExited
+    private void jLabel114MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseEntered
         // TODO add your handling code here:
-        OOP.home_panel2(home_invoice);
-    }//GEN-LAST:event_jLabel115MouseExited
+        OOP.home_panel1(home_income);
+    }//GEN-LAST:event_jLabel114MouseEntered
 
-    private void product_STOCKSMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_STOCKSMouseEntered
+    private void jLabel114MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseClicked
         // TODO add your handling code here:
-        OOP.product_color1(product_STOCKS);
-    }//GEN-LAST:event_product_STOCKSMouseEntered
+        OOP.glenn(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
 
-    private void product_STOCKSMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_STOCKSMouseExited
-        // TODO add your handling code here:
-        OOP.product_color2(product_STOCKS);
-    }//GEN-LAST:event_product_STOCKSMouseExited
+        try {
+            DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
+            table1.setRowCount(0);
 
-    private void product_REMOVEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_REMOVEMouseEntered
-        // TODO add your handling code here:
-        OOP.product_color1(product_REMOVE);
-    }//GEN-LAST:event_product_REMOVEMouseEntered
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery(" SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` ");
 
-    private void product_REMOVEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_REMOVEMouseExited
-        // TODO add your handling code here:
-        OOP.product_color2(product_REMOVE);
-    }//GEN-LAST:event_product_REMOVEMouseExited
+            while (rs.next()) {
+                Vector r = new Vector();
 
-    private void choose_SETTINGS1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_choose_SETTINGS1MouseClicked
+                r.add(rs.getString(1));
+                r.add(rs.getString(2));
+                r.add(rs.getString(3));
+                r.add(rs.getString(4));
+                r.add(rs.getString(5));
+                r.add(rs.getString(6));
+                r.add(rs.getString(7));
+                table1.addRow(r);
+            }
+        } catch (Exception x) {
+            System.out.println(x.getMessage());
 
-    private void choose_SETTINGS1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_choose_SETTINGS1MouseEntered
+        }
+        try {
 
-    private void choose_SETTINGS1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseExited
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
+
+            while (rs.next()) {
+                profit.setText(rs.getString("sum(`profit`)"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try {
+
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
+
+            while (rs.next()) {
+                Total_Income.setText(rs.getString("sum(`total_price`)"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }//GEN-LAST:event_jLabel114MouseClicked
+
+    private void jLabel113MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_choose_SETTINGS1MouseExited
+        OOP.home_panel2(home_remove);
+    }//GEN-LAST:event_jLabel113MouseExited
+
+    private void jLabel113MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_remove);
+    }//GEN-LAST:event_jLabel113MouseEntered
+
+    private void jLabel113MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
+        try {
+            DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
+            table.setRowCount(0);
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("select * from tblremove");
+
+            while (rs.next()) {
+
+                Object o[] = {rs.getString("remove_id"), rs.getString("remove_by"), rs.getString("product_id"), rs.getString("product_name"), rs.getString("quantity"), rs.getString("unit_price"), rs.getString("date"), rs.getString("time")};
+                table.addRow(o);
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        try {
+
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("select count(*) from tblremove");
+
+            while (rs.next()) {
+
+                jLabel103.setText(rs.getString("count(*)"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        try {
+
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
+
+            while (rs.next()) {
+                profit1.setText(rs.getString("sum(`quantity`)"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }//GEN-LAST:event_jLabel113MouseClicked
+
+    private void jLabel112MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseExited
+        // TODO add your handling code here:
+        OOP.home_panel2(home_stock);
+    }//GEN-LAST:event_jLabel112MouseExited
+
+    private void jLabel112MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_stock);
+    }//GEN-LAST:event_jLabel112MouseEntered
+
+    private void jLabel112MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
+        jComboBox5.setSelectedItem("Product");
+        stockdata();
+    }//GEN-LAST:event_jLabel112MouseClicked
+
+    private void jLabel111MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseExited
+        // TODO add your handling code here:
+        OOP.home_panel2(home_most);
+    }//GEN-LAST:event_jLabel111MouseExited
+
+    private void jLabel111MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_most);
+    }//GEN-LAST:event_jLabel111MouseEntered
+
+    private void jLabel111MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
+        sdata();
+        try {
+            Statement state = Home_source.mycon().createStatement();
+            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
+
+            while (rs.next()) {
+                tot_quantity.setText(rs.getString("sum(`quantity`)"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+
+        }
+    }//GEN-LAST:event_jLabel111MouseClicked
+
+    private void jLabel110MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseExited
+        // TODO add your handling code here:
+        OOP.home_panel2(home_product);
+    }//GEN-LAST:event_jLabel110MouseExited
+
+    private void jLabel110MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_product);
+    }//GEN-LAST:event_jLabel110MouseEntered
+
+    private void jLabel110MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
+        data();
+    }//GEN-LAST:event_jLabel110MouseClicked
+
+    private void jLabel109MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseExited
+        // TODO add your handling code here:
+        OOP.home_panel2(home_costumer);
+    }//GEN-LAST:event_jLabel109MouseExited
+
+    private void jLabel109MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_costumer);
+    }//GEN-LAST:event_jLabel109MouseEntered
+
+    private void jLabel109MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
+    }//GEN-LAST:event_jLabel109MouseClicked
+
+    private void jLabel102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseExited
+        // TODO add your handling code here:
+        OOP.home_panel2(home_pos);
+    }//GEN-LAST:event_jLabel102MouseExited
+
+    private void jLabel102MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseEntered
+        // TODO add your handling code here:
+        OOP.home_panel1(home_pos);
+    }//GEN-LAST:event_jLabel102MouseEntered
+
+    private void jLabel102MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseClicked
+        // TODO add your handling code here:
+        OOP.glenn(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
+        jComboBox2.setSelectedItem("Regular Costumer");
+        jComboBox1.setSelectedItem("Select product");
+    }//GEN-LAST:event_jLabel102MouseClicked
 
     /**
      * @param args the command line arguments
@@ -7077,324 +7079,324 @@ public class Main_menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Costumer;
-    private javax.swing.JPanel Income;
-    private javax.swing.JPanel Invoice;
+    private static javax.swing.JPanel Costumer;
+    private static javax.swing.JPanel Income;
+    private static javax.swing.JPanel Invoice;
     public javax.swing.JLabel PAID;
     public javax.swing.JLabel PARTIAL;
-    private javax.swing.JPanel POS;
-    private javax.swing.JPanel Panelhome;
-    private javax.swing.JPanel Product;
-    private javax.swing.JPanel Removed;
-    private javax.swing.JPanel Selling;
-    private javax.swing.JPanel Stock_in;
-    private javax.swing.JLabel Total_Income;
-    private javax.swing.JLabel Total_Income2;
+    private static javax.swing.JPanel POS;
+    private static javax.swing.JPanel Panelhome;
+    private static javax.swing.JPanel Product;
+    private static javax.swing.JPanel Removed;
+    private static javax.swing.JPanel Selling;
+    private static javax.swing.JPanel Stock_in;
+    private static javax.swing.JLabel Total_Income;
+    private static javax.swing.JLabel Total_Income2;
     public javax.swing.JLabel UNPAID;
-    private javax.swing.JTextField addd;
-    private javax.swing.JLabel address;
-    private javax.swing.JLabel ans;
-    private javax.swing.JLabel avail_stocks;
-    private javax.swing.JLabel b_code;
-    private javax.swing.JTextField bar_code;
-    private javax.swing.JLabel change;
-    private javax.swing.JLabel chooose_POS;
-    private javax.swing.JLabel choose_COSTUMER;
-    private javax.swing.JLabel choose_INCOME;
-    private javax.swing.JLabel choose_INVOICE;
-    private javax.swing.JLabel choose_PRODUCT;
-    private javax.swing.JLabel choose_SETTINGS;
-    private javax.swing.JLabel choose_SETTINGS1;
-    private javax.swing.JLabel contact;
-    private javax.swing.JTextField costumerAddress;
-    private javax.swing.JTextField costumerEmail;
-    private javax.swing.JTextField costumerID;
-    private javax.swing.JTextField costumerLastname;
-    private javax.swing.JTextField costumerName;
-    private javax.swing.JTextField costumerNumber;
-    private javax.swing.JTextField costumerSex;
-    private javax.swing.JTextField csearch;
-    private javax.swing.JLabel daTE;
-    private javax.swing.JLabel edate;
-    private javax.swing.JLabel email;
-    private javax.swing.JTextField exp_date;
-    private javax.swing.JLabel fname;
-    private javax.swing.JPanel home;
-    private javax.swing.JPanel home_costumer;
-    private javax.swing.JPanel home_income;
-    private javax.swing.JPanel home_invoice;
-    private javax.swing.JPanel home_most;
-    private javax.swing.JPanel home_pos;
-    private javax.swing.JPanel home_product;
-    private javax.swing.JPanel home_remove;
-    private javax.swing.JPanel home_stock;
-    private javax.swing.JTextField income_search;
-    private javax.swing.JTextField income_search1;
+    private static javax.swing.JTextField addd;
+    private static javax.swing.JLabel address;
+    private static javax.swing.JLabel ans;
+    private static javax.swing.JLabel avail_stocks;
+    private static javax.swing.JLabel b_code;
+    private static javax.swing.JTextField bar_code;
+    private static javax.swing.JLabel change;
+    private static javax.swing.JLabel chooose_POS;
+    private static javax.swing.JLabel choose_COSTUMER;
+    private static javax.swing.JLabel choose_INCOME;
+    private static javax.swing.JLabel choose_INVOICE;
+    private static javax.swing.JLabel choose_PRODUCT;
+    private static javax.swing.JLabel choose_SETTINGS;
+    private static javax.swing.JLabel choose_SETTINGS1;
+    private static javax.swing.JLabel contact;
+    private static javax.swing.JTextField costumerAddress;
+    private static javax.swing.JTextField costumerEmail;
+    private static javax.swing.JTextField costumerID;
+    private static javax.swing.JTextField costumerLastname;
+    private static javax.swing.JTextField costumerName;
+    private static javax.swing.JTextField costumerNumber;
+    private static javax.swing.JTextField costumerSex;
+    private static javax.swing.JTextField csearch;
+    private static javax.swing.JLabel daTE;
+    private static javax.swing.JLabel edate;
+    private static javax.swing.JLabel email;
+    private static javax.swing.JTextField exp_date;
+    private static javax.swing.JLabel fname;
+    private static javax.swing.JPanel home;
+    private static javax.swing.JPanel home_costumer;
+    private static javax.swing.JPanel home_income;
+    private static javax.swing.JPanel home_invoice;
+    private static javax.swing.JPanel home_most;
+    private static javax.swing.JPanel home_pos;
+    private static javax.swing.JPanel home_product;
+    private static javax.swing.JPanel home_remove;
+    private static javax.swing.JPanel home_stock;
+    private static javax.swing.JTextField income_search;
+    private static javax.swing.JTextField income_search1;
     public javax.swing.JComboBox<String> jComboBox1;
     public javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private static javax.swing.JComboBox<String> jComboBox3;
     public javax.swing.JComboBox<String> jComboBox4;
     public javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel109;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel66;
-    private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
+    private static javax.swing.JLabel jLabel1;
+    private static javax.swing.JLabel jLabel10;
+    private static javax.swing.JLabel jLabel100;
+    private static javax.swing.JLabel jLabel101;
+    private static javax.swing.JLabel jLabel102;
+    private static javax.swing.JLabel jLabel103;
+    private static javax.swing.JLabel jLabel105;
+    private static javax.swing.JLabel jLabel106;
+    private static javax.swing.JLabel jLabel109;
+    private static javax.swing.JLabel jLabel11;
+    private static javax.swing.JLabel jLabel110;
+    private static javax.swing.JLabel jLabel111;
+    private static javax.swing.JLabel jLabel112;
+    private static javax.swing.JLabel jLabel113;
+    private static javax.swing.JLabel jLabel114;
+    private static javax.swing.JLabel jLabel115;
+    private static javax.swing.JLabel jLabel12;
+    private static javax.swing.JLabel jLabel13;
+    private static javax.swing.JLabel jLabel14;
+    private static javax.swing.JLabel jLabel15;
+    private static javax.swing.JLabel jLabel16;
+    private static javax.swing.JLabel jLabel17;
+    private static javax.swing.JLabel jLabel18;
+    private static javax.swing.JLabel jLabel19;
+    private static javax.swing.JLabel jLabel2;
+    private static javax.swing.JLabel jLabel20;
+    private static javax.swing.JLabel jLabel21;
+    private static javax.swing.JLabel jLabel27;
+    private static javax.swing.JLabel jLabel28;
+    private static javax.swing.JLabel jLabel29;
+    private static javax.swing.JLabel jLabel30;
+    private static javax.swing.JLabel jLabel31;
+    private static javax.swing.JLabel jLabel32;
+    private static javax.swing.JLabel jLabel33;
+    private static javax.swing.JLabel jLabel34;
+    private static javax.swing.JLabel jLabel35;
+    private static javax.swing.JLabel jLabel36;
+    private static javax.swing.JLabel jLabel37;
+    private static javax.swing.JLabel jLabel38;
+    private static javax.swing.JLabel jLabel4;
+    private static javax.swing.JLabel jLabel40;
+    private static javax.swing.JLabel jLabel42;
+    private static javax.swing.JLabel jLabel43;
+    private static javax.swing.JLabel jLabel44;
+    private static javax.swing.JLabel jLabel45;
+    private static javax.swing.JLabel jLabel46;
+    private static javax.swing.JLabel jLabel47;
+    private static javax.swing.JLabel jLabel48;
+    private static javax.swing.JLabel jLabel49;
+    private static javax.swing.JLabel jLabel5;
+    private static javax.swing.JLabel jLabel50;
+    private static javax.swing.JLabel jLabel52;
+    private static javax.swing.JLabel jLabel53;
+    private static javax.swing.JLabel jLabel55;
+    private static javax.swing.JLabel jLabel56;
+    private static javax.swing.JLabel jLabel57;
+    private static javax.swing.JLabel jLabel58;
+    private static javax.swing.JLabel jLabel59;
+    private static javax.swing.JLabel jLabel6;
+    private static javax.swing.JLabel jLabel60;
+    private static javax.swing.JLabel jLabel61;
+    private static javax.swing.JLabel jLabel62;
+    private static javax.swing.JLabel jLabel63;
+    private static javax.swing.JLabel jLabel66;
+    private static javax.swing.JLabel jLabel67;
+    private static javax.swing.JLabel jLabel68;
+    private static javax.swing.JLabel jLabel69;
+    private static javax.swing.JLabel jLabel7;
+    private static javax.swing.JLabel jLabel70;
+    private static javax.swing.JLabel jLabel71;
+    private static javax.swing.JLabel jLabel72;
     public javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
-    private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
-    private javax.swing.JLabel jLabel88;
-    private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel90;
+    private static javax.swing.JLabel jLabel74;
+    private static javax.swing.JLabel jLabel75;
+    private static javax.swing.JLabel jLabel76;
+    private static javax.swing.JLabel jLabel77;
+    private static javax.swing.JLabel jLabel78;
+    private static javax.swing.JLabel jLabel79;
+    private static javax.swing.JLabel jLabel8;
+    private static javax.swing.JLabel jLabel80;
+    private static javax.swing.JLabel jLabel81;
+    private static javax.swing.JLabel jLabel82;
+    private static javax.swing.JLabel jLabel83;
+    private static javax.swing.JLabel jLabel84;
+    private static javax.swing.JLabel jLabel85;
+    private static javax.swing.JLabel jLabel86;
+    private static javax.swing.JLabel jLabel87;
+    private static javax.swing.JLabel jLabel88;
+    private static javax.swing.JLabel jLabel89;
+    private static javax.swing.JLabel jLabel90;
     public javax.swing.JLabel jLabel91;
-    private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
-    private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
-    private javax.swing.JLabel jLabel96;
+    private static javax.swing.JLabel jLabel92;
+    private static javax.swing.JLabel jLabel93;
+    private static javax.swing.JLabel jLabel94;
+    private static javax.swing.JLabel jLabel95;
+    private static javax.swing.JLabel jLabel96;
     public javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
-    private javax.swing.JLabel jLabel99;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel30;
-    private javax.swing.JPanel jPanel31;
-    private javax.swing.JPanel jPanel32;
-    private javax.swing.JPanel jPanel33;
-    private javax.swing.JPanel jPanel34;
-    private javax.swing.JPanel jPanel35;
-    private javax.swing.JPanel jPanel36;
-    private javax.swing.JPanel jPanel37;
-    private javax.swing.JPanel jPanel38;
-    private javax.swing.JPanel jPanel39;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
-    private javax.swing.JPanel jPanel42;
-    private javax.swing.JPanel jPanel43;
-    private javax.swing.JPanel jPanel44;
-    private javax.swing.JPanel jPanel45;
-    private javax.swing.JPanel jPanel46;
-    private javax.swing.JPanel jPanel47;
-    private javax.swing.JPanel jPanel48;
-    private javax.swing.JPanel jPanel49;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel50;
-    private javax.swing.JPanel jPanel51;
-    private javax.swing.JPanel jPanel52;
-    private javax.swing.JPanel jPanel53;
-    private javax.swing.JPanel jPanel54;
-    private javax.swing.JPanel jPanel55;
-    private javax.swing.JPanel jPanel56;
-    private javax.swing.JPanel jPanel57;
-    private javax.swing.JPanel jPanel58;
-    private javax.swing.JPanel jPanel59;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel60;
-    private javax.swing.JPanel jPanel61;
-    private javax.swing.JPanel jPanel62;
-    private javax.swing.JPanel jPanel63;
-    private javax.swing.JPanel jPanel64;
-    private javax.swing.JPanel jPanel65;
-    private javax.swing.JPanel jPanel66;
-    private javax.swing.JPanel jPanel67;
-    private javax.swing.JPanel jPanel68;
-    private javax.swing.JPanel jPanel69;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel71;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JTable jTable1;
+    private static javax.swing.JLabel jLabel98;
+    private static javax.swing.JLabel jLabel99;
+    private static javax.swing.JPanel jPanel1;
+    private static javax.swing.JPanel jPanel10;
+    private static javax.swing.JPanel jPanel11;
+    private static javax.swing.JPanel jPanel12;
+    private static javax.swing.JPanel jPanel13;
+    private static javax.swing.JPanel jPanel14;
+    private static javax.swing.JPanel jPanel15;
+    private static javax.swing.JPanel jPanel16;
+    private static javax.swing.JPanel jPanel17;
+    private static javax.swing.JPanel jPanel18;
+    private static javax.swing.JPanel jPanel19;
+    private static javax.swing.JPanel jPanel2;
+    private static javax.swing.JPanel jPanel20;
+    private static javax.swing.JPanel jPanel21;
+    private static javax.swing.JPanel jPanel22;
+    private static javax.swing.JPanel jPanel23;
+    private static javax.swing.JPanel jPanel24;
+    private static javax.swing.JPanel jPanel25;
+    private static javax.swing.JPanel jPanel26;
+    private static javax.swing.JPanel jPanel27;
+    private static javax.swing.JPanel jPanel28;
+    private static javax.swing.JPanel jPanel29;
+    private static javax.swing.JPanel jPanel3;
+    private static javax.swing.JPanel jPanel30;
+    private static javax.swing.JPanel jPanel31;
+    private static javax.swing.JPanel jPanel32;
+    private static javax.swing.JPanel jPanel33;
+    private static javax.swing.JPanel jPanel34;
+    private static javax.swing.JPanel jPanel35;
+    private static javax.swing.JPanel jPanel36;
+    private static javax.swing.JPanel jPanel37;
+    private static javax.swing.JPanel jPanel38;
+    private static javax.swing.JPanel jPanel39;
+    private static javax.swing.JPanel jPanel4;
+    private static javax.swing.JPanel jPanel40;
+    private static javax.swing.JPanel jPanel41;
+    private static javax.swing.JPanel jPanel42;
+    private static javax.swing.JPanel jPanel43;
+    private static javax.swing.JPanel jPanel44;
+    private static javax.swing.JPanel jPanel45;
+    private static javax.swing.JPanel jPanel46;
+    private static javax.swing.JPanel jPanel47;
+    private static javax.swing.JPanel jPanel48;
+    private static javax.swing.JPanel jPanel49;
+    private static javax.swing.JPanel jPanel5;
+    private static javax.swing.JPanel jPanel50;
+    private static javax.swing.JPanel jPanel51;
+    private static javax.swing.JPanel jPanel52;
+    private static javax.swing.JPanel jPanel53;
+    private static javax.swing.JPanel jPanel54;
+    private static javax.swing.JPanel jPanel55;
+    private static javax.swing.JPanel jPanel56;
+    private static javax.swing.JPanel jPanel57;
+    private static javax.swing.JPanel jPanel58;
+    private static javax.swing.JPanel jPanel59;
+    private static javax.swing.JPanel jPanel6;
+    private static javax.swing.JPanel jPanel60;
+    private static javax.swing.JPanel jPanel61;
+    private static javax.swing.JPanel jPanel62;
+    private static javax.swing.JPanel jPanel63;
+    private static javax.swing.JPanel jPanel64;
+    private static javax.swing.JPanel jPanel65;
+    private static javax.swing.JPanel jPanel66;
+    private static javax.swing.JPanel jPanel67;
+    private static javax.swing.JPanel jPanel68;
+    private static javax.swing.JPanel jPanel69;
+    private static javax.swing.JPanel jPanel7;
+    private static javax.swing.JPanel jPanel71;
+    private static javax.swing.JPanel jPanel8;
+    private static javax.swing.JPanel jPanel9;
+    private static javax.swing.JScrollPane jScrollPane1;
+    private static javax.swing.JScrollPane jScrollPane2;
+    private static javax.swing.JScrollPane jScrollPane3;
+    private static javax.swing.JScrollPane jScrollPane4;
+    private static javax.swing.JScrollPane jScrollPane5;
+    private static javax.swing.JScrollPane jScrollPane6;
+    private static javax.swing.JScrollPane jScrollPane7;
+    private static javax.swing.JScrollPane jScrollPane8;
+    private static javax.swing.JSpinner jSpinner1;
+    private static javax.swing.JTable jTable1;
     public javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTable jTable4;
-    private javax.swing.JTable jTable5;
-    private javax.swing.JTable jTable6;
-    private javax.swing.JTable jTable7;
-    private javax.swing.JTable jTable8;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel lname;
+    private static javax.swing.JTable jTable3;
+    private static javax.swing.JTable jTable4;
+    private static javax.swing.JTable jTable5;
+    private static javax.swing.JTable jTable6;
+    private static javax.swing.JTable jTable7;
+    private static javax.swing.JTable jTable8;
+    private static javax.swing.JTextField jTextField2;
+    private static javax.swing.JLabel lname;
     public javax.swing.JLabel log;
-    private javax.swing.JTextField m_search;
-    private javax.swing.JLabel m_up;
-    private javax.swing.JLabel mark_p;
-    private javax.swing.JTextField mark_up;
-    private javax.swing.JPanel pAy;
-    private javax.swing.JLabel paRTIAL;
-    private javax.swing.JTextField paid;
-    private javax.swing.JPanel panel_DAY;
-    private javax.swing.JPanel panel_DAY1;
-    private javax.swing.JPanel panel_REFRESH;
-    private javax.swing.JPanel panel_REFRESH1;
-    private javax.swing.JPanel panel_REfresh;
-    private javax.swing.JPanel panel_Refresh;
-    private javax.swing.JPanel panel_UPdate;
-    private javax.swing.JPanel panel_a;
-    private javax.swing.JPanel panel_all;
-    private javax.swing.JPanel panel_c;
-    private javax.swing.JPanel panel_cart;
-    private javax.swing.JPanel panel_choose;
-    private javax.swing.JPanel panel_clear;
-    private javax.swing.JPanel panel_cos;
-    private javax.swing.JPanel panel_d;
-    private javax.swing.JPanel panel_day;
-    private javax.swing.JPanel panel_del;
-    private javax.swing.JPanel panel_income;
-    private javax.swing.JPanel panel_invoice;
-    private javax.swing.JPanel panel_invoice1;
-    private javax.swing.JPanel panel_invoice2;
-    private javax.swing.JPanel panel_main;
-    private javax.swing.JPanel panel_p;
-    private javax.swing.JPanel panel_pos;
-    private javax.swing.JPanel panel_prod;
-    private javax.swing.JPanel panel_s;
-    private javax.swing.JPanel panel_u;
-    private javax.swing.JPanel panelu;
-    private javax.swing.JPanel pay_all;
-    private javax.swing.JPanel pay_balance;
-    private javax.swing.JPanel pay_refresh;
-    private javax.swing.JPanel pay_unpaid;
-    private javax.swing.JTextField pid;
-    private javax.swing.JLabel pname;
-    private javax.swing.JLabel posdate;
-    private javax.swing.JLabel postime;
-    private javax.swing.JLabel pri;
-    private javax.swing.JTextField price;
-    private javax.swing.JTextField product;
-    private javax.swing.JLabel product_ALL;
-    private javax.swing.JLabel product_DELETE;
-    private javax.swing.JLabel product_MOST;
-    private javax.swing.JLabel product_REFRESH;
-    private javax.swing.JLabel product_REMOVE;
-    private javax.swing.JLabel product_SAVE;
-    private javax.swing.JLabel product_STOCKS;
-    private javax.swing.JLabel product_UPDATE;
-    private javax.swing.JLabel product_id;
-    private javax.swing.JLabel profit;
-    private javax.swing.JLabel profit1;
-    private javax.swing.JTextField psearch;
-    private javax.swing.JLabel qua;
+    private static javax.swing.JTextField m_search;
+    private static javax.swing.JLabel m_up;
+    private static javax.swing.JLabel mark_p;
+    private static javax.swing.JTextField mark_up;
+    private static javax.swing.JPanel pAy;
+    private static javax.swing.JLabel paRTIAL;
+    private static javax.swing.JTextField paid;
+    private static javax.swing.JPanel panel_DAY;
+    private static javax.swing.JPanel panel_DAY1;
+    private static javax.swing.JPanel panel_REFRESH;
+    private static javax.swing.JPanel panel_REFRESH1;
+    private static javax.swing.JPanel panel_REfresh;
+    private static javax.swing.JPanel panel_Refresh;
+    private static javax.swing.JPanel panel_UPdate;
+    private static javax.swing.JPanel panel_a;
+    private static javax.swing.JPanel panel_all;
+    private static javax.swing.JPanel panel_c;
+    private static javax.swing.JPanel panel_cart;
+    private static javax.swing.JPanel panel_choose;
+    private static javax.swing.JPanel panel_clear;
+    private static javax.swing.JPanel panel_cos;
+    private static javax.swing.JPanel panel_d;
+    private static javax.swing.JPanel panel_day;
+    private static javax.swing.JPanel panel_del;
+    private static javax.swing.JPanel panel_income;
+    private static javax.swing.JPanel panel_invoice;
+    private static javax.swing.JPanel panel_invoice1;
+    private static javax.swing.JPanel panel_invoice2;
+    private static javax.swing.JPanel panel_main;
+    private static javax.swing.JPanel panel_p;
+    private static javax.swing.JPanel panel_pos;
+    private static javax.swing.JPanel panel_prod;
+    private static javax.swing.JPanel panel_s;
+    private static javax.swing.JPanel panel_u;
+    private static javax.swing.JPanel panelu;
+    private static javax.swing.JPanel pay_all;
+    private static javax.swing.JPanel pay_balance;
+    private static javax.swing.JPanel pay_refresh;
+    private static javax.swing.JPanel pay_unpaid;
+    private static javax.swing.JTextField pid;
+    private static javax.swing.JLabel pname;
+    private static javax.swing.JLabel posdate;
+    private static javax.swing.JLabel postime;
+    private static javax.swing.JLabel pri;
+    private static javax.swing.JTextField price;
+    private static javax.swing.JTextField product;
+    private static javax.swing.JLabel product_ALL;
+    private static javax.swing.JLabel product_DELETE;
+    private static javax.swing.JLabel product_MOST;
+    private static javax.swing.JLabel product_REFRESH;
+    private static javax.swing.JLabel product_REMOVE;
+    private static javax.swing.JLabel product_SAVE;
+    private static javax.swing.JLabel product_STOCKS;
+    private static javax.swing.JLabel product_UPDATE;
+    private static javax.swing.JLabel product_id;
+    private static javax.swing.JLabel profit;
+    private static javax.swing.JLabel profit1;
+    private static javax.swing.JTextField psearch;
+    private static javax.swing.JLabel qua;
     public javax.swing.JTextField quantity;
-    private javax.swing.JPanel rEfresh;
-    private javax.swing.JPanel rEmove;
-    private javax.swing.JLabel sellingID;
-    private javax.swing.JLabel sex;
-    private javax.swing.JLabel stocks;
-    private javax.swing.JLabel t_price;
-    private javax.swing.JLabel tiME;
-    private javax.swing.JLabel tot_quantity;
-    private javax.swing.JLabel total_purchase;
-    private javax.swing.JLabel total_qty;
-    private javax.swing.JLabel unPAID;
-    private javax.swing.JLabel unit_price;
+    private static javax.swing.JPanel rEfresh;
+    private static javax.swing.JPanel rEmove;
+    private static javax.swing.JLabel sellingID;
+    private static javax.swing.JLabel sex;
+    private static javax.swing.JLabel stocks;
+    private static javax.swing.JLabel t_price;
+    private static javax.swing.JLabel tiME;
+    private static javax.swing.JLabel tot_quantity;
+    private static javax.swing.JLabel total_purchase;
+    private static javax.swing.JLabel total_qty;
+    private static javax.swing.JLabel unPAID;
+    private static javax.swing.JLabel unit_price;
     // End of variables declaration//GEN-END:variables
 }
