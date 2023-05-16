@@ -71,7 +71,6 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        setUndecorated(true);
 
         jPanel2.setBackground(new java.awt.Color(87, 62, 27));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -464,7 +463,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(661, 432));
+        setSize(new java.awt.Dimension(677, 440));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
