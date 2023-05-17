@@ -42,10 +42,16 @@ public class Progress extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(400, 400));
+        setResizable(false);
+        setSize(new java.awt.Dimension(400, 400));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 2));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        jPanel1.setMinimumSize(new java.awt.Dimension(400, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 400));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -62,6 +68,8 @@ public class Progress extends javax.swing.JFrame {
         jPanel1.add(percent, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 70, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setAlignmentX(0.0F);
+        jPanel2.setAlignmentY(0.0F);
         jPanel2.setPreferredSize(new java.awt.Dimension(70, 66));
         jPanel2.setLayout(null);
 
@@ -69,25 +77,21 @@ public class Progress extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Java_Rice/loading.gif"))); // NOI18N
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 400, 290);
+        jLabel1.setBounds(0, 0, 380, 300);
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 300));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 380, 300));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, Short.MAX_VALUE)
         );
 
         pack();
