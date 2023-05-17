@@ -28,7 +28,7 @@ import javax.swing.Timer;
 
 public class DBconn {
 
-    public void glenn(JPanel start, JPanel start1, JPanel start2, JPanel start3, JPanel start4, JPanel start5, JPanel start6, JPanel start7, JPanel start8) {
+    public void Namias(JPanel start, JPanel start1, JPanel start2, JPanel start3, JPanel start4, JPanel start5, JPanel start6, JPanel start7, JPanel start8) {
         start.setVisible(true);
         start1.setVisible(false);
         start2.setVisible(false);
