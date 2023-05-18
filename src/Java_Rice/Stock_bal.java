@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class Stock_bal extends javax.swing.JFrame {
-    Home_source OOP = new Home_source();
+    DBconn OOP = new DBconn();
     /**
      * Creates new form Stocks
      */
@@ -229,7 +229,7 @@ public class Stock_bal extends javax.swing.JFrame {
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
           try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
           
                 state.executeUpdate("update tblinvoice set  Status =  \"Paid\" where Costumer = '"+naME.getText()+"'");
                 JOptionPane.showMessageDialog(rootPane, "Trannsaction Complete!!");

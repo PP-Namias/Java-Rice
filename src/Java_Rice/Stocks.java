@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class Stocks extends javax.swing.JFrame {
-    Home_source OOP = new Home_source();
+    DBconn OOP = new DBconn();
     /**
      * Creates new form Stocks
      */
@@ -232,7 +232,7 @@ public class Stocks extends javax.swing.JFrame {
         
         }else{
           try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
           
                 state.executeUpdate("update tblinvoice set  Status =  \"Paid\" where Costumer = '"+naME.getText()+"'");
                 JOptionPane.showMessageDialog(rootPane, "Trannsaction Complete!!");
