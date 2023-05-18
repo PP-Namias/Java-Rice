@@ -30,7 +30,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class Main_menu extends javax.swing.JFrame {
 
-    Home_source OOP = new Home_source();
+    DBconn OOP = new DBconn();
 
     public Main_menu() {
         initComponents();
@@ -60,7 +60,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     public void cdata() {
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select product_name from tblproduct order by `product_name` asc ");
 
             Vector v = new Vector();
@@ -77,7 +77,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     public void ccdata() {
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select product_name from tblproduct order by `product_name` asc ");
 
             Vector r = new Vector();
@@ -95,7 +95,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     public void costumerdata() {
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select fname from tblcostumer order by `fname` asc ");
 
             Vector v = new Vector();
@@ -113,7 +113,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     public void costumerd() {
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select fname from tblcostumer order by `fname` asc ");
 
             Vector v = new Vector();
@@ -175,7 +175,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table = (DefaultTableModel) jTable1.getModel();
             table.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" select * from tblcostumer ");
 
             while (rs.next()) {
@@ -204,7 +204,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable2.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" select * from tblproduct ");
 
             while (rs.next()) {
@@ -233,7 +233,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable4.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select `selling_id`,`product_id`,`product_name`,sum(`quantity`),sum(`total_price`) FROM `tblselling`  GROUP BY `product_id` order by sum(`quantity`) desc");
 
             while (rs.next()) {
@@ -260,7 +260,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable5.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select prod_id,product_name,quantity from tblproduct");
 
             while (rs.next()) {
@@ -341,7 +341,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblnum where numid = 1");
 
             if (rs.next()) {
@@ -379,6 +379,8 @@ public class Main_menu extends javax.swing.JFrame {
         choose_SETTINGS = new javax.swing.JLabel();
         panel_invoice2 = new javax.swing.JPanel();
         choose_SETTINGS1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         panel_main = new javax.swing.JPanel();
         home = new javax.swing.JPanel();
         jPanel71 = new javax.swing.JPanel();
@@ -402,7 +404,6 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel28 = new javax.swing.JPanel();
         daTE = new javax.swing.JLabel();
         tiME = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
         Costumer = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         fname = new javax.swing.JLabel();
@@ -680,22 +681,25 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel99 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Java Rice - An Interactive Food Ordering System");
+        setMinimumSize(new java.awt.Dimension(1280, 720));
         setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
-        setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
+        jPanel1.setMinimumSize(new java.awt.Dimension(1280, 720));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         panel_choose.setBackground(new java.awt.Color(54, 65, 77));
+        panel_choose.setPreferredSize(new java.awt.Dimension(250, 720));
 
         panel_pos.setBackground(new java.awt.Color(84, 86, 91));
         panel_pos.setForeground(new java.awt.Color(255, 255, 255));
 
-        chooose_POS.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        chooose_POS.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         chooose_POS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         chooose_POS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_sale_price_tag_30px.png"))); // NOI18N
         chooose_POS.setText("Point of Sale");
+        chooose_POS.setPreferredSize(new java.awt.Dimension(117, 33));
         chooose_POS.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 chooose_POSMouseClicked(evt);
@@ -712,19 +716,23 @@ public class Main_menu extends javax.swing.JFrame {
         panel_pos.setLayout(panel_posLayout);
         panel_posLayout.setHorizontalGroup(
             panel_posLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(chooose_POS, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(chooose_POS, javax.swing.GroupLayout.DEFAULT_SIZE, 241, Short.MAX_VALUE)
         );
         panel_posLayout.setVerticalGroup(
             panel_posLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(chooose_POS, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_posLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(chooose_POS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_cos.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_COSTUMER.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_COSTUMER.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_COSTUMER.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_COSTUMER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_parenting_30px_1.png"))); // NOI18N
         choose_COSTUMER.setText("Costumer");
+        choose_COSTUMER.setMinimumSize(new java.awt.Dimension(99, 33));
+        choose_COSTUMER.setPreferredSize(new java.awt.Dimension(99, 33));
         choose_COSTUMER.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 choose_COSTUMERMouseClicked(evt);
@@ -741,19 +749,22 @@ public class Main_menu extends javax.swing.JFrame {
         panel_cos.setLayout(panel_cosLayout);
         panel_cosLayout.setHorizontalGroup(
             panel_cosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_COSTUMER, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(choose_COSTUMER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_cosLayout.setVerticalGroup(
             panel_cosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_COSTUMER, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_cosLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(choose_COSTUMER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_prod.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_PRODUCT.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_PRODUCT.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_PRODUCT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_PRODUCT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_product_30px_1.png"))); // NOI18N
         choose_PRODUCT.setText("Products");
+        choose_PRODUCT.setPreferredSize(new java.awt.Dimension(91, 33));
         choose_PRODUCT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 choose_PRODUCTMouseClicked(evt);
@@ -770,19 +781,22 @@ public class Main_menu extends javax.swing.JFrame {
         panel_prod.setLayout(panel_prodLayout);
         panel_prodLayout.setHorizontalGroup(
             panel_prodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_PRODUCT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(choose_PRODUCT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_prodLayout.setVerticalGroup(
             panel_prodLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_PRODUCT, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_prodLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(choose_PRODUCT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_income.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_INCOME.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_INCOME.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_INCOME.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INCOME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_cost_30px_1.png"))); // NOI18N
         choose_INCOME.setText("Income");
+        choose_INCOME.setPreferredSize(new java.awt.Dimension(87, 33));
         choose_INCOME.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 choose_INCOMEMouseClicked(evt);
@@ -799,16 +813,18 @@ public class Main_menu extends javax.swing.JFrame {
         panel_income.setLayout(panel_incomeLayout);
         panel_incomeLayout.setHorizontalGroup(
             panel_incomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_INCOME, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(choose_INCOME, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_incomeLayout.setVerticalGroup(
             panel_incomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_INCOME, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_incomeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(choose_INCOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_invoice.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_INVOICE.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_INVOICE.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_INVOICE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INVOICE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_invoice_25px.png"))); // NOI18N
         choose_INVOICE.setText("Invoice");
@@ -828,11 +844,11 @@ public class Main_menu extends javax.swing.JFrame {
         panel_invoice.setLayout(panel_invoiceLayout);
         panel_invoiceLayout.setHorizontalGroup(
             panel_invoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_INVOICE, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(choose_INVOICE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_invoiceLayout.setVerticalGroup(
             panel_invoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_INVOICE, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addComponent(choose_INVOICE, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
         );
 
         jPanel16.setBackground(new java.awt.Color(84, 86, 91));
@@ -846,7 +862,7 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel74, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -855,10 +871,11 @@ public class Main_menu extends javax.swing.JFrame {
 
         Panelhome.setBackground(new java.awt.Color(84, 86, 91));
 
-        jLabel94.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel94.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel94.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_home_25px.png"))); // NOI18N
         jLabel94.setText("Home");
+        jLabel94.setPreferredSize(new java.awt.Dimension(71, 33));
         jLabel94.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel94MouseClicked(evt);
@@ -875,16 +892,19 @@ public class Main_menu extends javax.swing.JFrame {
         Panelhome.setLayout(PanelhomeLayout);
         PanelhomeLayout.setHorizontalGroup(
             PanelhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel94, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         PanelhomeLayout.setVerticalGroup(
             PanelhomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelhomeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_invoice1.setBackground(new java.awt.Color(84, 86, 91));
+        panel_invoice1.setPreferredSize(new java.awt.Dimension(218, 33));
 
-        choose_SETTINGS.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_SETTINGS.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_SETTINGS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_SETTINGS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_settings_20px_1.png"))); // NOI18N
         choose_SETTINGS.setText("Settings");
@@ -904,16 +924,16 @@ public class Main_menu extends javax.swing.JFrame {
         panel_invoice1.setLayout(panel_invoice1Layout);
         panel_invoice1Layout.setHorizontalGroup(
             panel_invoice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_SETTINGS, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(choose_SETTINGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panel_invoice1Layout.setVerticalGroup(
             panel_invoice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_SETTINGS, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
+            .addComponent(choose_SETTINGS, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
         );
 
         panel_invoice2.setBackground(new java.awt.Color(84, 86, 91));
 
-        choose_SETTINGS1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        choose_SETTINGS1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_SETTINGS1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_SETTINGS1.setText("About Us");
         choose_SETTINGS1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -936,42 +956,62 @@ public class Main_menu extends javax.swing.JFrame {
         );
         panel_invoice2Layout.setVerticalGroup(
             panel_invoice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(choose_SETTINGS1, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+            .addComponent(choose_SETTINGS1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
         );
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/namias.png"))); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Namias");
 
         javax.swing.GroupLayout panel_chooseLayout = new javax.swing.GroupLayout(panel_choose);
         panel_choose.setLayout(panel_chooseLayout);
         panel_chooseLayout.setHorizontalGroup(
             panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel_cos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_pos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_invoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_prod, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_income, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Panelhome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_invoice1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panel_invoice2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_chooseLayout.createSequentialGroup()
+                .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(panel_chooseLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Panelhome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_cos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_income, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_invoice, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_invoice2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_invoice1, javax.swing.GroupLayout.DEFAULT_SIZE, 241, Short.MAX_VALUE)
+                            .addComponent(panel_prod, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_pos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
         );
         panel_chooseLayout.setVerticalGroup(
             panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_chooseLayout.createSequentialGroup()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addGap(24, 24, 24)
                 .addComponent(Panelhome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_pos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_cos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_prod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_income, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_invoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_invoice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(panel_invoice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
@@ -1014,7 +1054,7 @@ public class Main_menu extends javax.swing.JFrame {
         );
         home_posLayout.setVerticalGroup(
             home_posLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_posLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, home_posLayout.createSequentialGroup()
                 .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -1254,6 +1294,7 @@ public class Main_menu extends javax.swing.JFrame {
         daTE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_calendar_8_20px.png"))); // NOI18N
         daTE.setText("date");
 
+        tiME.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         tiME.setForeground(new java.awt.Color(255, 255, 255));
         tiME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_clock_20px_3.png"))); // NOI18N
         tiME.setText("time");
@@ -1265,18 +1306,18 @@ public class Main_menu extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(daTE)
-                .addGap(72, 72, 72)
+                .addGap(41, 41, 41)
                 .addComponent(tiME)
-                .addGap(45, 45, 45))
+                .addGap(63, 63, 63))
         );
         jPanel28Layout.setVerticalGroup(
             jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel28Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(daTE)
                     .addComponent(tiME))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel71Layout = new javax.swing.GroupLayout(jPanel71);
@@ -1308,7 +1349,7 @@ public class Main_menu extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel71Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(home_most, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addContainerGap(313, Short.MAX_VALUE))
             .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel71Layout.setVerticalGroup(
@@ -1332,19 +1373,11 @@ public class Main_menu extends javax.swing.JFrame {
                         .addComponent(home_pos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(home_stock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, Short.MAX_VALUE)
                 .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        home.add(jPanel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 870, 590));
-
-        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_multiply_20px.png"))); // NOI18N
-        jLabel56.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel56MouseClicked(evt);
-            }
-        });
-        home.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 0, -1, 30));
+        home.add(jPanel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 720));
 
         panel_main.add(home, "card3");
 
@@ -4489,13 +4522,13 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1136, 629));
+        setSize(new java.awt.Dimension(1296, 728));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void choose_COSTUMERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_COSTUMERMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
     }//GEN-LAST:event_choose_COSTUMERMouseClicked
 
     private void csearchKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_csearchKeyPressed
@@ -4513,7 +4546,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable1.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblcostumer where  FNAME like '%" + search1 + "%' or lname like '%" + search1 + "%' or cid like '%" + search1 + "%'");
 
             if (search1.isEmpty()) {
@@ -4539,7 +4572,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable1.getModel();
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblcostumer");
             table1.setRowCount(0);
 
@@ -4571,7 +4604,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
 
             String sql = ("insert into tblcostumer (`FNAME`,`LNAME`,`contact`,`sex`,`address`,`time`,`date`,`email`) values ('" + costumerName.getText() + "','" + costumerLastname.getText() + "','" + costumerNumber.getText() + "','" + costumerSex.getText() + "','" + costumerAddress.getText() + "','" + postime.getText() + "','" + posdate.getText() + "','" + costumerEmail.getText() + "')");
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
 
             if (costumerName.getText().isEmpty() && costumerLastname.getText().isEmpty() && costumerNumber.getText().isEmpty() && costumerSex.getText().isEmpty() && costumerAddress.getText().isEmpty() && costumerEmail.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Invalid!!");
@@ -4627,7 +4660,7 @@ public class Main_menu extends javax.swing.JFrame {
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
         // TODO add your handling code here:
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             if (costumerID.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Select from the box!!");
             } else {
@@ -4669,7 +4702,7 @@ public class Main_menu extends javax.swing.JFrame {
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
         // TODO add your handling code here:
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
 
             if (costumerID.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Select from the box!!");
@@ -4748,7 +4781,7 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable2.getModel();
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblproduct");
             table1.setRowCount(0);
 
@@ -4778,7 +4811,7 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
 
             if (product.getText().isEmpty() && bar_code.getText().isEmpty() && price.getText().isEmpty() && quantity.getText().isEmpty() && mark_up.getText().isEmpty() && exp_date.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Invalid!!");
@@ -4833,7 +4866,7 @@ public class Main_menu extends javax.swing.JFrame {
     private void product_UPDATEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_UPDATEMouseClicked
         // TODO add your handling code here:
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             if (pid.getText().isEmpty()) {
 
                 JOptionPane.showMessageDialog(null, "Select from the box!!");
@@ -4870,7 +4903,7 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             if (pid.getText().isEmpty()) {
 
                 JOptionPane.showMessageDialog(null, "Select from the box");
@@ -4937,7 +4970,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable2.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblproduct where  product_name like '%" + search1 + "%' or bar_code like '%" + search1 + "%' or prod_id like '%" + search1 + "%'");
 
             if (search1.isEmpty()) {
@@ -4959,7 +4992,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void choose_PRODUCTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_PRODUCTMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
         data();
     }//GEN-LAST:event_choose_PRODUCTMouseClicked
 
@@ -4967,7 +5000,7 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         // OOP.settingDisableSliderON(PanelDisabler, goodness);
 
-        OOP.glenn(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
         jComboBox2.setSelectedItem("Regular Costumer");
         jComboBox1.setSelectedItem("Select product");
     }//GEN-LAST:event_chooose_POSMouseClicked
@@ -4980,7 +5013,7 @@ public class Main_menu extends javax.swing.JFrame {
             stocks.setText("0.0");
         } else {
             try {
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select prod_id,price,product_name,mark_up,quantity  from tblproduct where product_name =  '" + search + "'");
 
                 if (rs.next()) {
@@ -5031,7 +5064,7 @@ public class Main_menu extends javax.swing.JFrame {
         } else {
             try {
                 mark_up();
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 state.executeUpdate("insert into tblselling (`product_id`,`product_name`,`quantity`,`total_price`,`unit_price`,`profit`,`date`,`time`) values ('" + product_id.getText() + "','" + jComboBox1.getSelectedItem().toString() + "','" + jSpinner1.getValue().toString() + "','" + t_price.getText() + "','" + unit_price.getText() + "','" + mark_p.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
 
             } catch (Exception ex) {
@@ -5039,7 +5072,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 state.executeUpdate("update tblproduct set quantity = '" + stocks.getText() + "' where prod_id = '" + product_id.getText() + "'");
 
             } catch (Exception ex) {
@@ -5104,7 +5137,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
                 String idd = jLabel75.getText();
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 state.executeUpdate("update tblnum set value = '" + idd + "' where numid = 1");
 
             } catch (Exception x) {
@@ -5113,7 +5146,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 state.executeUpdate("insert into tblinvoice (`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time`) values ('" + log.getText() + "','" + jComboBox2.getSelectedItem().toString() + "','" + paid.getText() + "','" + status + "','" + change.getText() + "','" + total_purchase.getText() + "','" + total_qty.getText() + "','" + jLabel75.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
                 jComboBox2.setSelectedItem("Regular Costumer");
             } catch (Exception x) {
@@ -5150,7 +5183,7 @@ public class Main_menu extends javax.swing.JFrame {
             sdata();
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`total_price`), sum(`quantity`)  FROM `tblselling`");
 
                 while (rs.next()) {
@@ -5167,7 +5200,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable4.getModel();
                 table.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT `selling_id`,`product_id`,`product_name`,sum(`quantity`),sum(`total_price`),`date` FROM `tblselling` WHERE `date` = '" + m + "' GROUP by  `product_id` order by sum(`quantity`) desc");
 
                 while (rs.next()) {
@@ -5181,7 +5214,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select sum(total_price),sum(quantity) from tblselling where date = '" + m + "'");
 
                 while (rs.next()) {
@@ -5236,7 +5269,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             ans.setText(String.valueOf(sum));
             try {
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
 
                 state.executeUpdate("update tblproduct set  quantity = '" + ans.getText() + "' where prod_id = '" + jLabel95.getText() + "'");
                 JOptionPane.showMessageDialog(rootPane, "Successfully update!!");
@@ -5250,7 +5283,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement stat = Home_source.mycon().createStatement();
+                Statement stat = DBconn.mycon().createStatement();
                 ResultSet r = stat.executeQuery("SELECT count(*) FROM `tblproduct` WHERE `quantity` = '" + 0.0 + "'");
 
                 while (r.next()) {
@@ -5287,7 +5320,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable5.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT `selling_id`,`product_id`,`unit_price`,`product_name`,`quantity` FROM `tblselling` where `product_id` = '" + p + "' and `product_name` = '" + pn + "' and `quantity` =  '" + bc + "' and `total_price`= '" + qty + "'");
             while (rs.next()) {
                 sellingID.setText(rs.getString("selling_id"));
@@ -5303,7 +5336,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable5.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet sr = state.executeQuery("SELECT `quantity`,`prod_id` FROM `tblproduct` where `prod_id` = '" + p + "'");
             while (sr.next()) {
                 jLabel61.setText(sr.getString("quantity"));
@@ -5328,7 +5361,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable3.getModel();
                 int rem = jTable3.getSelectedRow();
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
 
                 state.executeUpdate("delete from tblselling where selling_id = '" + sellingID.getText() + "'");
                 state.executeUpdate("update tblproduct set `quantity` = '" + jLabel62.getText() + "' where prod_id = '" + product_id.getText() + "'");
@@ -5476,7 +5509,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             DefaultTableModel table = (DefaultTableModel) jTable4.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT `selling_id`,`product_id`,`product_name`,sum(`quantity`),sum(`total_price`),`date` FROM `tblselling` WHERE `date` = '" + posdate.getText() + "' GROUP by  `product_id` order by sum(`quantity`) desc");
 
             while (rs.next()) {
@@ -5491,7 +5524,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling` where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5508,7 +5541,7 @@ public class Main_menu extends javax.swing.JFrame {
         sdata();
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -5590,7 +5623,7 @@ public class Main_menu extends javax.swing.JFrame {
                 DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
                 table1.setRowCount(0);
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling`");
 
                 while (rs.next()) {
@@ -5610,7 +5643,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`profit`),sum(`total_price`) FROM `tblselling`");
 
                 while (rs.next()) {
@@ -5626,7 +5659,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable6.getModel();
                 table.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` WHERE date = '" + m + "'");
                 while (rs.next()) {
                     Object o[] = {rs.getString("selling_id"), rs.getString("product_id"), rs.getString("product_name"), rs.getString("quantity"), rs.getString("total_price"), rs.getString("unit_price"), rs.getString("date")};
@@ -5639,7 +5672,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`profit`),sum(`total_price`) FROM `tblselling` where date = '" + m + "'");
 
                 while (rs.next()) {
@@ -5657,7 +5690,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable6.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling`  where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5677,7 +5710,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling` where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5688,7 +5721,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling` where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5717,7 +5750,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling`");
 
             while (rs.next()) {
@@ -5738,7 +5771,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -5750,7 +5783,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -5775,13 +5808,13 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void choose_INCOMEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INCOMEMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
+        OOP.Namias(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
 
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` ");
 
             while (rs.next()) {
@@ -5802,7 +5835,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -5814,7 +5847,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -5846,7 +5879,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
                 table.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select * from tblremove");
 
                 while (rs.next()) {
@@ -5859,7 +5892,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select count(*) from tblremove");
 
                 while (rs.next()) {
@@ -5872,7 +5905,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
 
                 while (rs.next()) {
@@ -5886,7 +5919,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
                 table.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select * from tblremove where date = '" + income_search1.getText() + "'");
                 while (rs.next()) {
 
@@ -5898,7 +5931,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("select count(*),sum(quantity) from tblremove where date = '" + income_search1.getText() + "'");
 
                 while (rs.next()) {
@@ -5917,7 +5950,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblremove where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5930,7 +5963,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select count(*),sum(quantity) from tblremove where date = '" + posdate.getText() + "'");
 
             while (rs.next()) {
@@ -5960,7 +5993,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblremove");
 
             while (rs.next()) {
@@ -5974,7 +6007,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
 
             while (rs.next()) {
@@ -6005,11 +6038,11 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (jLabel73.getText().equals("0")) {
         } else {
-            OOP.glenn(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
+            OOP.Namias(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
             try {
                 DefaultTableModel table = (DefaultTableModel) jTable5.getModel();
                 table.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT `prod_id`,`product_name`,`quantity` FROM `tblproduct` WHERE `quantity` = '" + 0.0 + "'");
 
                 while (rs.next()) {
@@ -6088,12 +6121,12 @@ public class Main_menu extends javax.swing.JFrame {
     private void choose_INVOICEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INVOICEMouseClicked
         // TODO add your handling code here:
         jComboBox4.setSelectedItem("All");
-        OOP.glenn(Invoice, home, POS, Product, Costumer, Selling, Stock_in, Removed, Income);
+        OOP.Namias(Invoice, home, POS, Product, Costumer, Selling, Stock_in, Removed, Income);
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` ");
 
             while (rs.next()) {
@@ -6119,7 +6152,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"paid\"");
 
             while (rs.next()) {
@@ -6133,7 +6166,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"unpaid\"");
 
             while (rs.next()) {
@@ -6146,7 +6179,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`paid_amount`) FROM `tblinvoice` where status = \"partial\"");
 
             while (rs.next()) {
@@ -6160,7 +6193,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT count(*),`Balance` FROM `tblinvoice` where status = \"unpaid\"");
 
             while (rs.next()) {
@@ -6192,7 +6225,7 @@ public class Main_menu extends javax.swing.JFrame {
                 DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
                 table1.setRowCount(0);
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` ");
 
                 while (rs.next()) {
@@ -6220,7 +6253,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
                 table1.setRowCount(0);
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` where status = '" + search + "'");
 
                 while (rs.next()) {
@@ -6271,7 +6304,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel94MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(home, POS, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(home, POS, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
     }//GEN-LAST:event_jLabel94MouseClicked
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
@@ -6285,7 +6318,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`sub_total`) FROM `tblinvoice` WHERE `Costumer`  like '%" + m + "%' and `Status` = \"unpaid\"");
 
                 while (rs.next()) {
@@ -6303,7 +6336,7 @@ public class Main_menu extends javax.swing.JFrame {
 
             try {
 
-                Statement state = Home_source.mycon().createStatement();
+                Statement state = DBconn.mycon().createStatement();
                 ResultSet rs = state.executeQuery("SELECT sum(`Balance`),`Balance` FROM `tblinvoice` WHERE `Costumer` like '%" + m + "%' and `Status` = \"partial\"");
 
                 while (rs.next()) {
@@ -6319,7 +6352,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice`  where costumer like '%" + m + "%' ");
 
             while (rs.next()) {
@@ -6389,7 +6422,7 @@ public class Main_menu extends javax.swing.JFrame {
             DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` ");
 
             while (rs.next()) {
@@ -6415,7 +6448,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"paid\"");
 
             while (rs.next()) {
@@ -6429,7 +6462,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"unpaid\"");
 
             while (rs.next()) {
@@ -6442,7 +6475,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`paid_amount`) FROM `tblinvoice` where status = \"partial\"");
 
             while (rs.next()) {
@@ -6514,7 +6547,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable5.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblproduct where  product_name like '%" + search1 + "%'");
 
             if (search1.equals("Poduct")) {
@@ -6567,7 +6600,7 @@ public class Main_menu extends javax.swing.JFrame {
         try {
             DefaultTableModel table = (DefaultTableModel) jTable5.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT `prod_id`,`product_name`,`quantity` FROM `tblproduct` WHERE `quantity` = '" + 0.0 + "'");
 
             while (rs.next()) {
@@ -6596,10 +6629,10 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void product_MOSTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_MOSTMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
         sdata();
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -6613,18 +6646,18 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void product_STOCKSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_STOCKSMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
+        OOP.Namias(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
         jComboBox5.setSelectedItem("Product");
         stockdata();
     }//GEN-LAST:event_product_STOCKSMouseClicked
 
     private void product_REMOVEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_REMOVEMouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
+        OOP.Namias(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
         try {
             DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblremove");
 
             while (rs.next()) {
@@ -6637,7 +6670,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select count(*) from tblremove");
 
             while (rs.next()) {
@@ -6650,7 +6683,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
 
             while (rs.next()) {
@@ -6719,17 +6752,6 @@ public class Main_menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_choose_SETTINGS1MouseExited
 
-    private void jLabel56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel56MouseClicked
-        // TODO add your handling code here:
-        Login Log = new Login();
-        if (total_qty.getText().equals("0.0")) {
-            Log.show();
-            dispose();
-        } else {
-            JOptionPane.showMessageDialog(null, "One or more transaction may not completed!!");
-        }
-    }//GEN-LAST:event_jLabel56MouseClicked
-
     private void jLabel115MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseExited
         // TODO add your handling code here:
         OOP.home_panel2(home_invoice);
@@ -6743,12 +6765,12 @@ public class Main_menu extends javax.swing.JFrame {
     private void jLabel115MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseClicked
         // TODO add your handling code here:
         jComboBox4.setSelectedItem("All");
-        OOP.glenn(Invoice, home, POS, Product, Costumer, Selling, Stock_in, Removed, Income);
+        OOP.Namias(Invoice, home, POS, Product, Costumer, Selling, Stock_in, Removed, Income);
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` ");
 
             while (rs.next()) {
@@ -6774,7 +6796,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"paid\"");
 
             while (rs.next()) {
@@ -6788,7 +6810,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"unpaid\"");
 
             while (rs.next()) {
@@ -6801,7 +6823,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT sum(`paid_amount`) FROM `tblinvoice` where status = \"partial\"");
 
             while (rs.next()) {
@@ -6815,7 +6837,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT count(*),`Balance` FROM `tblinvoice` where status = \"unpaid\"");
 
             while (rs.next()) {
@@ -6848,13 +6870,13 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel114MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
+        OOP.Namias(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice);
 
         try {
             DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
             table1.setRowCount(0);
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery(" SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` ");
 
             while (rs.next()) {
@@ -6875,7 +6897,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -6887,7 +6909,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -6910,11 +6932,11 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel113MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
+        OOP.Namias(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income);
         try {
             DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
             table.setRowCount(0);
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select * from tblremove");
 
             while (rs.next()) {
@@ -6927,7 +6949,7 @@ public class Main_menu extends javax.swing.JFrame {
         }
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("select count(*) from tblremove");
 
             while (rs.next()) {
@@ -6940,7 +6962,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         try {
 
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
 
             while (rs.next()) {
@@ -6963,7 +6985,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel112MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
+        OOP.Namias(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice);
         jComboBox5.setSelectedItem("Product");
         stockdata();
     }//GEN-LAST:event_jLabel112MouseClicked
@@ -6980,10 +7002,10 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel111MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice);
         sdata();
         try {
-            Statement state = Home_source.mycon().createStatement();
+            Statement state = DBconn.mycon().createStatement();
             ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
 
             while (rs.next()) {
@@ -7007,7 +7029,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel110MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice);
         data();
     }//GEN-LAST:event_jLabel110MouseClicked
 
@@ -7023,7 +7045,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel109MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice);
     }//GEN-LAST:event_jLabel109MouseClicked
 
     private void jLabel102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseExited
@@ -7038,7 +7060,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel102MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseClicked
         // TODO add your handling code here:
-        OOP.glenn(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
+        OOP.Namias(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice);
         jComboBox2.setSelectedItem("Regular Costumer");
         jComboBox1.setSelectedItem("Select product");
     }//GEN-LAST:event_jLabel102MouseClicked
@@ -7167,6 +7189,7 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel27;
     private static javax.swing.JLabel jLabel28;
     private static javax.swing.JLabel jLabel29;
+    private static javax.swing.JLabel jLabel3;
     private static javax.swing.JLabel jLabel30;
     private static javax.swing.JLabel jLabel31;
     private static javax.swing.JLabel jLabel32;
@@ -7191,7 +7214,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel52;
     private static javax.swing.JLabel jLabel53;
     private static javax.swing.JLabel jLabel55;
-    private static javax.swing.JLabel jLabel56;
     private static javax.swing.JLabel jLabel57;
     private static javax.swing.JLabel jLabel58;
     private static javax.swing.JLabel jLabel59;
@@ -7226,6 +7248,7 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel87;
     private static javax.swing.JLabel jLabel88;
     private static javax.swing.JLabel jLabel89;
+    private static javax.swing.JLabel jLabel9;
     private static javax.swing.JLabel jLabel90;
     public javax.swing.JLabel jLabel91;
     private static javax.swing.JLabel jLabel92;
@@ -7399,4 +7422,5 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel unPAID;
     private static javax.swing.JLabel unit_price;
     // End of variables declaration//GEN-END:variables
+
 }
