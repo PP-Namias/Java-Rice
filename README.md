@@ -6,7 +6,7 @@
   <a href="https://github.com/PP-Namias/Java-Rice/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice stars"/></a>
   <a href="https://github.com/PP-Namias/Java-Rice/issues" target="_blank"><img src="https://img.shields.io/github/issues/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice issues"/></a>
   <a href="https://github.com/PP-Namias/Java-Rice/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/PP-Namias/Java-Rice?style=flat-square" alt="Java Rice pull-requests"/></a>
-  <a href="#" target="_blank"><img src="https://visitor-badge.glitch.me/badge?page_id=PP-Namias.Java-Rice" alt="Java Rice Visitors"/></a>
+  <a href="https://github.com/PP-Namias/Java-Rice" target="_blank"><img src="https://visitor-badge.glitch.me/badge?page_id=PP-Namias.Java-Rice" alt="Java Rice Visitors"/></a>
   <a href="https://github.com/PP-Namias/Java-Rice/releases" target="_blank"><img src="https://img.shields.io/github/downloads/PP-Namias/Java-Rice/total.svg?style=flat-square" alt="Java Rice downloads"/></a>
 </p>
 
