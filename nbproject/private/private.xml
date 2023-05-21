@@ -5,12 +5,12 @@
         <group>
             <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/AutoCompleteDecorator.java</file>
             <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Main_menu.java</file>
-            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Stock_un.java</file>
-            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Stocks.java</file>
-            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Home_source.java</file>
             <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Login.java</file>
-            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Loading.java</file>
+            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/DBconn.java</file>
+            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Progress.java</file>
+            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Gsoft_pos.java</file>
             <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Stock_bal.java</file>
+            <file>file:/C:/Users/jkrbn/Downloads/PP%20Projects/Java_Rice/src/Java_Rice/Invoice.java</file>
         </group>
     </open-files>
 </project-private>
