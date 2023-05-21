@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `java-rice` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `java-rice`;
 -- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: java-rice
@@ -68,7 +66,7 @@ CREATE TABLE `tblinvoice` (
   `date` varchar(50) NOT NULL,
   `time` varchar(50) NOT NULL,
   PRIMARY KEY (`invoice_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +75,7 @@ CREATE TABLE `tblinvoice` (
 
 LOCK TABLES `tblinvoice` WRITE;
 /*!40000 ALTER TABLE `tblinvoice` DISABLE KEYS */;
-INSERT INTO `tblinvoice` VALUES (5,'bcopointofsale','Regular Costumer','100','Paid','88.0','12.0','4.0',6,'29-04-2021','07:07:44 PM'),(6,'bcopointofsale','Regular Costumer','1000','Paid','655.0','345.0','23.0',7,'29-04-2021','07:24:25 PM'),(7,'User','Regular Costumer','1000','Paid','765.0','235.0','15.0',8,'29-04-2021','07:34:06 PM'),(8,'glenn','Regular Costumer','1000','Paid','593.00','407.00','22',9,'16-05-2021','07:54:53 AM'),(9,'glenn','Regular Costumer','40','Paid','10.0','30.0','2.0',10,'02-05-2023','03:22:11 PM'),(10,'Namias','Regular Costumer','100','Paid','35.0','65.0','5.0',11,'09-05-2023','09:57:12 AM');
+INSERT INTO `tblinvoice` VALUES (5,'User','Regular Costumer','100','Paid','88.0','12.0','4.0',6,'02-05-2023','07:07:44 PM'),(6,'User','Regular Costumer','1000','Paid','655.0','345.0','23.0',7,'02-05-2023','07:24:25 PM'),(7,'User','Regular Costumer','1000','Paid','765.0','235.0','15.0',8,'02-05-2023','07:34:06 PM'),(8,'Namias','Regular Costumer','1000','Paid','593.00','407.00','22',9,'02-05-2023','07:54:53 AM'),(9,'Namias','Regular Costumer','40','Paid','10.0','30.0','2.0',10,'02-05-2023','03:22:11 PM'),(10,'Namias','Regular Costumer','100','Paid','35.0','65.0','5.0',11,'09-05-2023','09:57:12 AM'),(11,'Caram','Namias','3','Partial','-24.0','27.0','3',12,'13-05-2023','06:23:45 PM'),(12,'Guest','Mike','0.0','Unpaid','0.0','147.0','3',13,'20-05-2023','10:41:47 AM');
 /*!40000 ALTER TABLE `tblinvoice` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -127,7 +125,7 @@ CREATE TABLE `tblnum` (
 
 LOCK TABLES `tblnum` WRITE;
 /*!40000 ALTER TABLE `tblnum` DISABLE KEYS */;
-INSERT INTO `tblnum` VALUES (1,11);
+INSERT INTO `tblnum` VALUES (1,13);
 /*!40000 ALTER TABLE `tblnum` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -158,7 +156,7 @@ CREATE TABLE `tblproduct` (
 
 LOCK TABLES `tblproduct` WRITE;
 /*!40000 ALTER TABLE `tblproduct` DISABLE KEYS */;
-INSERT INTO `tblproduct` VALUES (1,'Nescafe','877-090',3,'956.0',1,'09-09-2021','18-09-2020','02:58:52 PM'),(2,'Milo','12-11',9,'982.0',3,'12-23-2023','29-04-2021','07:04:19 PM'),(3,'Coke 12oz','1221-1111',15,'998.0',4,'12-23-2023','29-04-2021','07:06:24 PM'),(4,'Silver swan ','12-2222',10,'990.0',4,'12-4-2024','29-04-2021','07:07:21 PM'),(5,'3 $ 1 nescafe ','1211-111',9,'970.0',3,'1-3-2030','29-04-2021','07:10:12 PM'),(6,'Colgate','13-33',10,'998.0',3,'12-2-2030','29-04-2021','07:11:30 PM'),(7,'Coke 1 liter','13-22-222',50,'996.0',10,'22-21-2030','29-04-2021','07:12:28 PM'),(8,'Beer','14-111111',30,'1000.0',8,'12-2-2030','29-04-2021','07:14:32 PM'),(9,'Meat loaf','19-999',23,'996.0',4,'12-9-2030','29-04-2021','07:18:39 PM'),(10,'Beef loaf','15-222222',24,'997',5,'10-9-2023','29-04-2021','07:19:18 PM'),(11,'Corn beef','26-1111',25,'980.0',4,'13-9-2034','29-04-2021','07:20:51 PM'),(12,'Asin','111-1111',5,'1000.0',2,'12-28-2034','29-04-2021','07:21:27 PM'),(13,'Vitsen','122333',3,'992.0',1,'12-09-2074','29-04-2021','07:21:55 PM');
+INSERT INTO `tblproduct` VALUES (1,'Java Rice','1',9,'22.0',6,'09-09-2021','01-05-2023','02:58:52 PM'),(2,'Egg','2',9,'20.0',6,'12-23-2023','01-05-2023','07:04:19 PM'),(3,'Java Rice w/ Egg','3',25,'35',13,'12-23-2023','01-05-2023','07:06:24 PM'),(4,'Java Rice w/ Bacon','4',39,'23',13,'12-4-2024','01-05-2023','07:07:21 PM'),(5,'Java Rice w/ Chicken','5',49,'30.0',13,'1-3-2030','01-05-2023','07:10:12 PM'),(6,'Java Rice w/ Ham','6',39,'-1.0',12,'12-2-2030','01-05-2023','07:11:30 PM'),(7,'Java Rice w/ Hotdog','7',39,'25.0',15,'22-21-2030','01-05-2023','07:12:28 PM'),(8,'Java Rice w/ Pork','8',49,'0.0',15,'12-2-2030','01-05-2023','07:14:32 PM'),(9,'Java Rice w/ Shanghai','9',39,'9.0',11,'12-9-2030','01-05-2023','07:18:39 PM'),(10,'Java Rice w/ Tapa','10',49,'28.0',15,'10-9-2023','01-05-2023','07:19:18 PM'),(11,'Java Rice w/ Tocino','11',39,'9.0',15,'13-9-2034','01-05-2023','07:20:51 PM'),(12,'Pancit Bihon','12',25,'56',10,'12-28-2034','01-05-2023','07:21:27 PM'),(13,'Vitsen','13',3,'12',25,'12-09-2074','01-05-2023','07:21:55 PM');
 /*!40000 ALTER TABLE `tblproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,7 +177,7 @@ CREATE TABLE `tblremove` (
   `date` varchar(50) NOT NULL,
   `time` varchar(30) NOT NULL,
   PRIMARY KEY (`remove_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +186,7 @@ CREATE TABLE `tblremove` (
 
 LOCK TABLES `tblremove` WRITE;
 /*!40000 ALTER TABLE `tblremove` DISABLE KEYS */;
-INSERT INTO `tblremove` VALUES (1,'Namias',1,'Nescafe','4','3','29-04-2023','07:23:59 PM'),(2,'Namias',7,'Coke 1 liter','3','50','29-04-2023','na'),(3,'Namias',2,'Milo','5','9','29-04-2023','na'),(4,'Caram',6,'Colgate','3','10','29-04-2023','na'),(5,'Caram',8,'Beer','4','30','29-04-2023','na'),(6,'Namias',3,'Coke 12oz','3','15','29-04-2023','na'),(7,'Caram',12,'Asin','5','5','29-04-2023','na'),(8,'Namias',5,'3 $ 1 nescafe ','34','9','29-04-2023','na');
+INSERT INTO `tblremove` VALUES (1,'Namias',1,'Java Rice w/ Hotdog','9','39','29-04-2023','07:23:59 PM'),(2,'Namias',7,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(3,'Namias',2,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(4,'Caram',6,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(5,'Caram',8,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(6,'Namias',3,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(7,'Caram',12,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(8,'Namias',5,'Java Rice w/ Hotdog','9','39','29-04-2023','na'),(9,'Namias',11,'Java Rice w/ Hotdog','9','39','19-05-2023','12:36:08 AM'),(10,'Namias',2,'Egg','3','9','20-05-2023','03:42:13 AM'),(11,'Namias',9,'Java Rice w/ Shanghai','4','39','20-05-2023','03:42:37 AM'),(12,'Namias',9,'Java Rice w/ Shanghai','3','39','20-05-2023','03:46:02 AM'),(13,'Guest',7,'Java Rice w/ Hotdog','9','39','21-05-2023','06:18:18 PM');
 /*!40000 ALTER TABLE `tblremove` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,7 +208,7 @@ CREATE TABLE `tblselling` (
   `date` varchar(30) NOT NULL,
   `time` varchar(30) NOT NULL,
   PRIMARY KEY (`selling_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -219,7 +217,7 @@ CREATE TABLE `tblselling` (
 
 LOCK TABLES `tblselling` WRITE;
 /*!40000 ALTER TABLE `tblselling` DISABLE KEYS */;
-INSERT INTO `tblselling` VALUES (1,1,'Nescafe','5','15.0','3','5.0','03-05-2023','02:59:04 PM'),(2,1,'Nescafe','5','15.0','3','5.0','03-05-2023','02:59:49 PM'),(3,1,'Nescafe','1','3.0','3','1.0','03-05-2023','03:01:47 PM'),(4,1,'Nescafe','9','27.0','3','9.0','03-05-2023','03:02:30 PM'),(5,1,'Nescafe','8','24.0','3','8.0','03-05-2023','06:35:14 PM'),(6,1,'Nescafe','6','18.0','3','6.0','03-05-2023','06:35:22 PM'),(7,1,'Nescafe','4','12.0','3','4.0','03-05-2023','07:07:33 PM'),(8,11,'Corn beef','6','150.0','25','24.0','03-05-2023','07:22:04 PM'),(9,11,'Corn beef','4','100.0','25','16.0','03-05-2023','07:22:12 PM'),(10,4,'Silver swan ','4','40.0','10','16.0','03-05-2023','07:22:17 PM'),(11,4,'Silver swan ','4','40.0','10','16.0','03-05-2023','07:22:21 PM'),(13,13,'Vitsen','5','15.0','3','5.0','03-05-2023','07:22:30 PM'),(14,11,'Corn beef','5','125.0','25','20.0','03-05-2023','07:33:45 PM'),(15,9,'Meat loaf','4','92.0','23','16.0','03-05-2023','07:33:48 PM'),(16,13,'Vitsen','3','9.0','3','3.0','03-05-2023','07:33:52 PM'),(17,1,'Nescafe','3','9.0','3','3.0','03-05-2023','07:33:55 PM'),(18,7,'Coke 1 liter','4','200.0','50','40.0','03-05-2023','na'),(19,10,'Beef loaf','3','72.0','24','15.0','03-05-2023','na'),(20,2,'Milo','15','135.0','9','45.0','03-05-2023','na'),(26,5,'3 $ 1 nescafe ','10','90.0','9','30.0','03-05-2023','na'),(27,5,'3 $ 1 nescafe ','20','180.0','9','60.0','03-05-2023','na'),(30,11,'Corn beef','4','100.0','25','16.0','03-05-2023','10:52:51 AM'),(31,2,'Milo','3','27.0','9','9.0','03-05-2023','10:52:56 AM'),(32,1,'Nescafe','3','9.0','3','3.0','03-05-2023','10:53:06 AM'),(33,3,'Coke 12oz','2','30.0','15','8.0','03-05-2023','03:21:27 PM'),(34,6,'Colgate','2','20.0','10','6.0','09-05-2023','09:56:42 AM'),(35,11,'Corn beef','1','25.0','25','4.0','09-05-2023','09:56:47 AM'),(36,4,'Silver swan ','2','20.0','10','8.0','09-05-2023','09:56:51 AM');
+INSERT INTO `tblselling` VALUES (47,6,'Java Rice w/ Ham','3','117.0','39','36.0','19-05-2023','10:24:34 AM'),(48,9,'Java Rice w/ Shanghai','3','117.0','39','33.0','19-05-2023','10:24:51 AM'),(49,11,'Java Rice w/ Tocino','4','156.0','39','60.0','19-05-2023','10:24:58 AM'),(50,2,'Egg','1','9.0','9','6.0','19-05-2023','10:33:45 AM'),(51,6,'Java Rice w/ Ham','3','117.0','39','36.0','19-05-2023','11:15:16 AM'),(52,7,'Java Rice w/ Hotdog','3','117.0','39','45.0','19-05-2023','02:30:50 PM'),(53,9,'Java Rice w/ Shanghai','3','117.0','39','33.0','19-05-2023','02:30:55 PM'),(54,8,'Java Rice w/ Pork','6','294.0','49','90.0','19-05-2023','02:31:04 PM'),(55,7,'Java Rice w/ Hotdog','3','117.0','39','45.0','19-05-2023','04:13:42 PM'),(56,6,'Java Rice w/ Ham','5','195.0','39','60.0','19-05-2023','05:32:54 PM'),(57,2,'Egg','4','36.0','9','24.0','19-05-2023','07:08:09 PM'),(58,1,'Java Rice','3','27.0','9','18.0','19-05-2023','11:45:12 PM'),(62,6,'Java Rice w/ Ham','3','117.0','39','36.0','20-05-2023','10:11:11 AM'),(63,5,'Java Rice w/ Chicken','4','196.0','49','52.0','20-05-2023','10:12:00 AM'),(64,8,'Java Rice w/ Pork','3','147.0','49','45.0','20-05-2023','10:41:42 AM'),(65,9,'Java Rice w/ Shanghai','3','117.0','39','33.0','20-05-2023','11:43:32 AM'),(66,10,'Java Rice w/ Tapa','4','196.0','49','60.0','20-05-2023','11:43:35 AM'),(68,7,'Java Rice w/ Hotdog','3','117.0','39','45.0','21-05-2023','05:30:34 PM'),(69,8,'Java Rice w/ Pork','3','147.0','49','45.0','21-05-2023','07:02:30 PM');
 /*!40000 ALTER TABLE `tblselling` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -232,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-09 10:02:33
+-- Dump completed on 2023-05-22  0:27:52
