@@ -272,6 +272,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
         Main_menu m = new Main_menu();
         m.show();
+        dispose();
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MousePressed
