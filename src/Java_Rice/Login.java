@@ -40,7 +40,6 @@ public class Login extends javax.swing.JFrame {
         panel_log = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         panel_cr = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
         password = new javax.swing.JPasswordField();
         jCheckBox1 = new javax.swing.JCheckBox();
@@ -49,6 +48,7 @@ public class Login extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,22 +58,22 @@ public class Login extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 690));
         setSize(new java.awt.Dimension(1000, 690));
 
-        jPanel2.setBackground(new java.awt.Color(87, 62, 27));
+        jPanel2.setBackground(new java.awt.Color(43, 33, 24));
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.setMinimumSize(new java.awt.Dimension(1000, 690));
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 690));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel_login.setBackground(new java.awt.Color(54, 65, 77));
+        panel_login.setBackground(new java.awt.Color(43, 33, 24));
         panel_login.setPreferredSize(new java.awt.Dimension(430, 660));
 
-        panel_log.setBackground(new java.awt.Color(87, 62, 27));
+        panel_log.setBackground(new java.awt.Color(43, 33, 24));
 
+        jLabel1.setBackground(new java.awt.Color(43, 33, 24));
         jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Login");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/login-btn.png"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,36 +101,18 @@ public class Login extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        panel_cr.setBackground(new java.awt.Color(87, 62, 27));
+        panel_cr.setBackground(new java.awt.Color(43, 33, 24));
         panel_cr.setPreferredSize(new java.awt.Dimension(280, 33));
-
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Enter as Guest");
-        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel2MouseExited(evt);
-            }
-        });
 
         javax.swing.GroupLayout panel_crLayout = new javax.swing.GroupLayout(panel_cr);
         panel_cr.setLayout(panel_crLayout);
         panel_crLayout.setHorizontalGroup(
             panel_crLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 320, Short.MAX_VALUE)
         );
         panel_crLayout.setVerticalGroup(
             panel_crLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 33, Short.MAX_VALUE)
         );
 
         username.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
@@ -144,10 +126,11 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox1.setBackground(new java.awt.Color(54, 65, 77));
+        jCheckBox1.setBackground(new java.awt.Color(43, 33, 24));
         jCheckBox1.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setText("Show password");
+        jCheckBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -163,13 +146,31 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("Password ");
 
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Java-Rice-Logo-3 - small.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Java-Rice-Logo-New-Banner-1.png"))); // NOI18N
         jLabel8.setAlignmentY(0.0F);
         jLabel8.setPreferredSize(new java.awt.Dimension(300, 150));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/user - small.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/user-icon.png"))); // NOI18N
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/pass - small.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/pass-icon.png"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/guest_btn_s.png"))); // NOI18N
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.setPreferredSize(new java.awt.Dimension(291, 64));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel_loginLayout = new javax.swing.GroupLayout(panel_login);
         panel_login.setLayout(panel_loginLayout);
@@ -196,7 +197,8 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(panel_cr, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
                             .addComponent(username, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(panel_log, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(password, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(password, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(55, 55, 55))))
         );
         panel_loginLayout.setVerticalGroup(
@@ -219,14 +221,16 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jCheckBox1)
                 .addGap(33, 33, 33)
                 .addComponent(panel_log, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
+                .addGap(64, 64, 64)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(panel_cr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.add(panel_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 0, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Java-Rice-Logo-3D-Animation.gif"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-login-prev.gif"))); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -260,12 +264,10 @@ public class Login extends javax.swing.JFrame {
 
     private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
         // TODO add your handling code here:
-        OOP.setcolor(panel_cr);
     }//GEN-LAST:event_jLabel2MouseExited
 
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
         // TODO add your handling code here:
-        OOP.resetcolor(panel_cr);
     }//GEN-LAST:event_jLabel2MouseEntered
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
@@ -281,14 +283,12 @@ public class Login extends javax.swing.JFrame {
 
     private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
         // TODO add your handling code here:
-        OOP.setcolor(panel_log);
         jLabel4.setText("Password");
         jLabel3.setText("Username");
     }//GEN-LAST:event_jLabel1MouseExited
 
     private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
         // TODO add your handling code here
-        OOP.resetcolor(panel_log);
         if(password.getText().isEmpty() && username.getText().isEmpty()){
             jLabel4.setText("Enter password");
             jLabel3.setText("Enter username");
