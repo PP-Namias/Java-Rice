@@ -2171,7 +2171,7 @@ public class Main_menu extends javax.swing.JFrame {
             jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel73Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel76, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                .addComponent(jPanel76, javax.swing.GroupLayout.PREFERRED_SIZE, 208, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel73Layout.setVerticalGroup(
@@ -2370,10 +2370,10 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel4.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, -1, 610));
 
         jScrollPane9.setBackground(new java.awt.Color(30, 30, 30));
+        jScrollPane9.setBorder(null);
 
-        jTable9.setBackground(new java.awt.Color(30, 30, 30));
-        jTable9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        jTable9.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jTable9.setBackground(new java.awt.Color(51, 51, 51));
+        jTable9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jTable9.setForeground(new java.awt.Color(255, 255, 255));
         jTable9.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -2391,7 +2391,8 @@ public class Main_menu extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable9.setSelectionBackground(new java.awt.Color(230, 240, 230));
+        jTable9.setSelectionBackground(new java.awt.Color(0, 102, 255));
+        jTable9.setSelectionForeground(new java.awt.Color(255, 255, 255));
         jTable9.getTableHeader().setReorderingAllowed(false);
         jTable9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -2468,6 +2469,7 @@ public class Main_menu extends javax.swing.JFrame {
             }
         });
         jTable3.setSelectionBackground(new java.awt.Color(0, 102, 255));
+        jTable3.setSelectionForeground(new java.awt.Color(255, 255, 255));
         jTable3.setShowHorizontalLines(true);
         jTable3.getTableHeader().setReorderingAllowed(false);
         jTable3.addMouseListener(new java.awt.event.MouseAdapter() {
