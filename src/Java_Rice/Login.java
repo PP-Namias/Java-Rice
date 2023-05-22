@@ -264,10 +264,12 @@ public class Login extends javax.swing.JFrame {
 
     private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
         // TODO add your handling code here:
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/guest_btn_s.png")));
     }//GEN-LAST:event_jLabel2MouseExited
 
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
         // TODO add your handling code here:
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-login-gue.gif")));
     }//GEN-LAST:event_jLabel2MouseEntered
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
@@ -283,12 +285,15 @@ public class Login extends javax.swing.JFrame {
 
     private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
         // TODO add your handling code here:
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/login-btn.png")));
         jLabel4.setText("Password");
         jLabel3.setText("Username");
     }//GEN-LAST:event_jLabel1MouseExited
 
     private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
         // TODO add your handling code here
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-login-log.gif")));
+
         if(password.getText().isEmpty() && username.getText().isEmpty()){
             jLabel4.setText("Enter password");
             jLabel3.setText("Enter username");
