@@ -28,7 +28,7 @@ import javax.swing.Timer;
 
 public class DBconn {
 
-    public void Namias(JPanel start, JPanel start1, JPanel start2, JPanel start3, JPanel start4, JPanel start5, JPanel start6, JPanel start7, JPanel start8) {
+    public void Namias(JPanel start, JPanel start1, JPanel start2, JPanel start3, JPanel start4, JPanel start5, JPanel start6, JPanel start7, JPanel start8, JPanel start9) {
         start.setVisible(true);
         start1.setVisible(false);
         start2.setVisible(false);
@@ -38,7 +38,7 @@ public class DBconn {
         start6.setVisible(false);
         start7.setVisible(false);
         start8.setVisible(false);
-
+        start9.setVisible(false);
     }
 
     public void setcolor(JPanel panel) {
@@ -178,7 +178,7 @@ public class DBconn {
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java-rice", "root", "Namias99");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java-rice", "root", "Namias");
             return con;
 
         } catch (ClassNotFoundException | SQLException x) {
