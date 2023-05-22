@@ -176,7 +176,7 @@ public class Main_menu extends javax.swing.JFrame {
     public void setDate() {
         Date d = new Date();
         SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy");
-        daTE.setText(s.format(d));
+        //daTE.setText(s.format(d));
 
     }
 
@@ -187,7 +187,7 @@ public class Main_menu extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
                 Date d = new Date();
                 SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss a");
-                tiME.setText(s.format(d));
+                //tiME.setText(s.format(d));
             }
         }
         ).start();
@@ -431,26 +431,7 @@ public class Main_menu extends javax.swing.JFrame {
         panel_main = new javax.swing.JPanel();
         home = new javax.swing.JPanel();
         jPanel71 = new javax.swing.JPanel();
-        home_pos = new javax.swing.JPanel();
-        jLabel102 = new javax.swing.JLabel();
-        home_costumer = new javax.swing.JPanel();
-        jLabel109 = new javax.swing.JLabel();
-        home_product = new javax.swing.JPanel();
-        jLabel110 = new javax.swing.JLabel();
-        home_most = new javax.swing.JPanel();
-        jLabel111 = new javax.swing.JLabel();
-        home_stock = new javax.swing.JPanel();
-        jLabel112 = new javax.swing.JLabel();
-        home_remove = new javax.swing.JPanel();
-        jLabel113 = new javax.swing.JLabel();
-        home_income = new javax.swing.JPanel();
-        jLabel114 = new javax.swing.JLabel();
-        home_invoice = new javax.swing.JPanel();
-        jLabel115 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jPanel28 = new javax.swing.JPanel();
-        daTE = new javax.swing.JLabel();
-        tiME = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         Costumer = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         fname = new javax.swing.JLabel();
@@ -744,17 +725,21 @@ public class Main_menu extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(1680, 900));
 
+        jPanel1.setBackground(new java.awt.Color(43, 33, 24));
         jPanel1.setMinimumSize(new java.awt.Dimension(1680, 900));
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 900));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        panel_choose.setBackground(new java.awt.Color(87, 62, 27));
-        panel_choose.setPreferredSize(new java.awt.Dimension(300, 900));
+        panel_choose.setBackground(new java.awt.Color(43, 33, 24));
+        panel_choose.setMaximumSize(new java.awt.Dimension(300, 700));
+        panel_choose.setMinimumSize(new java.awt.Dimension(300, 700));
+        panel_choose.setOpaque(false);
+        panel_choose.setPreferredSize(new java.awt.Dimension(300, 720));
 
-        panel_pos.setBackground(new java.awt.Color(87, 62, 27));
+        panel_pos.setBackground(new java.awt.Color(43, 33, 24));
         panel_pos.setForeground(new java.awt.Color(255, 255, 255));
 
-        chooose_POS.setBackground(new java.awt.Color(87, 62, 27));
+        chooose_POS.setBackground(new java.awt.Color(43, 33, 24));
         chooose_POS.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         chooose_POS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         chooose_POS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/shop.png"))); // NOI18N
@@ -785,9 +770,9 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(chooose_POS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panel_cos.setBackground(new java.awt.Color(87, 62, 27));
+        panel_cos.setBackground(new java.awt.Color(43, 33, 24));
 
-        choose_COSTUMER.setBackground(new java.awt.Color(87, 62, 27));
+        choose_COSTUMER.setBackground(new java.awt.Color(43, 33, 24));
         choose_COSTUMER.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_COSTUMER.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_COSTUMER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/customer.png"))); // NOI18N
@@ -819,9 +804,9 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(choose_COSTUMER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panel_prod.setBackground(new java.awt.Color(87, 62, 27));
+        panel_prod.setBackground(new java.awt.Color(43, 33, 24));
 
-        choose_PRODUCT.setBackground(new java.awt.Color(87, 62, 27));
+        choose_PRODUCT.setBackground(new java.awt.Color(43, 33, 24));
         choose_PRODUCT.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_PRODUCT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_PRODUCT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/products.png"))); // NOI18N
@@ -852,9 +837,9 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(choose_PRODUCT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panel_income.setBackground(new java.awt.Color(87, 62, 27));
+        panel_income.setBackground(new java.awt.Color(43, 33, 24));
 
-        choose_INCOME.setBackground(new java.awt.Color(87, 62, 27));
+        choose_INCOME.setBackground(new java.awt.Color(43, 33, 24));
         choose_INCOME.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_INCOME.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INCOME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/income.png"))); // NOI18N
@@ -885,9 +870,9 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(choose_INCOME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panel_invoice.setBackground(new java.awt.Color(87, 62, 27));
+        panel_invoice.setBackground(new java.awt.Color(43, 33, 24));
 
-        choose_INVOICE.setBackground(new java.awt.Color(87, 62, 27));
+        choose_INVOICE.setBackground(new java.awt.Color(43, 33, 24));
         choose_INVOICE.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_INVOICE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_INVOICE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/invoice.png"))); // NOI18N
@@ -915,36 +900,44 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(choose_INVOICE, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel16.setBackground(new java.awt.Color(87, 62, 27));
+        jPanel16.setBackground(new java.awt.Color(43, 33, 24));
+        jPanel16.setMaximumSize(new java.awt.Dimension(250, 83));
+        jPanel16.setMinimumSize(new java.awt.Dimension(250, 83));
+        jPanel16.setName(""); // NOI18N
 
-        jLabel74.setBackground(new java.awt.Color(87, 62, 27));
+        jLabel74.setBackground(new java.awt.Color(43, 33, 24));
         jLabel74.setFont(new java.awt.Font("sansserif", 1, 12)); // NOI18N
         jLabel74.setForeground(new java.awt.Color(51, 204, 0));
         jLabel74.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Java-Rice-Logo-2 - small.png"))); // NOI18N
+        jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/Java-Rice-Logo-7-small.png"))); // NOI18N
+        jLabel74.setMaximumSize(new java.awt.Dimension(300, 83));
+        jLabel74.setMinimumSize(new java.awt.Dimension(300, 83));
+        jLabel74.setPreferredSize(new java.awt.Dimension(300, 83));
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
         );
 
-        Panelhome.setBackground(new java.awt.Color(87, 62, 27));
+        Panelhome.setBackground(new java.awt.Color(43, 33, 24));
         Panelhome.setAlignmentX(0.0F);
         Panelhome.setAlignmentY(0.0F);
         Panelhome.setAutoscrolls(true);
 
-        jLabel94.setBackground(new java.awt.Color(87, 62, 27));
+        jLabel94.setBackground(new java.awt.Color(43, 33, 24));
         jLabel94.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel94.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/menu.png"))); // NOI18N
         jLabel94.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel94.setPreferredSize(new java.awt.Dimension(71, 33));
+        jLabel94.setMaximumSize(new java.awt.Dimension(300, 40));
+        jLabel94.setMinimumSize(new java.awt.Dimension(300, 40));
+        jLabel94.setPreferredSize(new java.awt.Dimension(300, 40));
         jLabel94.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel94MouseClicked(evt);
@@ -970,9 +963,9 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panel_invoice2.setBackground(new java.awt.Color(87, 62, 27));
+        panel_invoice2.setBackground(new java.awt.Color(43, 33, 24));
 
-        choose_SETTINGS1.setBackground(new java.awt.Color(87, 62, 27));
+        choose_SETTINGS1.setBackground(new java.awt.Color(43, 33, 24));
         choose_SETTINGS1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         choose_SETTINGS1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         choose_SETTINGS1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/about.png"))); // NOI18N
@@ -1007,14 +1000,18 @@ public class Main_menu extends javax.swing.JFrame {
         log.setForeground(new java.awt.Color(255, 255, 255));
         log.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         log.setText("Guest");
-        log.setPreferredSize(new java.awt.Dimension(20, 20));
+        log.setMaximumSize(new java.awt.Dimension(250, 45));
+        log.setMinimumSize(new java.awt.Dimension(250, 45));
+        log.setPreferredSize(new java.awt.Dimension(250, 45));
 
-        jPanel65.setBackground(new java.awt.Color(87, 62, 27));
+        jPanel65.setBackground(new java.awt.Color(43, 33, 24));
+        jPanel65.setMaximumSize(new java.awt.Dimension(250, 50));
+        jPanel65.setMinimumSize(new java.awt.Dimension(250, 50));
 
         jLabel106.setBackground(new java.awt.Color(87, 62, 27));
         jLabel106.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel106.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/logout.png"))); // NOI18N
+        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/exit.png"))); // NOI18N
         jLabel106.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel106.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1032,9 +1029,7 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel65.setLayout(jPanel65Layout);
         jPanel65Layout.setHorizontalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel65Layout.createSequentialGroup()
-                .addComponent(jLabel106, javax.swing.GroupLayout.PREFERRED_SIZE, 244, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jLabel106, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel65Layout.setVerticalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1045,22 +1040,26 @@ public class Main_menu extends javax.swing.JFrame {
         panel_choose.setLayout(panel_chooseLayout);
         panel_chooseLayout.setHorizontalGroup(
             panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(userPic, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(log, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_chooseLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(Panelhome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_pos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_cos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_prod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_income, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_invoice, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_invoice2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Panelhome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_pos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_cos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_prod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_income, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_invoice, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_invoice2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel_chooseLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(25, 25, 25))
+            .addGroup(panel_chooseLayout.createSequentialGroup()
+                .addGroup(panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(log, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(userPic, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         panel_chooseLayout.setVerticalGroup(
             panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1070,7 +1069,7 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(userPic, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(24, 24, 24)
                 .addComponent(Panelhome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_pos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1086,7 +1085,7 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(panel_invoice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51))
+                .addGap(63, 63, 63))
         );
 
         jPanel1.add(panel_choose, java.awt.BorderLayout.LINE_START);
@@ -1097,358 +1096,24 @@ public class Main_menu extends javax.swing.JFrame {
         home.setBackground(new java.awt.Color(54, 65, 77));
         home.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel71.setBackground(new java.awt.Color(54, 65, 77));
+        jPanel71.setBackground(new java.awt.Color(43, 33, 24));
         jPanel71.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
 
-        home_pos.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel102.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel102.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel102.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel102.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_add_shopping_cart_50px.png"))); // NOI18N
-        jLabel102.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel102.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel102MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel102MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel102MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_posLayout = new javax.swing.GroupLayout(home_pos);
-        home_pos.setLayout(home_posLayout);
-        home_posLayout.setHorizontalGroup(
-            home_posLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel102, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_posLayout.setVerticalGroup(
-            home_posLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, home_posLayout.createSequentialGroup()
-                .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_costumer.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel109.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel109.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel109.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel109.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_parenting_50px_2.png"))); // NOI18N
-        jLabel109.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel109.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel109MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel109MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel109MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_costumerLayout = new javax.swing.GroupLayout(home_costumer);
-        home_costumer.setLayout(home_costumerLayout);
-        home_costumerLayout.setHorizontalGroup(
-            home_costumerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel109, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_costumerLayout.setVerticalGroup(
-            home_costumerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_costumerLayout.createSequentialGroup()
-                .addComponent(jLabel109, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_product.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel110.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel110.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel110.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_product_50px.png"))); // NOI18N
-        jLabel110.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel110.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel110MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel110MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel110MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_productLayout = new javax.swing.GroupLayout(home_product);
-        home_product.setLayout(home_productLayout);
-        home_productLayout.setHorizontalGroup(
-            home_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel110, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_productLayout.setVerticalGroup(
-            home_productLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_productLayout.createSequentialGroup()
-                .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_most.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel111.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel111.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_shopping_bag_50px.png"))); // NOI18N
-        jLabel111.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel111.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel111MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel111MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel111MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_mostLayout = new javax.swing.GroupLayout(home_most);
-        home_most.setLayout(home_mostLayout);
-        home_mostLayout.setHorizontalGroup(
-            home_mostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel111, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_mostLayout.setVerticalGroup(
-            home_mostLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_mostLayout.createSequentialGroup()
-                .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_stock.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel112.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel112.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel112.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_out_of_stock_50px.png"))); // NOI18N
-        jLabel112.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel112.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel112MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel112MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel112MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_stockLayout = new javax.swing.GroupLayout(home_stock);
-        home_stock.setLayout(home_stockLayout);
-        home_stockLayout.setHorizontalGroup(
-            home_stockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel112, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_stockLayout.setVerticalGroup(
-            home_stockLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_stockLayout.createSequentialGroup()
-                .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_remove.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel113.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel113.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel113.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_delete_bin_50px.png"))); // NOI18N
-        jLabel113.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel113.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel113MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel113MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel113MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_removeLayout = new javax.swing.GroupLayout(home_remove);
-        home_remove.setLayout(home_removeLayout);
-        home_removeLayout.setHorizontalGroup(
-            home_removeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel113, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_removeLayout.setVerticalGroup(
-            home_removeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_removeLayout.createSequentialGroup()
-                .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_income.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel114.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel114.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel114.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel114.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_chart_50px.png"))); // NOI18N
-        jLabel114.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel114.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel114MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel114MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel114MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_incomeLayout = new javax.swing.GroupLayout(home_income);
-        home_income.setLayout(home_incomeLayout);
-        home_incomeLayout.setHorizontalGroup(
-            home_incomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel114, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_incomeLayout.setVerticalGroup(
-            home_incomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_incomeLayout.createSequentialGroup()
-                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        home_invoice.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel115.setFont(new java.awt.Font("Bodoni MT Condensed", 1, 24)); // NOI18N
-        jLabel115.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel115.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel115.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_invoice_50px.png"))); // NOI18N
-        jLabel115.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jLabel115.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel115MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel115MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel115MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout home_invoiceLayout = new javax.swing.GroupLayout(home_invoice);
-        home_invoice.setLayout(home_invoiceLayout);
-        home_invoiceLayout.setHorizontalGroup(
-            home_invoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel115, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        home_invoiceLayout.setVerticalGroup(
-            home_invoiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(home_invoiceLayout.createSequentialGroup()
-                .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        jLabel44.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel44.setText("Java Rice Homepage [TEST]");
-
-        jPanel28.setBackground(new java.awt.Color(0, 0, 0));
-
-        daTE.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        daTE.setForeground(new java.awt.Color(255, 255, 255));
-        daTE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_calendar_8_20px.png"))); // NOI18N
-        daTE.setText("date");
-
-        tiME.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        tiME.setForeground(new java.awt.Color(255, 255, 255));
-        tiME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_clock_20px_3.png"))); // NOI18N
-        tiME.setText("time");
-
-        javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
-        jPanel28.setLayout(jPanel28Layout);
-        jPanel28Layout.setHorizontalGroup(
-            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(daTE)
-                .addGap(41, 41, 41)
-                .addComponent(tiME)
-                .addGap(63, 63, 63))
-        );
-        jPanel28Layout.setVerticalGroup(
-            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel28Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(daTE)
-                    .addComponent(tiME))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-menu-final-v2.gif"))); // NOI18N
 
         javax.swing.GroupLayout jPanel71Layout = new javax.swing.GroupLayout(jPanel71);
         jPanel71.setLayout(jPanel71Layout);
         jPanel71Layout.setHorizontalGroup(
             jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel71Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 627, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel71Layout.createSequentialGroup()
-                        .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel71Layout.createSequentialGroup()
-                                .addComponent(home_pos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(home_costumer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel71Layout.createSequentialGroup()
-                                .addComponent(home_stock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(40, 40, 40)
-                                .addComponent(home_remove, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(37, 37, 37)
-                        .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(home_income, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(home_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel71Layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(home_invoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel71Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(home_most, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(713, Short.MAX_VALUE))
-            .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel26)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel71Layout.setVerticalGroup(
             jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel71Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jLabel44)
-                .addGap(32, 32, 32)
-                .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel71Layout.createSequentialGroup()
-                        .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(home_costumer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(home_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(home_most, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(home_income, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(home_remove, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(home_invoice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel71Layout.createSequentialGroup()
-                        .addComponent(home_pos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(home_stock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 460, Short.MAX_VALUE)
-                .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43))
+                .addComponent(jLabel26)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         home.add(jPanel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1430, 900));
@@ -5798,51 +5463,61 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void chooose_POSMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chooose_POSMouseEntered
         // TODO add your handling code here:
+        chooose_POS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-sho.gif")));
         OOP.choose_color1(chooose_POS);
     }//GEN-LAST:event_chooose_POSMouseEntered
 
     private void chooose_POSMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_chooose_POSMouseExited
         // TODO add your handling code here:
+        chooose_POS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/shop.png")));
         OOP.choose_color2(chooose_POS);
     }//GEN-LAST:event_chooose_POSMouseExited
 
     private void choose_COSTUMERMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_COSTUMERMouseEntered
         // TODO add your handling code here:
+        choose_COSTUMER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-cus.gif")));
         OOP.choose_color1(choose_COSTUMER);
     }//GEN-LAST:event_choose_COSTUMERMouseEntered
 
     private void choose_COSTUMERMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_COSTUMERMouseExited
         // TODO add your handling code here:
+        choose_COSTUMER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/customer.png")));
         OOP.choose_color2(choose_COSTUMER);
     }//GEN-LAST:event_choose_COSTUMERMouseExited
 
     private void choose_PRODUCTMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_PRODUCTMouseEntered
         // TODO add your handling code here:
+        choose_PRODUCT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-pro.gif")));
         OOP.choose_color1(choose_PRODUCT);
     }//GEN-LAST:event_choose_PRODUCTMouseEntered
 
     private void choose_PRODUCTMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_PRODUCTMouseExited
         // TODO add your handling code here:
+        choose_PRODUCT.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/products.png")));
         OOP.choose_color2(choose_PRODUCT);
     }//GEN-LAST:event_choose_PRODUCTMouseExited
 
     private void choose_INCOMEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INCOMEMouseEntered
         // TODO add your handling code here:
+        choose_INCOME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-inc.gif")));
         OOP.choose_color1(choose_INCOME);
     }//GEN-LAST:event_choose_INCOMEMouseEntered
 
     private void choose_INCOMEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INCOMEMouseExited
         // TODO add your handling code here:
+        choose_INCOME.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/income.png")));
         OOP.choose_color2(choose_INCOME);
     }//GEN-LAST:event_choose_INCOMEMouseExited
 
     private void choose_INVOICEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INVOICEMouseEntered
         // TODO add your handling code here:
+        choose_INVOICE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-inv.gif")));
         OOP.choose_color1(choose_INVOICE);
     }//GEN-LAST:event_choose_INVOICEMouseEntered
 
     private void choose_INVOICEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_INVOICEMouseExited
         // TODO add your handling code here:
+        choose_INVOICE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/invoice.png")));
         OOP.choose_color2(choose_INVOICE);
     }//GEN-LAST:event_choose_INVOICEMouseExited
 
@@ -6635,11 +6310,13 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel94MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseEntered
         // TODO add your handling code here:
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-men.gif"))); // NOI18N
         jLabel94.setForeground(Color.orange);
     }//GEN-LAST:event_jLabel94MouseEntered
 
     private void jLabel94MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseExited
         // TODO add your handling code here:
+        jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/menu.png")));
         jLabel94.setForeground(Color.black);
     }//GEN-LAST:event_jLabel94MouseExited
 
@@ -6920,11 +6597,13 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel106MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel106MouseEntered
         // TODO add your handling code here:
+        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-ext.gif")));
         jLabel106.setForeground(Color.red);
     }//GEN-LAST:event_jLabel106MouseEntered
 
     private void jLabel106MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel106MouseExited
         // TODO add your handling code here:
+        jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/exit.png")));
         jLabel106.setForeground(Color.black);
     }//GEN-LAST:event_jLabel106MouseExited
 
@@ -7075,324 +6754,13 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void choose_SETTINGS1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseEntered
         // TODO add your handling code here:
+        choose_SETTINGS1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-abt.gif")));
     }//GEN-LAST:event_choose_SETTINGS1MouseEntered
 
     private void choose_SETTINGS1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_choose_SETTINGS1MouseExited
         // TODO add your handling code here:
+        choose_SETTINGS1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/about.png")));
     }//GEN-LAST:event_choose_SETTINGS1MouseExited
-
-    private void jLabel115MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_invoice);
-    }//GEN-LAST:event_jLabel115MouseExited
-
-    private void jLabel115MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_invoice);
-    }//GEN-LAST:event_jLabel115MouseEntered
-
-    private void jLabel115MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel115MouseClicked
-        // TODO add your handling code here:
-        jComboBox4.setSelectedItem("All");
-        OOP.Namias(Invoice, home, POS, Product, Costumer, Selling, Stock_in, Removed, Income,About_Us);
-        try {
-            DefaultTableModel table1 = (DefaultTableModel) jTable8.getModel();
-            table1.setRowCount(0);
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT `invoice_id`,`user`,`Costumer`,`paid_amount`,`Status`,`Balance`,`sub_total`,`total_quantity`,`transaction_no`,`date`,`time` FROM `tblinvoice` ");
-
-            while (rs.next()) {
-                Vector r = new Vector();
-
-                r.add(rs.getString(1));
-                r.add(rs.getString(2));
-                r.add(rs.getString(3));
-                r.add(rs.getString(4));
-                r.add(rs.getString(5));
-                r.add(rs.getString(6));
-                r.add(rs.getString(7));
-                r.add(rs.getString(8));
-                r.add(rs.getString(9));
-                r.add(rs.getString(10));
-                r.add(rs.getString(11));
-                table1.addRow(r);
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"paid\"");
-
-            while (rs.next()) {
-                PAID.setText(rs.getString("sum(`sub_total`)"));
-
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT sum(`sub_total`) FROM `tblinvoice` where status = \"unpaid\"");
-
-            while (rs.next()) {
-                UNPAID.setText(rs.getString("sum(`sub_total`)"));
-
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT sum(`paid_amount`) FROM `tblinvoice` where status = \"partial\"");
-
-            while (rs.next()) {
-                PARTIAL.setText(rs.getString("sum(`paid_amount`)"));
-
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT count(*),`Balance` FROM `tblinvoice` where status = \"unpaid\"");
-
-            while (rs.next()) {
-                jLabel93.setText(rs.getString("count(*)"));
-
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-        Integer sum = Integer.valueOf(PAID.getText());
-        Integer sum1 = Integer.valueOf(PARTIAL.getText());
-
-        Integer total = sum + sum1;
-
-        jLabel91.setText(String.valueOf(total));
-
-        paRTIAL.setText("0.0");
-        unPAID.setText("0.0");
-    }//GEN-LAST:event_jLabel115MouseClicked
-
-    private void jLabel114MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_income);
-    }//GEN-LAST:event_jLabel114MouseExited
-
-    private void jLabel114MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_income);
-    }//GEN-LAST:event_jLabel114MouseEntered
-
-    private void jLabel114MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel114MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Income, home, POS, Product, Costumer, Selling, Stock_in, Removed, Invoice,About_Us);
-
-        try {
-            DefaultTableModel table1 = (DefaultTableModel) jTable6.getModel();
-            table1.setRowCount(0);
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery(" SELECT `selling_ID`,`product_ID`,`product_name`,`quantity`,`total_price`,`unit_price`,`date` FROM `tblselling` ");
-
-            while (rs.next()) {
-                Vector r = new Vector();
-
-                r.add(rs.getString(1));
-                r.add(rs.getString(2));
-                r.add(rs.getString(3));
-                r.add(rs.getString(4));
-                r.add(rs.getString(5));
-                r.add(rs.getString(6));
-                r.add(rs.getString(7));
-                table1.addRow(r);
-            }
-        } catch (Exception x) {
-            System.out.println(x.getMessage());
-
-        }
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`profit`) FROM `tblselling`");
-
-            while (rs.next()) {
-                profit.setText(rs.getString("sum(`profit`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`total_price`) FROM `tblselling`");
-
-            while (rs.next()) {
-                Total_Income.setText(rs.getString("sum(`total_price`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }//GEN-LAST:event_jLabel114MouseClicked
-
-    private void jLabel113MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_remove);
-    }//GEN-LAST:event_jLabel113MouseExited
-
-    private void jLabel113MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_remove);
-    }//GEN-LAST:event_jLabel113MouseEntered
-
-    private void jLabel113MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel113MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Removed, home, POS, Product, Costumer, Selling, Stock_in, Invoice, Income,About_Us);
-        try {
-            DefaultTableModel table = (DefaultTableModel) jTable7.getModel();
-            table.setRowCount(0);
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("select * from tblremove");
-
-            while (rs.next()) {
-
-                Object o[] = {rs.getString("remove_id"), rs.getString("remove_by"), rs.getString("product_id"), rs.getString("product_name"), rs.getString("quantity"), rs.getString("unit_price"), rs.getString("date"), rs.getString("time")};
-                table.addRow(o);
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("select count(*) from tblremove");
-
-            while (rs.next()) {
-
-                jLabel103.setText(rs.getString("count(*)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        try {
-
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblremove`");
-
-            while (rs.next()) {
-                profit1.setText(rs.getString("sum(`quantity`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }//GEN-LAST:event_jLabel113MouseClicked
-
-    private void jLabel112MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_stock);
-    }//GEN-LAST:event_jLabel112MouseExited
-
-    private void jLabel112MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_stock);
-    }//GEN-LAST:event_jLabel112MouseEntered
-
-    private void jLabel112MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel112MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Stock_in, home, POS, Product, Costumer, Selling, Income, Removed, Invoice,About_Us);
-        jComboBox5.setSelectedItem("Product");
-        stockdata();
-    }//GEN-LAST:event_jLabel112MouseClicked
-
-    private void jLabel111MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_most);
-    }//GEN-LAST:event_jLabel111MouseExited
-
-    private void jLabel111MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_most);
-    }//GEN-LAST:event_jLabel111MouseEntered
-
-    private void jLabel111MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel111MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Selling, home, POS, Product, Costumer, Stock_in, Income, Removed, Invoice,About_Us);
-        sdata();
-        try {
-            Statement state = DBconn.mycon().createStatement();
-            ResultSet rs = state.executeQuery("SELECT sum(`quantity`) FROM `tblselling`");
-
-            while (rs.next()) {
-                tot_quantity.setText(rs.getString("sum(`quantity`)"));
-            }
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-
-        }
-    }//GEN-LAST:event_jLabel111MouseClicked
-
-    private void jLabel110MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_product);
-    }//GEN-LAST:event_jLabel110MouseExited
-
-    private void jLabel110MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_product);
-    }//GEN-LAST:event_jLabel110MouseEntered
-
-    private void jLabel110MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel110MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Product, home, POS, Selling, Costumer, Stock_in, Income, Removed, Invoice,About_Us);
-        data();
-    }//GEN-LAST:event_jLabel110MouseClicked
-
-    private void jLabel109MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_costumer);
-    }//GEN-LAST:event_jLabel109MouseExited
-
-    private void jLabel109MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_costumer);
-    }//GEN-LAST:event_jLabel109MouseEntered
-
-    private void jLabel109MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel109MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(Costumer, home, POS, Selling, Product, Stock_in, Income, Removed, Invoice,About_Us);
-    }//GEN-LAST:event_jLabel109MouseClicked
-
-    private void jLabel102MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseExited
-        // TODO add your handling code here:
-        OOP.home_panel2(home_pos);
-    }//GEN-LAST:event_jLabel102MouseExited
-
-    private void jLabel102MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseEntered
-        // TODO add your handling code here:
-        OOP.home_panel1(home_pos);
-    }//GEN-LAST:event_jLabel102MouseEntered
-
-    private void jLabel102MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel102MouseClicked
-        // TODO add your handling code here:
-        OOP.Namias(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice,About_Us);
-        jComboBox2.setSelectedItem("Regular Costumer");
-        jComboBox1.setSelectedItem("Select product");
-    }//GEN-LAST:event_jLabel102MouseClicked
 
      
     
@@ -7484,20 +6852,11 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JTextField costumerNumber;
     private static javax.swing.JTextField costumerSex;
     private static javax.swing.JTextField csearch;
-    private static javax.swing.JLabel daTE;
     private static javax.swing.JLabel edate;
     private static javax.swing.JLabel email;
     private static javax.swing.JTextField exp_date;
     private static javax.swing.JLabel fname;
     private static javax.swing.JPanel home;
-    private static javax.swing.JPanel home_costumer;
-    private static javax.swing.JPanel home_income;
-    private static javax.swing.JPanel home_invoice;
-    private static javax.swing.JPanel home_most;
-    private static javax.swing.JPanel home_pos;
-    private static javax.swing.JPanel home_product;
-    private static javax.swing.JPanel home_remove;
-    private static javax.swing.JPanel home_stock;
     private static javax.swing.JTextField income_search;
     private static javax.swing.JTextField income_search1;
     public javax.swing.JComboBox<String> jComboBox1;
@@ -7509,18 +6868,10 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel10;
     private static javax.swing.JLabel jLabel100;
     private static javax.swing.JLabel jLabel101;
-    private static javax.swing.JLabel jLabel102;
     private static javax.swing.JLabel jLabel103;
     private static javax.swing.JLabel jLabel105;
     private static javax.swing.JLabel jLabel106;
-    private static javax.swing.JLabel jLabel109;
     private static javax.swing.JLabel jLabel11;
-    private static javax.swing.JLabel jLabel110;
-    private static javax.swing.JLabel jLabel111;
-    private static javax.swing.JLabel jLabel112;
-    private static javax.swing.JLabel jLabel113;
-    private static javax.swing.JLabel jLabel114;
-    private static javax.swing.JLabel jLabel115;
     private static javax.swing.JLabel jLabel12;
     private static javax.swing.JLabel jLabel13;
     private static javax.swing.JLabel jLabel14;
@@ -7536,6 +6887,7 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel23;
     private static javax.swing.JLabel jLabel24;
     private static javax.swing.JLabel jLabel25;
+    private static javax.swing.JLabel jLabel26;
     private static javax.swing.JLabel jLabel27;
     private static javax.swing.JLabel jLabel28;
     private static javax.swing.JLabel jLabel29;
@@ -7552,7 +6904,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel40;
     private static javax.swing.JLabel jLabel42;
     private static javax.swing.JLabel jLabel43;
-    private static javax.swing.JLabel jLabel44;
     private static javax.swing.JLabel jLabel45;
     private static javax.swing.JLabel jLabel46;
     private static javax.swing.JLabel jLabel47;
@@ -7627,7 +6978,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JPanel jPanel25;
     private static javax.swing.JPanel jPanel26;
     private static javax.swing.JPanel jPanel27;
-    private static javax.swing.JPanel jPanel28;
     private static javax.swing.JPanel jPanel29;
     private static javax.swing.JPanel jPanel3;
     private static javax.swing.JPanel jPanel30;
@@ -7769,7 +7119,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel sex;
     private static javax.swing.JLabel stocks;
     private static javax.swing.JLabel t_price;
-    private static javax.swing.JLabel tiME;
     private static javax.swing.JLabel tot_quantity;
     private static javax.swing.JLabel total_purchase;
     private static javax.swing.JLabel total_qty;
