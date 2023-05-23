@@ -334,7 +334,6 @@ public class Login extends javax.swing.JFrame {
 
                                 m.show();
                                 m.log.setText(rs.getString("username"));
-                                m.jComboBox1.setSelectedItem("select product");
                                 m.jComboBox2.setSelectedItem("Regular Costumer");
                                 m.jComboBox4.setSelectedItem("All");
                                 m.jComboBox5.setSelectedItem("Product");
