@@ -45,7 +45,6 @@ public class Main_menu extends javax.swing.JFrame {
         setDate();
         setTime();
         cdata();
-        org.jdesktop.swingx.autocomplete.AutoCompleteDecorator.decorate(jComboBox1);
         org.jdesktop.swingx.autocomplete.AutoCompleteDecorator.decorate(jComboBox2);
         org.jdesktop.swingx.autocomplete.AutoCompleteDecorator.decorate(jComboBox3);
         org.jdesktop.swingx.autocomplete.AutoCompleteDecorator.decorate(jComboBox4);
@@ -62,7 +61,8 @@ public class Main_menu extends javax.swing.JFrame {
     }
     
     public void UserPic() {
-        String logText = log.getText().toString().trim();
+
+        String logText = log.getText();
         String imagePath;
 
         if (logText.equals("Namias")) {
@@ -75,8 +75,12 @@ public class Main_menu extends javax.swing.JFrame {
             imagePath = "/Icons/cano.png";
         } else if (logText.equals("Lonoza")) {
             imagePath = "/Icons/lonoza.png";
+        } else if (logText.equals("User")) {
+            imagePath = "/UI/guest.png";
+        } else if (logText.equals("Guest")) {
+            imagePath = "/UI/guest.png";
         } else {
-            imagePath = "/Icons/caram.png";
+            imagePath = "/UI/guest.png";
         }
 
         try {
@@ -86,6 +90,7 @@ public class Main_menu extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }
+    
     public void cdata() {
         try {
             Statement state = DBconn.mycon().createStatement();
@@ -96,7 +101,6 @@ public class Main_menu extends javax.swing.JFrame {
             while (rs.next()) {
                 v.add(rs.getString("product_name"));
                 DefaultComboBoxModel c = new DefaultComboBoxModel(v);
-                jComboBox1.setModel(c);
             }
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -484,19 +488,6 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        product_id = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        sellingID = new javax.swing.JLabel();
-        total_qty = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        unit_price = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        mark_p = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
@@ -544,6 +535,17 @@ public class Main_menu extends javax.swing.JFrame {
         change = new javax.swing.JLabel();
         rEmove = new javax.swing.JPanel();
         jLabel52 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        total_qty = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        product_id = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        unit_price = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        sellingID = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        mark_p = new javax.swing.JLabel();
         Product = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         pname = new javax.swing.JLabel();
@@ -999,6 +1001,11 @@ public class Main_menu extends javax.swing.JFrame {
 
         userPic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         userPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/guest.png"))); // NOI18N
+        userPic.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                userPicMouseClicked(evt);
+            }
+        });
 
         log.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
         log.setForeground(new java.awt.Color(255, 255, 255));
@@ -1581,13 +1588,13 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel70Layout.setHorizontalGroup(
             jPanel70Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel70Layout.createSequentialGroup()
-                .addContainerGap(206, Short.MAX_VALUE)
+                .addContainerGap(181, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(posdate, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(postime, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(postime, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
         );
         jPanel70Layout.setVerticalGroup(
             jPanel70Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1602,7 +1609,7 @@ public class Main_menu extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        POS.add(jPanel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 850, 1430, 30));
+        POS.add(jPanel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 840, 1430, 30));
 
         jPanel6.setBackground(new java.awt.Color(128, 128, 128));
 
@@ -1618,82 +1625,6 @@ public class Main_menu extends javax.swing.JFrame {
             }
         });
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jComboBox1.setBackground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setEditable(true);
-        jComboBox1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Default" }));
-        jComboBox1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jComboBox1MouseExited(evt);
-            }
-        });
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 220, -1));
-
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Select product :");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
-
-        product_id.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        product_id.setForeground(new java.awt.Color(255, 255, 255));
-        product_id.setText("0.0");
-        jPanel4.add(product_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, -1, -1));
-
-        jLabel33.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel33.setText("Unit price :");
-        jPanel4.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, -1));
-
-        jLabel50.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel50.setText("Selling ID :");
-        jPanel4.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
-
-        sellingID.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        sellingID.setForeground(new java.awt.Color(255, 255, 255));
-        sellingID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        sellingID.setText("0");
-        jPanel4.add(sellingID, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 30, -1));
-
-        total_qty.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        total_qty.setForeground(new java.awt.Color(255, 255, 255));
-        total_qty.setText("0.0");
-        jPanel4.add(total_qty, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, -1, -1));
-
-        jLabel35.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel35.setText("Total quantity :");
-        jPanel4.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Product Id :");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, -1, -1));
-
-        unit_price.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        unit_price.setForeground(new java.awt.Color(255, 255, 255));
-        unit_price.setText("0.0");
-        jPanel4.add(unit_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
-
-        jLabel61.setForeground(new java.awt.Color(145, 194, 141));
-        jLabel61.setText("0.0");
-        jPanel4.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, -1, -1));
-
-        jLabel62.setForeground(new java.awt.Color(145, 194, 141));
-        jLabel62.setText("0.0");
-        jPanel4.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, -1, 20));
-
-        mark_p.setBackground(new java.awt.Color(145, 194, 141));
-        mark_p.setForeground(new java.awt.Color(145, 194, 141));
-        mark_p.setText("0.0");
-        jPanel4.add(mark_p, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
 
         jPanel5.setBackground(new java.awt.Color(99, 101, 106));
 
@@ -1725,21 +1656,19 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(jLabel76)
                 .addGap(28, 28, 28)
                 .addComponent(jLabel75)
-                .addGap(148, 148, 148)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 237, Short.MAX_VALUE)
                 .addComponent(jLabel73)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addGap(57, 57, 57))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel75)
-                    .addComponent(jLabel76)
-                    .addComponent(jLabel73))
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, -1));
+        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, 30));
 
         jPanel27.setBackground(new java.awt.Color(99, 101, 106));
         jPanel27.setMaximumSize(new java.awt.Dimension(350, 630));
@@ -1827,8 +1756,8 @@ public class Main_menu extends javax.swing.JFrame {
         );
         jPanel76Layout.setVerticalGroup(
             jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(t_price, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
             .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(t_price, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel73Layout = new javax.swing.GroupLayout(jPanel73);
@@ -1844,7 +1773,7 @@ public class Main_menu extends javax.swing.JFrame {
             jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel73Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel76, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel76, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2024,11 +1953,11 @@ public class Main_menu extends javax.swing.JFrame {
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel31)
                     .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addComponent(jPanel73, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel73, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
                 .addComponent(jLabel34)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(panel_cart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
         );
@@ -2068,7 +1997,7 @@ public class Main_menu extends javax.swing.JFrame {
         });
         jScrollPane9.setViewportView(jTable9);
 
-        jPanel4.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 530, 550));
+        jPanel4.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 530, 600));
 
         stocks.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         stocks.setForeground(new java.awt.Color(255, 255, 255));
@@ -2349,6 +2278,60 @@ public class Main_menu extends javax.swing.JFrame {
         );
 
         POS.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 1360, 770));
+
+        jLabel35.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Total quantity :");
+        POS.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 870, -1, -1));
+
+        total_qty.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        total_qty.setForeground(new java.awt.Color(255, 255, 255));
+        total_qty.setText("0.0");
+        POS.add(total_qty, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 870, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Product Id :");
+        POS.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 870, -1, -1));
+
+        product_id.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        product_id.setForeground(new java.awt.Color(255, 255, 255));
+        product_id.setText("0.0");
+        POS.add(product_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 870, -1, -1));
+
+        jLabel33.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Unit price :");
+        POS.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 870, -1, -1));
+
+        unit_price.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        unit_price.setForeground(new java.awt.Color(255, 255, 255));
+        unit_price.setText("0.0");
+        POS.add(unit_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 870, -1, -1));
+
+        jLabel50.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel50.setText("Selling ID :");
+        POS.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 870, -1, -1));
+
+        sellingID.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        sellingID.setForeground(new java.awt.Color(255, 255, 255));
+        sellingID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        sellingID.setText("0");
+        POS.add(sellingID, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 870, 30, -1));
+
+        jLabel62.setForeground(new java.awt.Color(145, 194, 141));
+        jLabel62.setText("0.0");
+        POS.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 870, -1, 20));
+
+        jLabel61.setForeground(new java.awt.Color(145, 194, 141));
+        jLabel61.setText("0.0");
+        POS.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 870, -1, -1));
+
+        mark_p.setBackground(new java.awt.Color(145, 194, 141));
+        mark_p.setForeground(new java.awt.Color(145, 194, 141));
+        mark_p.setText("0.0");
+        POS.add(mark_p, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 870, -1, -1));
 
         panel_main.add(POS, "card2");
 
@@ -4828,7 +4811,6 @@ public class Main_menu extends javax.swing.JFrame {
                 OOP.clearupdate(product, bar_code, price, quantity, mark_up, exp_date, pid);
                 pid.setText("");
                 psearch.setText("Search product name");
-                jComboBox1.setSelectedItem("select product");
             }
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -4953,118 +4935,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         OOP.Namias(POS, home, Costumer, Selling, Product, Stock_in, Income, Removed, Invoice,About_Us);
         jComboBox2.setSelectedItem("Regular Costumer");
-        jComboBox1.setSelectedItem("Select product");
     }//GEN-LAST:event_chooose_POSMouseClicked
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-        String search = jComboBox1.getSelectedItem().toString();
-
-        if (!sellingID.getText().equals("0")) {
-            stocks.setText("0.0");
-        } else {
-            try {
-                Statement state = DBconn.mycon().createStatement();
-                ResultSet rs = state.executeQuery("select prod_id,product_name,price,product_name,mark_up,quantity  from tblproduct where product_name =  '" + search + "'");
-
-                if (rs.next()) {
-
-                    product_id.setText(rs.getString("prod_id"));
-                    product_name.setText(rs.getString("product_name"));
-                    mark_p.setText(rs.getString("mark_up"));
-                    avail_stocks.setText(rs.getString("quantity"));
-                    unit_price.setText(rs.getString("price"));
-
-                        
-                    if (product_id.getText().equals("1")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/java.png")));
-                    }
-                    else if (product_id.getText().equals("2")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/egg.png")));
-                    }
-                    else if (product_id.getText().equals("3")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog.png")));
-                    }
-                    else if (product_id.getText().equals("4")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-bacon.png")));
-                    }
-                    else if (product_id.getText().equals("5")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-chicken.png")));
-                    }
-                    else if (product_id.getText().equals("6")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-ham.png")));
-                    }
-                    else if (product_id.getText().equals("7")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-hotdog.png")));
-                    }
-                    else if (product_id.getText().equals("8")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-pork.png")));
-                    }
-                    else if (product_id.getText().equals("9")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-shanghai.png")));
-                    }
-                    else if (product_id.getText().equals("10")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-tapa.png")));
-                    }
-                    else if (product_id.getText().equals("11")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/silog-tocino.png")));
-                    }
-                    else if (product_id.getText().equals("12")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/bihon.png")));
-                    }
-                    else if (product_id.getText().equals("13")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/buttered-chicken.png")));
-                    }
-                    else if (product_id.getText().equals("14")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/calamares.png")));
-                    }
-                    else if (product_id.getText().equals("15")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/canton.png")));
-                    }
-                    else if (product_id.getText().equals("16")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/cheesesticks.png")));
-                    }
-                    else if (product_id.getText().equals("17")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/crispy-ears.png")));
-                    }
-                    else if (product_id.getText().equals("18")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/dynamite.png")));
-                    }
-                    else if (product_id.getText().equals("19")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/fried-chicken.png")));
-                    }
-                    else if (product_id.getText().equals("20")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/fries.png")));
-                    }
-                    else if (product_id.getText().equals("21")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/lechon-kawali.png")));
-                    }
-                    else if (product_id.getText().equals("22")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/lomi.png")));
-                    }
-                    else if (product_id.getText().equals("23")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/shanghai.png")));
-                    }
-                    else if (product_id.getText().equals("24")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/sizzling-hotdog.png")));
-                    }
-                    else if (product_id.getText().equals("25")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/sizzling-sisig.png")));
-                    }
-                    else if (product_id.getText().equals("26")){
-                        MenuPic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Menu/spicy-wings.png")));
-                    }
-                    
-                    
-                } else {
-                }
-
-                OOP.totalPurchase(jSpinner1, unit_price, t_price);
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-            }
-        }
-    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
         // TODO add your handling code here: 
@@ -5087,6 +4958,21 @@ public class Main_menu extends javax.swing.JFrame {
         DefaultTableModel table = (DefaultTableModel) jTable3.getModel();
         int r = 0;
 
+        
+        
+        int t = jTable9.getSelectedRow();
+        String pid = jTable9.getValueAt(t, 0).toString();
+        String pron = jTable9.getValueAt(t, 1).toString();
+        String pricee = jTable9.getValueAt(t, 2).toString();
+        String qtys = jTable9.getValueAt(t, 3).toString();
+
+        product_id.setText(pid);
+        product_name.setText(pron);
+        unit_price.setText(pricee);
+        avail_stocks.setText(qtys);
+        
+        
+        
         if (product_id.getText().equals("0.0")) {
             JOptionPane.showMessageDialog(null, "Please select product");
         } else if (jSpinner1.getValue().equals(r)) {
@@ -5095,7 +4981,7 @@ public class Main_menu extends javax.swing.JFrame {
             try {
                 mark_up();
                 Statement state = DBconn.mycon().createStatement();
-                state.executeUpdate("insert into tblselling (`product_id`,`product_name`,`quantity`,`total_price`,`unit_price`,`profit`,`date`,`time`) values ('" + product_id.getText() + "','" + jComboBox1.getSelectedItem().toString() + "','" + jSpinner1.getValue().toString() + "','" + t_price.getText() + "','" + unit_price.getText() + "','" + mark_p.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
+                state.executeUpdate("insert into tblselling (`product_id`,`product_name`,`quantity`,`total_price`,`unit_price`,`profit`,`date`,`time`) values ('" + product_id.getText() + "','" + jTable9.getValueAt(t, 1).toString() + "','" + jSpinner1.getValue().toString() + "','" + t_price.getText() + "','" + unit_price.getText() + "','" + mark_p.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
 
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
@@ -5113,7 +4999,7 @@ public class Main_menu extends javax.swing.JFrame {
             Vector v = new Vector();
 
             v.add(product_id.getText());
-            v.add(jComboBox1.getSelectedItem().toString());
+            v.add(jTable9.getValueAt(t, 1).toString());
             v.add(jSpinner1.getValue().toString());
             v.add(unit_price.getText());
             v.add(t_price.getText());
@@ -5122,7 +5008,6 @@ public class Main_menu extends javax.swing.JFrame {
 
             OOP.number(avail_stocks, mark_p, unit_price, t_price, product_id, stocks);
             jSpinner1.setValue(r);
-            jComboBox1.setSelectedItem("Select product");
         }
         data();
         paid.setText("0.0");
@@ -5269,10 +5154,6 @@ public class Main_menu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jLabel27MouseClicked
 
-    private void jComboBox1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jComboBox1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1MouseExited
-
     private void jTable5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable5MouseClicked
         // TODO add your handling code here:
         int t = jTable5.getSelectedRow();
@@ -5338,6 +5219,7 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
         // TODO add your handling code here:
+        
         int t = jTable3.getSelectedRow();
         String p = jTable3.getValueAt(t, 0).toString();
         String pn = jTable3.getValueAt(t, 1).toString();
@@ -5354,7 +5236,6 @@ public class Main_menu extends javax.swing.JFrame {
                 sellingID.setText(rs.getString("selling_id"));
                 product_id.setText(rs.getString("product_id"));
                 unit_price.setText(rs.getString("unit_price"));
-                jComboBox1.setSelectedItem(rs.getString("product_name"));
                 total_qty.setText(rs.getString("quantity"));
             }
         } catch (Exception ex) {
@@ -5384,6 +5265,18 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
         // TODO add your handling code here:         
+        int tb = jTable9.getSelectedRow();
+        String pid = jTable9.getValueAt(tb, 0).toString();
+        String pron = jTable9.getValueAt(tb, 1).toString();
+        String pricee = jTable9.getValueAt(tb, 2).toString();
+        String qtys = jTable9.getValueAt(tb, 3).toString();
+
+        product_id.setText(pid);
+        product_name.setText(pron);
+        unit_price.setText(pricee);
+        avail_stocks.setText(qtys);
+        
+        
         if (jLabel62.getText().equals("0.0")) {
         } else {
             try {
@@ -5393,7 +5286,7 @@ public class Main_menu extends javax.swing.JFrame {
 
                 state.executeUpdate("delete from tblselling where selling_id = '" + sellingID.getText() + "'");
                 state.executeUpdate("update tblproduct set `quantity` = '" + jLabel62.getText() + "' where prod_id = '" + product_id.getText() + "'");
-                state.execute("insert into tblremove (`remove_by`,`product_id`,`product_name`,`quantity`,`unit_price`,`date`,`time`) values ('" + log.getText() + "','" + product_id.getText() + "','" + jComboBox1.getSelectedItem().toString() + "','" + total_qty.getText() + "','" + unit_price.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
+                state.execute("insert into tblremove (`remove_by`,`product_id`,`product_name`,`quantity`,`unit_price`,`date`,`time`) values ('" + log.getText() + "','" + product_id.getText() + "','" + jTable9.getValueAt(tb, 1).toString() + "','" + total_qty.getText() + "','" + unit_price.getText() + "','" + posdate.getText() + "','" + postime.getText() + "')");
 
                 table.removeRow(rem);
                 total_purchase();
@@ -5402,7 +5295,6 @@ public class Main_menu extends javax.swing.JFrame {
                 jLabel61.setText("0.0");
                 product_id.setText("0.0");
                 unit_price.setText("0.0");
-                jComboBox1.setSelectedItem("select product");
 
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
@@ -5429,7 +5321,6 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel61.setText("0.0");
         unit_price.setText("0.0");
         t_price.setText("0.0");
-        jComboBox1.setSelectedItem("select product");
         stocks.setText("0.0");
         total_purchase();
         jComboBox2.setSelectedItem("Regular Costumer");
@@ -6865,6 +6756,38 @@ public class Main_menu extends javax.swing.JFrame {
                     
     }//GEN-LAST:event_jTable9MouseClicked
 
+    private void userPicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userPicMouseClicked
+        // TODO add your handling code here:
+        
+        String logText = log.getText();
+        String imagePath;
+
+        if (logText.equals("Namias")) {
+            imagePath = "/Icons/namias.png";
+        } else if (logText.equals("Caram")) {
+            imagePath = "/Icons/caram.png";
+        } else if (logText.equals("Llanes")) {
+            imagePath = "/Icons/llanes.png";
+        } else if (logText.equals("Cano")) {
+            imagePath = "/Icons/cano.png";
+        } else if (logText.equals("Lonoza")) {
+            imagePath = "/Icons/lonoza.png";
+        } else if (logText.equals("User")) {
+            imagePath = "/UI/guest.png";
+        } else if (logText.equals("Guest")) {
+            imagePath = "/UI/guest.png";
+        } else {
+            imagePath = "/UI/guest.png";
+        }
+
+        try {
+            userPic.setIcon(new javax.swing.ImageIcon(getClass().getResource(imagePath)));
+        } catch (NullPointerException e) {
+            // Handle the exception if the image path is incorrect or the resource is not found
+            e.printStackTrace();
+        }
+    }//GEN-LAST:event_userPicMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -6946,7 +6869,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JPanel home;
     private static javax.swing.JTextField income_search;
     private static javax.swing.JTextField income_search1;
-    public javax.swing.JComboBox<String> jComboBox1;
     public javax.swing.JComboBox<String> jComboBox2;
     private static javax.swing.JComboBox<String> jComboBox3;
     public javax.swing.JComboBox<String> jComboBox4;
@@ -6987,7 +6909,6 @@ public class Main_menu extends javax.swing.JFrame {
     private static javax.swing.JLabel jLabel35;
     private static javax.swing.JLabel jLabel37;
     private static javax.swing.JLabel jLabel38;
-    private static javax.swing.JLabel jLabel4;
     private static javax.swing.JLabel jLabel40;
     private static javax.swing.JLabel jLabel42;
     private static javax.swing.JLabel jLabel43;
