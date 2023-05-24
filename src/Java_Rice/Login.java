@@ -55,7 +55,6 @@ public class Login extends javax.swing.JFrame {
         setTitle("Java Rice | Login Form");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMinimumSize(new java.awt.Dimension(1000, 690));
-        setPreferredSize(new java.awt.Dimension(1000, 690));
         setSize(new java.awt.Dimension(1000, 690));
 
         jPanel2.setBackground(new java.awt.Color(43, 33, 24));
