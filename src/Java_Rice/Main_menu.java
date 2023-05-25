@@ -1655,9 +1655,8 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel76, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel75, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel73, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 530, 30));
@@ -1729,11 +1728,18 @@ public class Main_menu extends javax.swing.JFrame {
         t_price.setForeground(new java.awt.Color(255, 255, 255));
         t_price.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         t_price.setText("0.0");
+        t_price.setMaximumSize(new java.awt.Dimension(42, 37));
+        t_price.setMinimumSize(new java.awt.Dimension(42, 37));
+        t_price.setPreferredSize(new java.awt.Dimension(42, 37));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("₱");
+        jLabel24.setMaximumSize(new java.awt.Dimension(42, 37));
+        jLabel24.setMinimumSize(new java.awt.Dimension(42, 37));
+        jLabel24.setName(""); // NOI18N
+        jLabel24.setPreferredSize(new java.awt.Dimension(42, 37));
 
         javax.swing.GroupLayout jPanel76Layout = new javax.swing.GroupLayout(jPanel76);
         jPanel76.setLayout(jPanel76Layout);
@@ -1749,7 +1755,7 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel76Layout.setVerticalGroup(
             jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(t_price, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, Short.MAX_VALUE)
+            .addComponent(t_price, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel73Layout = new javax.swing.GroupLayout(jPanel73);
@@ -1999,7 +2005,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Java Rice | Menu");
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Java-Rice-Logo - Shop.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -2142,6 +2148,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/verified.png"))); // NOI18N
+        jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jLabel42.setMaximumSize(new java.awt.Dimension(50, 25));
         jLabel42.setMinimumSize(new java.awt.Dimension(50, 25));
         jLabel42.setPreferredSize(new java.awt.Dimension(50, 25));
@@ -2221,6 +2228,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel52.setForeground(new java.awt.Color(255, 255, 255));
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/trash.png"))); // NOI18N
+        jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jLabel52.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel52MouseClicked(evt);
@@ -4528,13 +4536,11 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
         // TODO add your handling code here:
-        OOP.color(panel_a);
         jLabel11.setForeground(Color.orange);
     }//GEN-LAST:event_jLabel11MouseEntered
 
     private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
         // TODO add your handling code here:
-        OOP.recolor(panel_a);
         jLabel11.setForeground(Color.black);
     }//GEN-LAST:event_jLabel11MouseExited
 
@@ -4568,7 +4574,6 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
         // TODO add your handling code here:
-        OOP.color(panel_s);
         jLabel12.setForeground(Color.orange);
         if (costumerName.getText().isEmpty() && costumerLastname.getText().isEmpty() && costumerNumber.getText().isEmpty() && costumerSex.getText().isEmpty() && costumerAddress.getText().isEmpty() && costumerEmail.getText().isEmpty()) {
             OOP.empty(fname, lname, contact, sex, address, email);
