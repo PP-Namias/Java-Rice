@@ -65,12 +65,15 @@ public class Main_menu extends javax.swing.JFrame {
     }
     
     public void UserPic() {
-
         String logText = log.getText();
         String imagePath;
 
         if (logText.equals("Namias")) {
             imagePath = "/Icons/namias.png";
+            choose_COSTUMER.setVisible(true);
+            choose_PRODUCT.setVisible(true);
+            choose_INCOME.setVisible(true);
+            choose_INVOICE.setVisible(true);
         } else if (logText.equals("Caram")) {
             imagePath = "/Icons/caram.png";
         } else if (logText.equals("Llanes")) {
@@ -731,6 +734,11 @@ public class Main_menu extends javax.swing.JFrame {
         setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         setResizable(false);
         setSize(new java.awt.Dimension(1680, 900));
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(43, 33, 24));
         jPanel1.setMinimumSize(new java.awt.Dimension(1680, 900));
@@ -6723,40 +6731,14 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void userPicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userPicMouseClicked
         // TODO add your handling code here:
-        
-        String logText = log.getText();
-        String imagePath;
-
-        if (logText.equals("Namias")) {
-            imagePath = "/Icons/namias.png";
-
-            choose_COSTUMER.setVisible(true);
-            choose_PRODUCT.setVisible(true);
-            choose_INCOME.setVisible(true);
-            choose_INVOICE.setVisible(true);
-        } else if (logText.equals("Caram")) {
-            imagePath = "/Icons/caram.png";
-        } else if (logText.equals("Llanes")) {
-            imagePath = "/Icons/llanes.png";
-        } else if (logText.equals("Cano")) {
-            imagePath = "/Icons/cano.png";
-        } else if (logText.equals("Lonoza")) {
-            imagePath = "/Icons/lonoza.png";
-        } else if (logText.equals("User")) {
-            imagePath = "/UI/guest.png";
-        } else if (logText.equals("Guest")) {
-            imagePath = "/UI/guest.png";
-        } else {
-            imagePath = "/UI/guest.png";
-        }
-
-        try {
-            userPic.setIcon(new javax.swing.ImageIcon(getClass().getResource(imagePath)));
-        } catch (NullPointerException e) {
-            // Handle the exception if the image path is incorrect or the resource is not found
-            e.printStackTrace();
-        }
+        UserPic();
     }//GEN-LAST:event_userPicMouseClicked
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        // TODO add your handling code here:
+        UserPic();
+
+    }//GEN-LAST:event_formWindowActivated
 
     /**
      * @param args the command line arguments
