@@ -933,11 +933,14 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel74, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jLabel74, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         Panelhome.setBackground(new java.awt.Color(43, 33, 24));
@@ -1085,7 +1088,7 @@ public class Main_menu extends javax.swing.JFrame {
             panel_chooseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_chooseLayout.createSequentialGroup()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
+                .addGap(0, 0, 0)
                 .addComponent(userPic, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1681,6 +1684,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         jSpinner1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 100, 1));
+        jSpinner1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jSpinner1.setPreferredSize(new java.awt.Dimension(100, 30));
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -1831,6 +1835,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/check-out.png"))); // NOI18N
         jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel40.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel40MouseClicked(evt);
@@ -1858,6 +1863,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel53.setForeground(new java.awt.Color(255, 255, 255));
         jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/update.png"))); // NOI18N
+        jLabel53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel53.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel53MouseClicked(evt);
@@ -2151,6 +2157,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/verified.png"))); // NOI18N
         jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel42.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel42.setMaximumSize(new java.awt.Dimension(50, 25));
         jLabel42.setMinimumSize(new java.awt.Dimension(50, 25));
         jLabel42.setPreferredSize(new java.awt.Dimension(50, 25));
@@ -2231,6 +2238,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/trash.png"))); // NOI18N
         jLabel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel52.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel52MouseClicked(evt);
@@ -6183,13 +6191,11 @@ public class Main_menu extends javax.swing.JFrame {
     private void jLabel94MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseEntered
         // TODO add your handling code here:
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/gif-nav-men.gif"))); // NOI18N
-        jLabel94.setForeground(Color.orange);
     }//GEN-LAST:event_jLabel94MouseEntered
 
     private void jLabel94MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseExited
         // TODO add your handling code here:
         jLabel94.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/menu.png")));
-        jLabel94.setForeground(Color.black);
     }//GEN-LAST:event_jLabel94MouseExited
 
     private void jLabel94MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel94MouseClicked
