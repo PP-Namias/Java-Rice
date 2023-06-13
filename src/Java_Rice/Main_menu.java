@@ -4438,12 +4438,14 @@ public class Main_menu extends javax.swing.JFrame {
 
         panel_main.add(Invoice, "card3");
 
-        About_Us.setPreferredSize(new java.awt.Dimension(1430, 850));
+        About_Us.setBackground(new java.awt.Color(43, 33, 24));
+        About_Us.setMinimumSize(new java.awt.Dimension(1430, 893));
+        About_Us.setPreferredSize(new java.awt.Dimension(1430, 893));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/about_head.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/about_foot.gif"))); // NOI18N
+        jLabel16.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout About_UsLayout = new javax.swing.GroupLayout(About_Us);
         About_Us.setLayout(About_UsLayout);
@@ -4453,15 +4455,14 @@ public class Main_menu extends javax.swing.JFrame {
                 .addGroup(About_UsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jLabel16))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         About_UsLayout.setVerticalGroup(
             About_UsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(About_UsLayout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         panel_main.add(About_Us, "card11");
