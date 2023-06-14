@@ -1546,7 +1546,7 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel14.setPreferredSize(new java.awt.Dimension(1430, 50));
 
         jLabel80.setBackground(new java.awt.Color(120, 60, 0));
-        jLabel80.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel80.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
         jLabel80.setForeground(new java.awt.Color(255, 255, 255));
         jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel80.setText("Java Rice - An Interactive Food Ordering System  ");
@@ -1555,13 +1555,15 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, 1428, Short.MAX_VALUE)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 1377, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 51, Short.MAX_VALUE))
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel14Layout.createSequentialGroup()
-                .addComponent(jLabel80, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jLabel80, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         POS.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -1591,7 +1593,7 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel70Layout.setHorizontalGroup(
             jPanel70Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel70Layout.createSequentialGroup()
-                .addContainerGap(181, Short.MAX_VALUE)
+                .addContainerGap(131, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 885, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(posdate, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1606,7 +1608,7 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(postime, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        POS.add(jPanel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 840, 1430, 40));
+        POS.add(jPanel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 840, 1380, 40));
 
         jPanel6.setBackground(new java.awt.Color(43, 33, 24));
 
@@ -1722,7 +1724,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel34.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 255));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel34.setText("Total unit price :");
+        jLabel34.setText("Total Unit Price");
 
         jPanel73.setBackground(new java.awt.Color(51, 51, 51));
         jPanel73.setPreferredSize(new java.awt.Dimension(112, 42));
@@ -1735,7 +1737,7 @@ public class Main_menu extends javax.swing.JFrame {
         t_price.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         t_price.setText("0.0");
         t_price.setMaximumSize(new java.awt.Dimension(42, 37));
-        t_price.setMinimumSize(new java.awt.Dimension(42, 37));
+        t_price.setMinimumSize(null);
         t_price.setPreferredSize(new java.awt.Dimension(42, 37));
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -1743,7 +1745,7 @@ public class Main_menu extends javax.swing.JFrame {
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("₱");
         jLabel24.setMaximumSize(new java.awt.Dimension(42, 37));
-        jLabel24.setMinimumSize(new java.awt.Dimension(42, 37));
+        jLabel24.setMinimumSize(null);
         jLabel24.setName(""); // NOI18N
         jLabel24.setPreferredSize(new java.awt.Dimension(42, 37));
 
@@ -1760,8 +1762,11 @@ public class Main_menu extends javax.swing.JFrame {
         );
         jPanel76Layout.setVerticalGroup(
             jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(t_price, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel76Layout.createSequentialGroup()
+                .addGroup(jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(t_price, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel73Layout = new javax.swing.GroupLayout(jPanel73);
@@ -1943,11 +1948,11 @@ public class Main_menu extends javax.swing.JFrame {
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel27Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
+                        .addGap(17, 17, 17)
                         .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(0, 0, 0)
                 .addComponent(MenuPic)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1963,12 +1968,12 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(jPanel73, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel34)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(panel_cart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18))
         );
 
-        jPanel4.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, -1, -1));
+        jPanel4.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 10, 350, -1));
 
         jScrollPane9.setBackground(new java.awt.Color(30, 30, 30));
         jScrollPane9.setBorder(null);
@@ -2255,7 +2260,7 @@ public class Main_menu extends javax.swing.JFrame {
         rEmove.setLayout(rEmoveLayout);
         rEmoveLayout.setHorizontalGroup(
             rEmoveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel52, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
         rEmoveLayout.setVerticalGroup(
             rEmoveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2559,7 +2564,6 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel3.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 70));
 
         jTable2.setBackground(new java.awt.Color(43, 33, 24));
-        jTable2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jTable2.setForeground(new java.awt.Color(255, 255, 255));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -3013,7 +3017,7 @@ public class Main_menu extends javax.swing.JFrame {
                 .addComponent(m_search, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(159, 159, 159)
                 .addComponent(jLabel38)
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addContainerGap(240, Short.MAX_VALUE))
         );
         jPanel53Layout.setVerticalGroup(
             jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3677,6 +3681,8 @@ public class Main_menu extends javax.swing.JFrame {
         panel_main.add(Removed, "card3");
 
         Income.setBackground(new java.awt.Color(43, 33, 24));
+        Income.setMinimumSize(new java.awt.Dimension(1430, 893));
+        Income.setPreferredSize(new java.awt.Dimension(1430, 893));
         Income.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel23.setBackground(new java.awt.Color(145, 194, 141));
@@ -3708,7 +3714,7 @@ public class Main_menu extends javax.swing.JFrame {
         });
         jScrollPane6.setViewportView(jTable6);
 
-        jPanel23.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 320));
+        jPanel23.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 400));
 
         Income.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, -1, 270));
 
@@ -3742,7 +3748,7 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
-        Income.add(panel_DAY, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 160, 40));
+        Income.add(panel_DAY, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 160, 40));
 
         panel_REFRESH.setBackground(new java.awt.Color(204, 51, 0));
 
@@ -3774,7 +3780,7 @@ public class Main_menu extends javax.swing.JFrame {
             .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
-        Income.add(panel_REFRESH, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, 170, 40));
+        Income.add(panel_REFRESH, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 660, 170, 40));
 
         jPanel24.setBackground(new java.awt.Color(43, 33, 24));
 
@@ -3952,18 +3958,18 @@ public class Main_menu extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        Income.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 1380, 100));
+        Income.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 1380, 100));
 
         panel_main.add(Income, "card3");
 
         Invoice.setBackground(new java.awt.Color(43, 33, 24));
+        Invoice.setPreferredSize(new java.awt.Dimension(1430, 893));
         Invoice.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel30.setBackground(new java.awt.Color(255, 255, 255));
         jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable8.setBackground(new java.awt.Color(43, 33, 24));
-        jTable8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
         jTable8.setForeground(new java.awt.Color(255, 255, 255));
         jTable8.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -3989,7 +3995,7 @@ public class Main_menu extends javax.swing.JFrame {
         });
         jScrollPane8.setViewportView(jTable8);
 
-        jPanel30.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1380, 390));
+        jPanel30.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1380, 420));
 
         jPanel31.setBackground(new java.awt.Color(43, 33, 24));
 
@@ -4190,7 +4196,7 @@ public class Main_menu extends javax.swing.JFrame {
         );
         pay_allLayout.setVerticalGroup(
             pay_allLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
         Invoice.add(pay_all, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 170, 70));
@@ -4782,7 +4788,6 @@ public class Main_menu extends javax.swing.JFrame {
 
     private void product_SAVEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_product_SAVEMouseEntered
         // TODO add your handling code here:
-        OOP.color(panel_p);
         OOP.product_color1(product_SAVE);
         if (product.getText().isEmpty() && bar_code.getText().isEmpty() && price.getText().isEmpty() && quantity.getText().isEmpty() && mark_up.getText().isEmpty() && exp_date.getText().isEmpty()) {
             OOP.empty1(pname, b_code, pri, qua, m_up, edate);
