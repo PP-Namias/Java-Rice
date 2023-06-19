@@ -1114,6 +1114,8 @@ public class Main_menu extends javax.swing.JFrame {
         jPanel1.add(panel_choose, java.awt.BorderLayout.LINE_START);
 
         panel_main.setBackground(new java.awt.Color(51, 102, 255));
+        panel_main.setMinimumSize(null);
+        panel_main.setPreferredSize(null);
         panel_main.setLayout(new java.awt.CardLayout());
 
         home.setBackground(new java.awt.Color(54, 65, 77));
@@ -1686,6 +1688,7 @@ public class Main_menu extends javax.swing.JFrame {
 
         jSpinner1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 100, 1));
+        jSpinner1.setBorder(null);
         jSpinner1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jSpinner1.setPreferredSize(new java.awt.Dimension(100, 30));
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -2026,10 +2029,9 @@ public class Main_menu extends javax.swing.JFrame {
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 907, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 899, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+            .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4445,8 +4447,7 @@ public class Main_menu extends javax.swing.JFrame {
         panel_main.add(Invoice, "card3");
 
         About_Us.setBackground(new java.awt.Color(43, 33, 24));
-        About_Us.setMinimumSize(new java.awt.Dimension(1430, 893));
-        About_Us.setPreferredSize(new java.awt.Dimension(1430, 893));
+        About_Us.setMinimumSize(null);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/about_head.png"))); // NOI18N
 
@@ -4461,7 +4462,7 @@ public class Main_menu extends javax.swing.JFrame {
                 .addGroup(About_UsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jLabel16))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
         About_UsLayout.setVerticalGroup(
             About_UsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
