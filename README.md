@@ -101,21 +101,6 @@ Overall, Java Rice is a practical solution for restaurants looking for an easy-t
   <img src="./Java-Rice-GUI-Plan/Java Rice [ Flowchart ].png" alt="Java Rice [ Flowchart ]"/>
 </p>
 
-## __About Us__
-<table border="hidden" align="center">
-  <tr>
-    <th><p align="center"><img src="./Java-Rice-GUI-Plan/cano.png"   width="300" height="300" alt="Cano Rizz Pic"/><br>Kurt Daniel S. Cano</p></th>
-    <th><p align="center"><img src="./Java-Rice-GUI-Plan/caram.png"  width="300" height="300" alt="Caram Rizz Pic"/><br>Mike Rufino J. Caram II</p></th>
-    <th><p align="center"><img src="./Java-Rice-GUI-Plan/lonoza.png" width="300" height="300" alt="Lonoza Rizz Pic"/><br>Joshua O. Lonoza</p></th>
-  </tr>  
-</table>
-<table border="hidden" align="center">
-  <tr>
-    <th><p align="center"><img src="./Java-Rice-GUI-Plan/llanes.png" width="300" height="300" alt="Llanes Rizz Pic"/><br>Kevin A. Llanes</p></th>
-    <th><p align="center"><img src="./Java-Rice-GUI-Plan/namias.png" width="300" height="300" alt="Namias Rizz Pic"/><br>Jhon Keneth Ryan B. Namias</p></th>
-  </tr>
-</table>
-
 ## __Changelog__
 This is compilation and record of development progress and notable changes made from inside-out and start-to-finish of the program or also known as changelogs.
 
